@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Sidebar Menu | CodingLab</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Log in</h1>
+    <form id="loginForm" action="/login" method="POST">
+      <label for="username">Username</label>
+      <input type="text" id="usernameInput" name="account" required><br>
+      <label for="password">Password</label>
+      <input type="password" id="passwordInput" name="password" required><br>
+      <button type="submit" id="signinButton">Log in</button>
+    </form>
+  </div>
+ <script src="script.js"></script>
+ <script src="server.js"></script>
+ <script src="login.js"></script>
+</body>
+</html>

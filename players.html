@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Sidebar Menu  | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">Lego League</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="dashboard.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="players.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Player Stats</span>
+       </a>
+       <span class="tooltip">Player Stats</span>
+     </li>
+     <li>
+       <a href="matches.html">
+        <i class='bx bx-stats'></i>
+         <span class="links_name">Match Stats</span>
+       </a>
+       <span class="tooltip">Match Stats</span>
+     </li>
+     <li>
+       <a href="table.html">
+        <i class='bx bx-table'></i>
+         <span class="links_name">Rankings</span>
+       </a>
+       <span class="tooltip">Rankings</span>
+     </li>
+     <li>
+       <a href="teamgenerator.html">
+        <i class='bx bxl-microsoft-teams'></i>
+         <span class="links_name">Team Generator</span>
+       </a>
+       <span class="tooltip">Team Generator</span>
+     </li>
+     <li>
+       <a href="comingsoon.html">
+        <i class='bx bx-award'></i>
+         <span class="links_name">Awards</span>
+       </a>
+       <span class="tooltip">Awards</span>
+     </li>
+     <li>
+       <a href="comingsoon.html">
+        <i class='bx bx-video-recording' ></i>
+         <span class="links_name">Records</span>
+       </a>
+       <span class="tooltip">Records</span>
+     </li>
+     <li>
+       <a href="comingsoon.html">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+    </ul>
+  </div>
+
+ <section class="home-section">
+    <div class="text">Player Stats</div>
+    <div class="sub-text">Filters</div>
+    <div class="filter-container">
+        <div class="filtering">Positions: </div>
+        <div class="filtering">
+        <input type="radio" name="position" value="goalkeeper">
+        <label for="goalkeeper">GK</label>
+    </div>
+    <div class="filtering">
+        <input type="radio" name="position" value="defender">
+        <label for="defender">DEF</label>
+</div>
+<div class="filtering">
+        <input type="radio" name="position" value="mid">
+        <label for="mid">MID</label>
+</div>
+<div class="filtering">
+        <input type="radio" name="position" value="striker">
+        <label for="striker">ST</label>
+    </div>
+    </div>
+
+    <div class="filter-container">
+        <div class="filtering">Stats: </div>
+        <div class="filtering">
+        <input type="radio" name="stats" value="goals">
+        <label for="goals">Goals</label>
+    </div>
+    <div class="filtering">
+        <input type="radio" name="stats" value="assists">
+        <label for="assists">Assists</label>
+</div>
+<div class="filtering">
+        <input type="radio" name="stats" value="clean">
+        <label for="clean">CS</label>
+</div>
+<div class="filtering">
+        <input type="radio" name="stats" value="motm">
+        <label for="motm">MOTM</label>
+    </div>
+    </div>
+
+    <div class="players-container"></div>
+    
+ </section>
+
+
+  <script src="script.js"></script>
+  <script src="playerstats.js"></script>
+</body>
+</html>
