@@ -127,6 +127,7 @@ function isAuthenticated(req, res, next) {
   
   if (req.isAuthenticated()) {
     console.log('User is authenticated. Proceeding to the next middleware or route.');
+    res.redirect(dashboardPath)
     return next();
   }
 
