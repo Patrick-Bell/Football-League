@@ -101,7 +101,7 @@ app.post('/login', (req, res, next) => {
       }
 
       console.log('Authentication successful. User:', user);
-      return res.json({ success: true, message: 'Authentication successful' });
+      res.redirect("/dashboard.html")
     });
   })(req, res, next);
 });
@@ -137,7 +137,7 @@ function isAuthenticated(req, res, next) {
 // Protected route
 app.get('/dashboard', isAuthenticated, (req, res) => {
   const dashboardPath = path.join(__dirname, 'dashboard.html');
-  res.sendFile(dashboardPath);
+  res.redirect(dashboardPath);
 });
 
 
