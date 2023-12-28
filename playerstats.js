@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    const playerTypeSelect = document.getElementById("position-type");
+    const statTypeSelect = document.getElementById("stat-type")
+    const container = document.querySelector(".players-container");
+
+
 
 const players = [
     {
@@ -9,7 +14,7 @@ const players = [
         "position": "GK",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -27,7 +32,7 @@ const players = [
         "position": "GK",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -45,7 +50,7 @@ const players = [
         "position": "GK",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -63,7 +68,7 @@ const players = [
         "position": "GK",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -81,7 +86,7 @@ const players = [
         "position": "DEF",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -99,7 +104,7 @@ const players = [
         "position": "DEF",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -117,7 +122,7 @@ const players = [
         "position": "DEF",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -135,7 +140,7 @@ const players = [
         "position": "MID",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -153,7 +158,7 @@ const players = [
         "position": "MID",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -171,7 +176,7 @@ const players = [
         "position": "MID",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -189,7 +194,7 @@ const players = [
         "position": "MID",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -207,7 +212,7 @@ const players = [
         "position": "MID",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -225,7 +230,7 @@ const players = [
         "position": "MID",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -243,7 +248,7 @@ const players = [
         "position": "MID",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -261,7 +266,7 @@ const players = [
         "position": "LM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -279,7 +284,7 @@ const players = [
         "position": "LM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -297,7 +302,7 @@ const players = [
         "position": "LM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -315,7 +320,7 @@ const players = [
         "position": "LM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -333,7 +338,7 @@ const players = [
         "position": "RM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -351,7 +356,7 @@ const players = [
         "position": "RM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -369,7 +374,7 @@ const players = [
         "position": "RM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -387,7 +392,7 @@ const players = [
         "position": "RM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -405,7 +410,7 @@ const players = [
         "position": "RM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -423,7 +428,7 @@ const players = [
         "position": "RM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -441,7 +446,7 @@ const players = [
         "position": "RM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -459,7 +464,7 @@ const players = [
         "position": "RM",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -477,7 +482,7 @@ const players = [
         "position": "ST",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -495,7 +500,7 @@ const players = [
         "position": "ST",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -513,7 +518,7 @@ const players = [
         "position": "ST",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -531,7 +536,7 @@ const players = [
         "position": "ST",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -549,7 +554,7 @@ const players = [
         "position": "ST",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -567,7 +572,7 @@ const players = [
         "position": "ST",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -585,7 +590,7 @@ const players = [
         "position": "ST",
         "apps": 0,
         "won": 0,
-        // "win_percentage": will be calculated and added during insertion
+        "win_percentage": 0,
         "goals": 0,
         "slingers": 0,
         "assists": 0,
@@ -601,12 +606,12 @@ const players = [
         "name": "Zlatan",
         "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQw9GpzSptNdMG9Gzn_I7O5FG7s3QME-qqjw&usqp=CAU",
         "position": "ST",
-        "apps": 0,
-        "won": 0,
-        // "win_percentage": will be calculated and added during insertion
-        "goals": 0,
+        "apps": 13,
+        "won": 4,
+        "win_percentage": 0,
+        "goals": 5,
         "slingers": 0,
-        "assists": 0,
+        "assists": 4,
         "penalties": 0,
         "hattricks": 0,
         "yellow": 0,
@@ -616,6 +621,13 @@ const players = [
     }
 ]
 
+players.forEach(player => {
+    // Calculate win percentage
+    player.win_percentage = (player.won / player.apps) * 100;
+
+    // Round to 2 decimal places using toFixed
+    player.win_percentage = player.win_percentage.toFixed(2) + " %";
+});
 
 
 function renderPlayers(players) {
@@ -641,7 +653,7 @@ function renderPlayers(players) {
   </div>
   <div class="stat-container">
     <div class="stat-bold"><i class="bi-sunset-fill"></i>Win %</div>
-    <div class="stat-num"></div>
+    <div class="stat-num">${player.win_percentage}</div>
   </div>
   <div class="stat-container">
     <div class="stat-bold"><i class='bx bx-football'></i>Goals</div>
@@ -694,16 +706,72 @@ function renderPlayers(players) {
 renderPlayers(players);
 
 
+function filterAndRenderCombined(selectedPosition, selectedCategories) {
+    let filteredPlayers;
 
-let viewStats = document.querySelectorAll(".view-stats");
-let playerStats = document.querySelectorAll(".full-stats");
-let arrowIcons = document.querySelectorAll(".bxs-up-arrow-circle");
+    if (selectedPosition === "all") {
+        // Show all players without considering position
+        filteredPlayers = players;
+    } else {
+        // Filter players based on the selected position
+        filteredPlayers = players.filter(player => player.position.toLowerCase() === selectedPosition.toLowerCase());
+    }
 
-viewStats.forEach((viewStat, index) => {
-    viewStat.addEventListener("click", () => {
-        playerStats[index].classList.toggle("active");
-        arrowIcons[index].className = playerStats[index].classList.contains("active") ? 'bxs-down-arrow-circle' : 'bxs-up-arrow-circle';
-    });
+    if (selectedCategories.includes("all") || selectedCategories.includes("none")) {
+        // Show all players without considering stats
+        // Use the previously filtered players if a position is selected
+        // Otherwise, use the original players array
+        renderPlayers(filteredPlayers || players);
+    } else {
+        // Sort filtered players based on each selected category
+        selectedCategories.forEach(category => {
+            filteredPlayers = filteredPlayers.sort((a, b) => b[category] - a[category]);
+        });
+        renderPlayers(filteredPlayers);
+        setupEventListeners();
+
+    }
+}
+
+// Add an event listener to the position select element
+playerTypeSelect.addEventListener('change', function () {
+    const selectedPosition = this.value;
+    const selectedCategories = getSelectedCategories(); // Assuming you have a function to get selected categories
+    filterAndRenderCombined(selectedPosition, selectedCategories);
 });
+
+// Add an event listener to the statType select element
+statTypeSelect.addEventListener('change', function () {
+    const selectedPosition = playerTypeSelect.value;
+    const selectedCategories = getSelectedCategories(); // Assuming you have a function to get selected categories
+    filterAndRenderCombined(selectedPosition, selectedCategories);
+});
+
+// Helper function to get selected categories (e.g., from checkboxes)
+function getSelectedCategories() {
+    const selectedCategories = Array.from(document.querySelectorAll('#stat-type option:checked')).map(option => option.value);
+    return selectedCategories.length > 0 ? selectedCategories : ["all"];
+}
+
+// Assuming players is the original array and you want to render all players initially
+renderPlayers(players);
+
+
+
+function setupEventListeners() {
+    let viewStats = document.querySelectorAll(".view-stats");
+    let playerStats = document.querySelectorAll(".full-stats");
+    let arrowIcons = document.querySelectorAll(".bxs-up-arrow-circle");
+
+    viewStats.forEach((viewStat, index) => {
+        viewStat.addEventListener("click", () => {
+            playerStats[index].classList.toggle("active");
+            arrowIcons[index].className = playerStats[index].classList.contains("active") ? 'bxs-down-arrow-circle' : 'bxs-up-arrow-circle';
+        });
+    });
+}
+
+renderPlayers(players);
+setupEventListeners();
 
 });

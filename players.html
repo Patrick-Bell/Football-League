@@ -79,46 +79,30 @@
     <div class="text">Player Stats</div>
     <div class="sub-text">Filters</div>
     <div class="filter-container">
-        <div class="filtering">Positions: </div>
-        <div class="filtering">
-        <input type="radio" name="position" value="goalkeeper">
-        <label for="goalkeeper">GK</label>
-    </div>
-    <div class="filtering">
-        <input type="radio" name="position" value="defender">
-        <label for="defender">DEF</label>
-</div>
-<div class="filtering">
-        <input type="radio" name="position" value="mid">
-        <label for="mid">MID</label>
-</div>
-<div class="filtering">
-        <input type="radio" name="position" value="striker">
-        <label for="striker">ST</label>
-    </div>
+     <select id="position-type">
+      <option value="all" id="all">All Players</option>
+      <option value="gk" id="gk">Keepers</option>
+      <option value="def" id="def">Defenders</option>
+      <option value="lm" id="lm">Left Midfielders</option>
+      <option value="mid" id="mid">Midfielders</option>
+      <option value="rm" id="rm">Right Midfielders</option>
+      <option value="st" id="st">Strikers</option>
+     </select>
     </div>
 
     <div class="filter-container">
-        <div class="filtering">Stats: </div>
-        <div class="filtering">
-        <input type="radio" name="stats" value="goals">
-        <label for="goals">Goals</label>
-    </div>
-    <div class="filtering">
-        <input type="radio" name="stats" value="assists">
-        <label for="assists">Assists</label>
-</div>
-<div class="filtering">
-        <input type="radio" name="stats" value="clean">
-        <label for="clean">CS</label>
-</div>
-<div class="filtering">
-        <input type="radio" name="stats" value="motm">
-        <label for="motm">MOTM</label>
-    </div>
-    </div>
+      <select id="stat-type">
+        <option value="none" id="none">No option</option>
+       <option value="goals" id="goals">Goals</option>
+       <option value="assists" id="assists">Assists</option>
+       <option value="clean-sheet" id="clean-sheet">Clean Sheets</option>
+       <option value="motm" id="motm">Man of the Match</option>
+      </select>
+     </div>
 
-    <div class="players-container"></div>
+ 
+
+    <div class="players-container" id="players-container></div>
     
  </section>
 

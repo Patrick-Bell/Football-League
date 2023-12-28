@@ -2,6 +2,7 @@ let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
 let searchBtn = document.querySelector(".bx-search");
 
+
 closeBtn.addEventListener("click", ()=>{
   sidebar.classList.toggle("open");
   menuBtnChange();//calling the function(optional)
@@ -16,18 +17,6 @@ function menuBtnChange() {
  }
 }
 
-
-
-let viewStats = document.querySelectorAll(".view-stats");
-let playerStats = document.querySelectorAll(".full-stats");
-let arrowIcons = document.querySelectorAll(".bxs-up-arrow-circle");
-
-viewStats.forEach((viewStat, index) => {
-    viewStat.addEventListener("click", () => {
-        playerStats[index].classList.toggle("active");
-        arrowIcons[index].className = playerStats[index].classList.contains("active") ? 'bxs-down-arrow-circle' : 'bxs-up-arrow-circle';
-    });
-});
 
 let generateTeams = document.querySelector(".team-gen-btn");
 
@@ -134,6 +123,9 @@ awayST.innerHTML = "<strong>ST:</strong>";
 
 
 })
+
+
+
 
 
 
