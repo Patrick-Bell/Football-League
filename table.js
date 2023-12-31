@@ -48,7 +48,7 @@ const teams = [
         points: 0
     },
     {
-        name: "Van Dikj (orange)",
+        name: "Van Dijk (orange)",
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
@@ -271,6 +271,63 @@ const teams = [
         losses: 0,
         points: 0
     },
+    {
+        name: "Carragher",
+        gamesPlayed: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        points: 0
+    },
+    {
+        name: "Puyol",
+        gamesPlayed: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        points: 0
+    },
+    {
+        name: "Berbatov",
+        gamesPlayed: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        points: 0
+    },
+    {
+        name: "Ramos",
+        gamesPlayed: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        points: 0
+    },
+    {
+        name: "Raul",
+        gamesPlayed: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        points: 0
+    },
+    {
+        name: "Van Persie (red)",
+        gamesPlayed: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        points: 0
+    },
+    {
+        name: "Beckham",
+        gamesPlayed: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        points: 0
+    }
+
 ];
 
 teams.forEach(team => {
@@ -302,7 +359,7 @@ teams.forEach((team, index) => {
         row.style.background = "gold"
     } else if (index > 0 && index < 4) {
         row.style.background = "blue"
-    } else if (index > 28 && index < 34) {
+    } else if (index > 35 && index < 42) {
         row.style.background = "red"
     } else if (index === 4) {
         row.style.background = "orange"

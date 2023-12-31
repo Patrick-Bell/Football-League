@@ -36,8 +36,8 @@ let awayST = document.querySelector(".away-st");
 
 let positions = {
   GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper"],
-  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman"],
-  LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho"],
+  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol"],
+  LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric"],
   RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi"],
   ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan"]
@@ -64,8 +64,8 @@ generateTeams.addEventListener("click", () => {
   // Reset the players array
   positions = {
     GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper"],
-    DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman"],
-    LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho"],
+    DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol"],
+    LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher"],
     MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric"],
     RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi"],
     ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan"]
@@ -99,8 +99,8 @@ resetBtn.addEventListener("click", () => {
 
 positions = {
   GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper"],
-  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman"],
-  LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho"],
+  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol"],
+  LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric"],
   RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi"],
   ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan"]

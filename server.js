@@ -6,6 +6,7 @@ const passport = require('passport');
 const bodyParser = require('body-parser');
 const LocalStrategy = require('passport-local').Strategy;
 const session = require('express-session');
+const methodOverride = require('method-override');
 const { sessionSecret } = require('./secret'); // Adjust the path accordingly
 
 
@@ -20,20 +21,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 console.log('Session Secret:', sessionSecret);
 
-// Use session to keep track of login status
-// Set session timeout to 30 minutes (adjust as needed)
 app.use(session({
-    secret: sessionSecret,
-    resave: true,
-    saveUninitialized: true,
-    cookie: {
-      maxAge: 30 * 60 * 10, // 30 minutes in milliseconds
-    },
-  }));
-  
-// Initialize Passport
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false
+}));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(methodOverride('_method'));
+  
 
 console.log('Code reached before console.log statements');
 console.log('Username from process.env:', process.env.ACCOUNT);
@@ -79,6 +75,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/dashboard.html', checkAuthenticated, (req, res) => {
+  res.sendFile(__dirname + '/dashboard.html');
+});
+
 // Login route
 app.post('/login', (req, res, next) => {
   const { account, password } = req.body;
@@ -108,37 +108,30 @@ app.post('/login', (req, res, next) => {
 
 
 
-// Logout route
-// Logout route
-app.get('/logout', (req, res) => {
-  req.logout((err) => {
+app.delete('/logout', checkAuthenticated, (req, res) => {
+  req.logout(function (err) {
       if (err) {
-          return res.status(500).json({ success: false, message: 'Logout failed' });
+          return next(err);
       }
-      res.json({ success: true, message: 'Logout successful' });
-      console.log("Logged out")
+      res.redirect('/');
   });
 });
 
 
-// Middleware to check if the user is authenticated
-function isAuthenticated(req, res, next) {
-  console.log('Checking authentication status...');
-  
+function checkAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
-    console.log('User is authenticated. Proceeding to the next middleware or route.');
-    res.redirect(dashboardPath)
+      return next();
   }
-
-  console.log('User is not authenticated. Redirecting to login page.');
-  res.redirect('/index'); // Redirect to the login page if not authenticated
+  res.redirect('/index.html');
 }
 
-// Protected route
-app.get('/dashboard', isAuthenticated, (req, res) => {
-  const dashboardPath = path.join(__dirname, 'dashboard.html');
-  res.redirect(dashboardPath);
-});
+function checkNotAuthenticated(req, res, next) {
+  if (!req.isAuthenticated()) {
+      return res.redirect('/');
+  }
+  next();
+}
+
 
 
 // Start the server
