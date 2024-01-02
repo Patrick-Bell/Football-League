@@ -40,7 +40,29 @@ const matches = [
         yellows: ["Zlatan", "Messi (ft)"],
         reds: [],
         cleansheets: ["Stackers", "Caveman", "Neymar", "De Bruyne", "Robinho", "Muller"],
-        motm: "De Bruyne"
+        motm: "De Bruyne",
+        events: ["De Bruyne free kick goal"]
+    },
+    {
+        id: 3,
+        month: "january",
+        match_number: 3,
+        date: "02/01/2024",
+        time: "14:00",
+        condition: "Clear",
+        team1_score: 0,
+        team2_score: 1,
+        team1: ["Neuer", "Caveman", "Pele", "Kroos", "Ramos", "Suarez"],
+        team2: ["Boxer", "Puyol", "Mane", "Pedri", "Carragher", "Zlatan"],
+        scorers: ["Zlatan"],
+        assisters: ["Mane"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Ramos"],
+        reds: [],
+        cleansheets: ["Boxer", "Puyol", "Mane", "Pedri", "Carragher", "Zlatan"],
+        motm: ["Zlatan"],
+        events: ["Zlatan disallowed slinger", "Zlatan bar and in not over"]
     },
 ]
 

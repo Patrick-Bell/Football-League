@@ -12,13 +12,13 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
         name: "Boxer",
         gamesPlayed: 0,
-        wins: 1,
+        wins: 2,
         draws: 0,
         losses: 0,
         points: 0
@@ -36,7 +36,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
@@ -60,7 +60,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
@@ -106,7 +106,7 @@ const teams = [
     {
         name: "Pedri",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 0,
         losses: 0,
         points: 0
@@ -180,13 +180,13 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
         name: "Mane",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 0,
         losses: 1,
         points: 0
@@ -252,7 +252,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
@@ -266,7 +266,7 @@ const teams = [
     {
         name: "Zlatan",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 0,
         losses: 1,
         points: 0
@@ -274,7 +274,7 @@ const teams = [
     {
         name: "Carragher",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 0,
         losses: 0,
         points: 0
@@ -282,7 +282,7 @@ const teams = [
     {
         name: "Puyol",
         gamesPlayed: 0,
-        wins: 1,
+        wins: 2,
         draws: 0,
         losses: 0,
         points: 0
@@ -300,7 +300,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {

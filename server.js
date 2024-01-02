@@ -75,7 +75,7 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/dashboard.html', checkAuthenticated, (req, res) => {
+app.get('/dashboard', checkAuthenticated, (req, res) => {
   res.sendFile(__dirname + '/dashboard.html');
 });
 
@@ -101,7 +101,7 @@ app.post('/login', (req, res, next) => {
       }
 
       console.log('Authentication successful. User:', user);
-      res.redirect("/dashboard.html")
+      res.redirect("/dashboard")
     });
   })(req, res, next);
 });
@@ -109,6 +109,7 @@ app.post('/login', (req, res, next) => {
 
 
 app.delete('/logout', checkAuthenticated, (req, res) => {
+  console.log("logged out")
   req.logout(function (err) {
       if (err) {
           return next(err);
@@ -122,7 +123,7 @@ function checkAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
       return next();
   }
-  res.redirect('/index.html');
+  res.redirect('/');
 }
 
 function checkNotAuthenticated(req, res, next) {
