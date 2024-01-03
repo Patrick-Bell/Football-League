@@ -2,7 +2,7 @@ const teams = [
     {
         name: "Stackers",
         gamesPlayed: 0,
-        wins: 2,
+        wins: 3,
         draws: 0,
         losses: 1,
         points: 0
@@ -12,7 +12,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 2,
+        losses: 3,
         points: 0
     },
     {
@@ -50,7 +50,7 @@ const teams = [
     {
         name: "Van Dijk (orange)",
         gamesPlayed: 0,
-        wins: 1,
+        wins: 2,
         draws: 0,
         losses: 2,
         points: 0
@@ -74,7 +74,7 @@ const teams = [
     {
         name: "De Bruyne",
         gamesPlayed: 0,
-        wins: 1,
+        wins: 2,
         draws: 0,
         losses: 1,
         points: 0
@@ -84,7 +84,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
@@ -172,13 +172,13 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
         name: "Pele",
         gamesPlayed: 0,
-        wins: 1,
+        wins: 2,
         draws: 0,
         losses: 1,
         points: 0
@@ -212,7 +212,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
@@ -234,7 +234,7 @@ const teams = [
     {
         name: "Jiminez",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 0,
         losses: 0,
         points: 0
@@ -284,7 +284,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 2,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
@@ -292,7 +292,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 2,
+        losses: 3,
         points: 0
     },
     {
@@ -314,7 +314,7 @@ const teams = [
     {
         name: "Van Persie (red)",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 0,
         losses: 0,
         points: 0
