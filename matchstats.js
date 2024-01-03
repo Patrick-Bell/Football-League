@@ -64,6 +64,27 @@ const matches = [
         motm: ["Zlatan"],
         events: ["Zlatan disallowed slinger", "Zlatan bar and in not over"]
     },
+    {
+        id: 4,
+        month: "january",
+        match_number: 4,
+        date: "03/01/2024",
+        time: "12:30",
+        condition: "Clear",
+        team1_score: 0,
+        team2_score: 2,
+        team1: ["Neuer", "Caveman", "Bale", "Eriksen", "Berbatov", "Zlatan"],
+        team2: ["Stackers", "Van Dijk", "Son", "Bastian", "Beckham", "Lewandowski"],
+        scorers: ["Son", "Lewandowski"],
+        assisters: ["Bastian"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Neuer"],
+        reds: [],
+        cleansheets: ["Stackers", "Van Dijk", "Son", "Bastian", "Beckham", "Lewandowski"],
+        motm: ["Bastian"],
+        events: ["Son scored by not giving honor", "motm decided by genetrator"]
+    },
 ]
 
 
