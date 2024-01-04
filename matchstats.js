@@ -128,6 +128,27 @@ const matches = [
         events: ["5 woodwork, no goals", "Boxer made some very good saves"]
     },
     {
+        id: "7",
+        month: "january",
+        match_number: "7",
+        date: "04/01/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 0, //away team
+        team1: ["Boxer", "Caveman", "Mane", "De Bruyne", "Messi (ft)", "Ronaldo"],
+        team2: ["Russian Keeper", "Van Dijk", "Neymar", "Bastian", "Robinho", "Lewandowski"],
+        scorers: ["Ronaldo", "Mane"],
+        assisters: ["De Bruyne", "Messi (ft)"],
+        slingers: ["Ronaldo"],
+        penalties: [],
+        yellows: ["Neymar", "Caveman", "Messi (ft)", "Robinho"],
+        reds: [],
+        cleansheets: ["Boxer", "Caveman", "Mane", "De Bruyne", "Messi (ft)", "Ronaldo"],
+        motm: ["Mane"],
+        events: ["First slinger scored by Ronaldo", "First time Messi (ft) and De Bruyne same team"]
+    },
+    {
         id: "",
         month: "january",
         match_number: "",

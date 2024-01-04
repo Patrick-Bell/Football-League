@@ -18,7 +18,7 @@ const teams = [
     {
         name: "Boxer",
         gamesPlayed: 0,
-        wins: 2,
+        wins: 3,
         draws: 1,
         losses: 0,
         points: 0
@@ -28,13 +28,13 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
         name: "Caveman",
         gamesPlayed: 0,
-        wins: 1,
+        wins: 2,
         draws: 0,
         losses: 2,
         points: 0
@@ -52,7 +52,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 2,
         draws: 1,
-        losses: 2,
+        losses: 3,
         points: 0
     },
     {
@@ -68,13 +68,13 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 0,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
         name: "De Bruyne",
         gamesPlayed: 0,
-        wins: 2,
+        wins: 3,
         draws: 0,
         losses: 1,
         points: 0
@@ -124,13 +124,13 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 1,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
         name: "Messi (ft)",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 0,
         losses: 1,
         points: 0
@@ -186,7 +186,7 @@ const teams = [
     {
         name: "Mane",
         gamesPlayed: 0,
-        wins: 1,
+        wins: 2,
         draws: 0,
         losses: 1,
         points: 0
@@ -196,7 +196,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 0,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
@@ -228,7 +228,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 2,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
@@ -242,7 +242,7 @@ const teams = [
     {
         name: "Ronaldo",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 0,
         losses: 1,
         points: 0
