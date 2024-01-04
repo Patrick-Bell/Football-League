@@ -106,8 +106,49 @@ const matches = [
         motm: ["De Bruyne"],
         events: ["Neuer made loads of saves", "De Bruyne beat Van Persie (red) for motm on random generator"]
     },
+    {
+        id: "6",
+        month: "january",
+        match_number: "6",
+        date: "04/01/2024",
+        time: "13:00",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Stackers", "Van Dijk (red)", "Mbappe", "Maradonna", "Beckham", "Benzema"],
+        team2: ["Boxer", "Van Dijk", "Mahrez", "Modric", "Robinho", "Zlatan"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Zlatan"],
+        reds: [],
+        cleansheets: ["Stackers", "Van Dijk (red)", "Mbappe", "Maradonna", "Beckham", "Benzema", "Boxer", "Van Dijk", "Mahrez", "Modric", "Robinho", "Zlatan"],
+        motm: ["Boxer"],
+        events: ["5 woodwork, no goals", "Boxer made some very good saves"]
+    },
+    {
+        id: "",
+        month: "january",
+        match_number: "",
+        date: "",
+        time: "",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: [],
+        team2: [],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: []
+    },
 ]
-
 
 
 

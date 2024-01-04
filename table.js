@@ -3,7 +3,7 @@ const teams = [
         name: "Stackers",
         gamesPlayed: 0,
         wins: 3,
-        draws: 0,
+        draws: 1,
         losses: 1,
         points: 0
     },
@@ -19,7 +19,7 @@ const teams = [
         name: "Boxer",
         gamesPlayed: 0,
         wins: 2,
-        draws: 0,
+        draws: 1,
         losses: 0,
         points: 0
     },
@@ -43,7 +43,7 @@ const teams = [
         name: "Van Dijk (red)",
         gamesPlayed: 0,
         wins: 0,
-        draws: 0,
+        draws: 1,
         losses: 0,
         points: 0
     },
@@ -51,7 +51,7 @@ const teams = [
         name: "Van Dijk (orange)",
         gamesPlayed: 0,
         wins: 2,
-        draws: 0,
+        draws: 1,
         losses: 2,
         points: 0
     },
@@ -91,7 +91,7 @@ const teams = [
         name: "Maradonna",
         gamesPlayed: 0,
         wins: 0,
-        draws: 0,
+        draws: 1,
         losses: 0,
         points: 0
     },
@@ -99,7 +99,7 @@ const teams = [
         name: "Modric",
         gamesPlayed: 0,
         wins: 0,
-        draws: 0,
+        draws: 1,
         losses: 0,
         points: 0
     },
@@ -123,7 +123,7 @@ const teams = [
         name: "Robinho",
         gamesPlayed: 0,
         wins: 1,
-        draws: 0,
+        draws: 1,
         losses: 0,
         points: 0
     },
@@ -147,7 +147,7 @@ const teams = [
         name: "Mbappe",
         gamesPlayed: 0,
         wins: 0,
-        draws: 0,
+        draws: 1,
         losses: 0,
         points: 0
     },
@@ -171,7 +171,7 @@ const teams = [
         name: "Mahrez",
         gamesPlayed: 0,
         wins: 0,
-        draws: 0,
+        draws: 1,
         losses: 1,
         points: 0
     },
@@ -211,7 +211,7 @@ const teams = [
         name: "Benzema",
         gamesPlayed: 0,
         wins: 0,
-        draws: 0,
+        draws: 1,
         losses: 1,
         points: 0
     },
@@ -267,7 +267,7 @@ const teams = [
         name: "Zlatan",
         gamesPlayed: 0,
         wins: 1,
-        draws: 0,
+        draws: 1,
         losses: 2,
         points: 0
     },
@@ -323,7 +323,7 @@ const teams = [
         name: "Beckham",
         gamesPlayed: 0,
         wins: 1,
-        draws: 0,
+        draws: 1,
         losses: 0,
         points: 0
     }
