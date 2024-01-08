@@ -2,9 +2,9 @@ const teams = [
     {
         name: "Stackers",
         gamesPlayed: 0,
-        wins: 3,
+        wins: 4,
         draws: 1,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
@@ -18,7 +18,7 @@ const teams = [
     {
         name: "Boxer",
         gamesPlayed: 0,
-        wins: 3,
+        wins: 4,
         draws: 1,
         losses: 0,
         points: 0
@@ -28,15 +28,15 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 2,
+        losses: 3,
         points: 0
     },
     {
         name: "Caveman",
         gamesPlayed: 0,
-        wins: 2,
+        wins: 3,
         draws: 0,
-        losses: 2,
+        losses: 3,
         points: 0
     },
     {
@@ -52,15 +52,15 @@ const teams = [
         gamesPlayed: 0,
         wins: 2,
         draws: 1,
-        losses: 3,
+        losses: 4,
         points: 0
     },
     {
         name: "Kroos",
         gamesPlayed: 0,
-        wins: 1,
+        wins: 2,
         draws: 0,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
@@ -76,7 +76,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 3,
         draws: 0,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
@@ -98,7 +98,7 @@ const teams = [
     {
         name: "Modric",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 1,
         losses: 0,
         points: 0
@@ -132,13 +132,13 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 0,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
         name: "Van Persie",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 2,
         draws: 0,
         losses: 0,
         points: 0
@@ -178,7 +178,7 @@ const teams = [
     {
         name: "Pele",
         gamesPlayed: 0,
-        wins: 2,
+        wins: 3,
         draws: 0,
         losses: 1,
         points: 0
@@ -186,7 +186,7 @@ const teams = [
     {
         name: "Mane",
         gamesPlayed: 0,
-        wins: 2,
+        wins: 3,
         draws: 0,
         losses: 1,
         points: 0
@@ -196,7 +196,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 0,
-        losses: 2,
+        losses: 3,
         points: 0
     },
     {
@@ -204,7 +204,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 0,
         draws: 0,
-        losses: 0,
+        losses: 1,
         points: 0
     },
     {
@@ -250,15 +250,15 @@ const teams = [
     {
         name: "Suarez",
         gamesPlayed: 0,
-        wins: 0,
+        wins: 1,
         draws: 0,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
         name: "Muller",
         gamesPlayed: 0,
-        wins: 1,
+        wins: 2,
         draws: 0,
         losses: 0,
         points: 0
@@ -268,7 +268,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 1,
-        losses: 2,
+        losses: 3,
         points: 0
     },
     {
@@ -282,7 +282,7 @@ const teams = [
     {
         name: "Puyol",
         gamesPlayed: 0,
-        wins: 2,
+        wins: 3,
         draws: 0,
         losses: 1,
         points: 0
@@ -300,7 +300,7 @@ const teams = [
         gamesPlayed: 0,
         wins: 1,
         draws: 0,
-        losses: 1,
+        losses: 2,
         points: 0
     },
     {
