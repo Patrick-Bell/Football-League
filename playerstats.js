@@ -444,7 +444,7 @@ const players = [
         "hattricks": 0,
         "yellow": 0,
         "red": 0,
-        "clean_sheets": 2,
+        "clean_sheets": 1,
         "motm": 0
     },
     {
