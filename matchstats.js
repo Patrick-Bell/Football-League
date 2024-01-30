@@ -233,6 +233,27 @@ const matches = [
         events: ["2 slingers", "Ronaldo first 3 goals, all slingers"]
     },
     {
+        id: "12",
+        month: "january",
+        match_number: "12",
+        date: "29/01/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 0, //away team
+        team1: ["Neuer", "Caveman", "Mane", "Kroos", "Berbatov", "Benzema"],
+        team2: ["Boxer", "Van Dijk (red)", "Neymar", "Modric", "Messi (ft)", "Ronaldo"],
+        scorers: ["Benzema", "Mane"],
+        assisters: ["Mane"],
+        slingers: [],
+        penalties: ["Mane"],
+        yellows: ["Modric", "Kroos"],
+        reds: [],
+        cleansheets: ["Neuer", "Caveman", "Mane", "Kroos", "Berbatov", "Benzema"],
+        motm: ["Mane"],
+        events: ["Benzema loses motm to wheel against Mane, starts a beef", "Boxer first time losing and conceding"]
+    },
+    {
         id: "",
         month: "january",
         match_number: "",
