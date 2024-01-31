@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+
     const playerTypeSelect = document.getElementById("position-type");
     const statTypeSelect = document.getElementById("stat-type");
     const monthTypeSelect = document.getElementById("month-type");
@@ -873,6 +874,10 @@ const players = [
          },
 ]
 
+window.players = players;
+
+
+
 
 players.forEach(player => {
     // Calculate the sum of 'apps', 'won', 'draw', etc. properties using reduce
@@ -918,23 +923,28 @@ players.forEach(player => {
 });
 
 
-
-
 function renderPlayers(players) {
     // Get the container where player cards will be appended
     const container = document.querySelector(".players-container");
 
-
-
     // Use map to create an array of HTML strings for each player
     const playerCardsHTML = players.map(player => {
-      const cards = player.monthlyData[0].yellow; 
-      const hasReached5YellowCards = cards === 5 || cards === 10 || cards === 15 || cards === 20 || cards === 25 || cards === 30 || cards === 35
+      const yellowCards = player.monthlyData[0].yellow;
+      const redCards = player.monthlyData[0].red
+      const playerId = player.id;
+      const hasReached5YellowCards = yellowCards === 5 || yellowCards === 10 || yellowCards === 15 || yellowCards === 20 || yellowCards === 25 || yellowCards === 30 || yellowCards === 35;
+      const hasActiveRedCard =  Number.isInteger(redCards) && redCards > 0;
       const highlightClass = hasReached5YellowCards ? 'highlighted' : '';
+      const bannedClass = hasActiveRedCard ? 'banned' : '';
+
+    
 
         return `
-    <div class="player-card ${highlightClass}">
-    <div class="suspended">${highlightClass === 'highlighted' ? 'SUSPENDED (1) GAME' : ''}</div>
+        <div class="player-card ${highlightClass} ${bannedClass}" data-player-id="${playerId}">
+                <div class="suspended">
+                    ${highlightClass === 'highlighted' ? 'SUSPENDED (1) GAME' : ''}
+                    ${bannedClass === 'banned' ? 'SUSPENDED' : ''}
+                </div>
     <div class="stat-bold player-name"><i class="bi-brightness-high-fill"></i>${player.name} (${player.position})</div>
     <img class="player-img" src="${player.picture}" alt="">
     <div class="view-stats"><i class='bx bxs-up-arrow-circle'></i>View Stats</div>
@@ -999,11 +1009,12 @@ function renderPlayers(players) {
 </div>
     `});
 
-    // Join the array of HTML strings into a single string
     const playersHTMLString = playerCardsHTML.join('');
 
     // Append the HTML string to the container
     container.innerHTML = playersHTMLString;
+
+    
 }
 
 // Call the function with your array of players
@@ -1048,7 +1059,6 @@ function filterAndRenderCombined(selectedPosition, selectedCategories, selectedM
         }
     }
     
-    // ...
     
     if (selectedMonth !== "overall") {
         // Ensure that each player has data for the selected month
@@ -1120,4 +1130,9 @@ function setupEventListeners() {
 
 renderPlayers(players);
 setupEventListeners();
+
+
+
+
+
 });

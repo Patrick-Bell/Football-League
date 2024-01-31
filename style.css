@@ -323,6 +323,13 @@ img {
 .player-card.highlighted {
   background: yellow;
 }
+.player-card.nothighlighted  {
+  background: #E4E9F7;
+}
+.player-card.banned {
+  background: red;
+  color: white;
+}
 .suspended{
   text-align: center;
   font-weight: 900;
@@ -443,8 +450,7 @@ img {
 
 /* table */
 table{
-  width: 95%;
-  margin: 5px;
+  width: 100%;
 
 }
 th{
@@ -518,6 +524,62 @@ label{
 }
 
 
+/* compare players */
+.compare-container{
+  border: 1px solid black;
+  margin: auto auto;
+  margin-top: 10px;
+  width: 50%;
+}
+.images-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stats-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px; /* Adjust as needed for spacing */
+}
+.name-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overall-container{
+  margin: 5px;
+}
+.names{
+  margin: 0 25px;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+}
+.statss,
+.titles {
+  width: auto; /* Adjust the width based on your preference */
+  text-align: center; /* Center-align the content */
+}
+
+.titles{
+  font-weight: 900;
+}
+
+.compare-container {
+  display: flex;
+}
+
+.player-container {
+  flex: 1;
+  margin: 10px; /* Adjust the margin as needed */
+  border: 1px solid #ddd; /* Optional border for separation */
+  padding: 10px;
+}
+
+
 
 
 @media (max-width: 380px) {
@@ -537,5 +599,8 @@ label{
   }
   .player{
     padding: 10px;
+  }
+  .compare-container{
+    width: 90%;
   }
 }
