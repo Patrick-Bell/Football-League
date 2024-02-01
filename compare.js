@@ -10,7 +10,7 @@ const overallCompareContainer = document.querySelector(".player-compare-containe
 const compareText = document.querySelector(".compare-text");
 overallCompareContainer.style.display = "none"
 compareText.style.display = "block"
-compareText.innerHTML = "Please select a player to start comparing stats!"
+compareText.innerHTML = "Select a player to start comparing stats!"
 }
 
 
@@ -42,6 +42,8 @@ function comparePlayers() {
 
             compareGoals(player1, player2);
             compareAssists(player1, player2);
+            compareWins(player1, player2);
+            compareUnbeatenPercentage(player1, player2);
         } else {
             overallCompareContainer.style.display = "none";
             compareText.style.display = "block";
@@ -71,10 +73,10 @@ function displayPlayerStats(player, containerId) {
             <p class="statss" id="${containerId}-assists">${player.monthlyData[0].assists}</p>
         </div>
         <div class="stats-container">
-            <p class="statss">${player.monthlyData[0].won}</p>
+            <p class="statss" id="${containerId}-won">${player.monthlyData[0].won}</p>
         </div>
         <div class="stats-container">
-            <p class="statss">${player.monthlyData[0].win_percentage}</p>
+            <p class="statss" id="${containerId}-unbeaten_percentage">${player.monthlyData[0].unbeaten_percentage}</p>
         </div>
     `;
 
@@ -122,7 +124,54 @@ function compareAssists(player1, player2) {
         player2AssistsElement.style.color = "green";
     } else {
         // Handle case when goals are equal
-        player2AssistsElement.style.color = "black";
+        player1AssistsElement.style.color = "black";
         player2AssistsElement.style.color = "black";
     }
 }
+
+function compareWins(player1, player2) {
+    const winsPlayer2 = player2.monthlyData[0].won;
+    const winsPlayer1 = player1.monthlyData[0].won;
+
+    const player1WinsElement = document.getElementById("player1-container-won");
+    const player2WinsElement = document.getElementById("player2-container-won");
+
+    console.log("Player 1 Win Element:", player1WinsElement);
+    console.log("Player 2 Win Element:", player2WinsElement);
+
+    if (winsPlayer1 > winsPlayer2) {
+        player1WinsElement.style.color = "green";
+        player2WinsElement.style.color = "red";
+    } else if (winsPlayer1 < winsPlayer2) {
+        player1WinsElement.style.color = "red";
+        player2WinsElement.style.color = "green";
+    } else {
+        // Handle case when goals are equal
+        player1WinsElement.style.color = "black";
+        player2WinsElement.style.color = "black";
+    }
+}
+
+function compareUnbeatenPercentage(player1, player2) {
+    const unbeatenPlayer2 = player2.monthlyData[0].unbeaten_percentage;
+    const unbeatenPlayer1 = player1.monthlyData[0].unbeaten_percentage;
+
+    const player1UnbeatenElement = document.getElementById("player1-container-unbeaten_percentage");
+    const player2UnbeatenElement = document.getElementById("player2-container-unbeaten_percentage");
+
+    console.log("Player 1 Unbeaten Element:", unbeatenPlayer1);
+    console.log("Player 2 Unbeaten Element:", unbeatenPlayer2);
+
+    if (unbeatenPlayer1 > unbeatenPlayer2) {
+        player1UnbeatenElement.style.color = "green";
+        player2UnbeatenElement.style.color = "red";
+    } else if (unbeatenPlayer1 < unbeatenPlayer2) {
+        player1UnbeatenElement.style.color = "red";
+        player2UnbeatenElement.style.color = "green";
+    } else {
+        // Handle case when goals are equal
+        player1UnbeatenElement.style.color = "black";
+        player2UnbeatenElement.style.color = "black";
+    }
+}
+
