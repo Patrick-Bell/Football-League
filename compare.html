@@ -8,6 +8,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="playerstats.js"></script>
      <script src="compare.js"></script>
+     <script src="script.js"></script>
 </head>
 <body>
   <div class="sidebar">
@@ -79,12 +80,12 @@
 
   <section class="home-section">
 
-    <div class="text">Player Comparisons</div>
+    <div class="text">Compare</div>
 
     <div class="filter-container">
         <select name="player1" id="player1">Player 1
+          <option value="Neymar">Neymar</option>
             <option value="Messi">Messi</option>
-            <option value="Neymar">Neymar</option>
             <option value="Mane">Mane</option>
             <option value="Pele">Pele</option>
         </select>
@@ -96,23 +97,36 @@
         </select>
     </div>
 
+      <p class="compare-text">Please select a player to start comparing stats!</p>
+
+    <div class="player-compare-container">
     <div class="compare-container">
         <div class="overall-container" id="player1-container">
             <!-- Player 1 content will go here -->
+        </div>
+        <div class="stat-container">
+          <p class="stat-bolds">GOALS</p>
+          <p class="stat-bolds">ASSISTS</p>
+          <p class="stat-bolds">WINS</p>
+          <p class="stat-bolds">UNBEATEN %</p>
         </div>
         <div class="overall-container" id="player2-container">
             <!-- Player 2 content will go here -->
         </div>
     </div>
+    <p class="view-players">To view all player stats, click <a href="players.html"> here.</a></p>
+  </div>
 
   </section>
   
-  <!-- Example event listeners -->
-<script src="compare.js"></script>
-<script>
-    document.getElementById("player1").addEventListener("change", comparePlayers);
-    document.getElementById("player2").addEventListener("change", comparePlayers);
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("player1").addEventListener("change", comparePlayers);
+        document.getElementById("player2").addEventListener("change", comparePlayers);
+        comparePlayers();
+    });
 </script>
+<script src="compare.js"></script>
 
 
 </body>

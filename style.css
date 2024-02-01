@@ -311,7 +311,7 @@ img {
     gap: 1rem;
     padding: 10px;
 }
-.stat-container{
+.statistic-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -531,6 +531,33 @@ label{
   margin-top: 10px;
   width: 50%;
 }
+.stat-container{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 380px;
+}
+.stat-bold{
+  text-align: center;
+}
+.stat-bolds{
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 900;
+}
+.player-compare-container{
+  display: none;
+}
+.compare-text{
+  text-align: center;
+  margin: 20px;
+  display: block;
+}
+.view-players{
+  text-align: center;
+}
 .images-container{
   display: flex;
   align-items: center;
@@ -545,14 +572,14 @@ label{
 .name-container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-weight: 900;
 }
 .overall-container{
   margin: 5px;
+  position: relative;
 }
-.names{
-  margin: 0 25px;
-}
+
 
 img{
   height: 150px;
@@ -563,13 +590,14 @@ img{
   width: auto; /* Adjust the width based on your preference */
   text-align: center; /* Center-align the content */
 }
-
 .titles{
   font-weight: 900;
 }
 
 .compare-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .player-container {

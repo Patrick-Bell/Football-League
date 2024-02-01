@@ -949,59 +949,59 @@ function renderPlayers(players) {
     <img class="player-img" src="${player.picture}" alt="">
     <div class="view-stats"><i class='bx bxs-up-arrow-circle'></i>View Stats</div>
 <div class="full-stats">
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class="bi-sunset-fill"></i>Appearances</div>
     <div class="stat-num">${player.monthlyData[0].apps}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class="bi-sunset-fill"></i>Wins</div>
     <div class="stat-num">${player.monthlyData[0].won}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class="bi-sunset-fill"></i>Draws</div>
     <div class="stat-num">${player.monthlyData[0].draw}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class="bi-sunset-fill"></i>Win %</div>
     <div class="stat-num">${player.monthlyData[0].win_percentage}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class="bi-sunset-fill"></i>Unbeaten %</div>
     <div class="stat-num">${player.monthlyData[0].unbeaten_percentage}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class='bx bx-football'></i>Goals</div>
     <div class="stat-num">${player.monthlyData[0].goals}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class='bx bx-football' style='color:#f1ff00'  ></i>Slingers</div>
     <div class="stat-num">${player.monthlyData[0].slingers}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class='bx bx-donate-blood'></i>Assists</div>
     <div class="stat-num">${player.monthlyData[0].assists}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class='bx bxl-product-hunt'></i>Penalties</div>
     <div class="stat-num">${player.monthlyData[0].penalties}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class='bx bx-football'></i><i class='bx bx-football'></i><i class='bx bx-football'></i>Hatricks</div>
     <div class="stat-num">${player.monthlyData[0].hattricks}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class='bx bxs-card' style='color:#fbff00'></i>Yellow Cards</div>
     <div class="stat-num">${player.monthlyData[0].yellow}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class='bx bxs-card' style='color:#ff1f00'  ></i>Red Cards</div>
     <div class="stat-num">${player.monthlyData[0].red}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class='bx bxs-hand'></i>Clean Sheets</div>
     <div class="stat-num">${player.monthlyData[0].clean_sheets}</div>
   </div>
-  <div class="stat-container">
+  <div class="statistic-container">
     <div class="stat-bold"><i class='bx bxs-medal'></i>Man of the match</div>
     <div class="stat-num">${player.monthlyData[0].motm}</div>
   </div>
