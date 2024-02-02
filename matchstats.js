@@ -254,11 +254,32 @@ const matches = [
         events: ["Benzema loses motm to wheel against Mane, starts a beef", "Boxer first time losing and conceding"]
     },
     {
-        id: "",
-        month: "january",
-        match_number: "",
-        date: "",
-        time: "",
+        id: "13",
+        month: "february",
+        match_number: "13",
+        date: "02/02/2024",
+        time: "TBD",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: [],
+        team2: [],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: []
+    },
+    {
+        id: "14",
+        month: "february",
+        match_number: "14",
+        date: "TBD",
+        time: "TBD",
         condition: "Clear",
         team1_score: 0, //home team
         team2_score: 0, //away team
@@ -335,7 +356,7 @@ let arrowIcons = document.querySelectorAll(".bxs-up-arrow-circle");
 viewStats.forEach((viewStat, index) => {
     viewStat.addEventListener("click", () => {
         playerStats[index].classList.toggle("active");
-        arrowIcons[index].className = playerStats[index].classList.contains("active") ? 'bxs-down-arrow-circle' : 'bxs-up-arrow-circle';
+        arrowIcons[index].classList.toggle("rotate");
     });
 });
 

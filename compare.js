@@ -90,9 +90,6 @@ function displayPlayerStats(player, containerId) {
             <p id="${containerId}-draw">${player.monthlyData[0].draw}</p>&nbsp-&nbsp;
             <p id="${containerId}-loss">${lossCount}</p>
         </div>
-    
-
-    
     `;
 
     container.innerHTML = playerStatsContent;

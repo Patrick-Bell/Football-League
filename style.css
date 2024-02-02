@@ -618,7 +618,9 @@ img{
   padding: 10px;
 }
 
-
+.rotate {
+  transform: rotate(180deg); /* You can adjust the degree of rotation */
+}
 
 
 @media (max-width: 380px) {
