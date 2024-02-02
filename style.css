@@ -537,7 +537,7 @@ label{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 380px;
+  top: 397.5px;
 }
 .stat-bold{
   text-align: center;
@@ -549,6 +549,7 @@ label{
 }
 .player-compare-container{
   display: none;
+  z-index: 1;
 }
 .compare-text{
   text-align: center;
@@ -568,6 +569,7 @@ label{
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 10px; /* Adjust as needed for spacing */
+  z-index: 10;
 }
 .name-container{
   display: flex;
@@ -595,12 +597,13 @@ img{
   padding: 0 10px;
   color: black;
   z-index: 1;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .titles{
   font-weight: 900;
-}
-.space{
-  padding: 0 15px;
 }
 .compare-container {
   display: flex;

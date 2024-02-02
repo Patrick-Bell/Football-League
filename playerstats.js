@@ -117,7 +117,7 @@ const players = [
      },
      {
             id: 6,
-            name: "Van Dijk (orange)",
+            name: "Van Dijk",
             picture: "",
             position: "DEF",
             monthlyData: [
