@@ -590,10 +590,18 @@ img{
   width: auto; /* Adjust the width based on your preference */
   text-align: center; /* Center-align the content */
 }
+.statss{
+  background: white;
+  padding: 0 10px;
+  color: black;
+  z-index: 1;
+}
 .titles{
   font-weight: 900;
 }
-
+.space{
+  padding: 0 15px;
+}
 .compare-container {
   display: flex;
   align-items: center;

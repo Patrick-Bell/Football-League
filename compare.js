@@ -26,6 +26,8 @@ function comparePlayers() {
     const player1 = window.players.find(player => player.name === player1Name);
     const player2 = window.players.find(player => player.name === player2Name);
 
+
+
     console.log("Player 1 Object:", player1);
     console.log("Player 2 Object:", player2);
 
@@ -77,7 +79,6 @@ function displayPlayerStats(player, containerId) {
         </div>
         <div class="stats-container">
             <p class="statss" id="${containerId}-unbeaten_percentage">${player.monthlyData[0].unbeaten_percentage}</p>
-        </div>
     `;
 
     container.innerHTML = playerStatsContent;
