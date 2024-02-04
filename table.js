@@ -838,7 +838,7 @@ function renderTableData(team, tbody, index) {
         row.style.background = "cyan";
     } else if (index === 5) {
         row.style.background = "orange";
-    } else if (index >= 37 && index < 42) {
+    } else if (index >= 38 && index < 43) {
         row.style.background = "red";
     } else {
         row.style.background = "white";
