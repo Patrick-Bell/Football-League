@@ -79,6 +79,10 @@ app.get('/dashboard', checkAuthenticated, (req, res) => {
   res.sendFile(__dirname + '/dashboard.html');
 });
 
+app.get('/player', checkAuthenticated, (req, res) => {
+  res.sendFile(__dirname + '/players.html');
+})
+
 // Login route
 app.post('/login', (req, res, next) => {
   const { account, password } = req.body;
