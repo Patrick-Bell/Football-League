@@ -17,7 +17,7 @@ const matches = [
         assisters: ["Lewandowski"],
         slingers: [],
         penalties: [],
-        yellows: ["Boxer", "Lewandowski"],
+        yellows: ["Lewandowski", "Boxer"],
         reds: [],
         cleansheets: ["Boxer", "Puyol", "Pele", "Kroos", "Ramos", "Lewandowski"],
         motm: "Pele"
@@ -278,7 +278,7 @@ const matches = [
         id: "14",
         month: "february",
         match_number: "14",
-        date: "TBD",
+        date: "05/02/2024",
         time: "TBD",
         condition: "Clear",
         team1_score: 0, //home team
@@ -296,6 +296,66 @@ const matches = [
         events: []
     },
 ]
+
+
+// this is just to monitor the amount of goals there have been in the league
+
+function addAllGoals(matches) {
+    let totalGoals = 0;
+
+    matches.forEach(match => {
+        totalGoals += match.team1_score + match.team2_score;
+    });
+
+    return (totalGoals);
+}
+
+console.log("Total Goals", addAllGoals(matches))
+
+// monitoring the amount of slingers
+
+function addAllSlingers(matches) {
+    let totalSlingers = 0;
+
+    matches.forEach(match => {
+        totalSlingers += match.slingers.length; // Assuming 'slingers' is an array
+    });
+
+    return totalSlingers;
+}
+
+console.log("Total Slingers", addAllSlingers(matches));
+
+
+
+function getPlayerYellowCounts(matches) {
+    const playerYellowCounts = {};
+    let totalYellows = 0;
+
+    matches.forEach(match => {
+        match.yellows.forEach(player => {
+            // Check if the player is already in the map
+            if (playerYellowCounts[player]) {
+                // If yes, increment the count
+                playerYellowCounts[player]++;
+            } else {
+                // If no, initialize the count to 1
+                playerYellowCounts[player] = 1;
+            }
+
+            // Increment the total yellow card count
+            totalYellows++;
+        });
+    });
+
+    return { playerYellowCounts, totalYellows };
+}
+
+const { playerYellowCounts, totalYellows } = getPlayerYellowCounts(matches);
+
+console.log("Player Yellow Card Counts", playerYellowCounts);
+console.log("Total Yellow Cards", totalYellows);
+
 
 
 

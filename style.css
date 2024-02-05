@@ -623,6 +623,28 @@ img{
 }
 
 
+/* awards */
+.table2{
+  width: 100%;
+}
+
+.table2 th{
+  background: linear-gradient(45deg, #11101d, #E4E9F7);
+  padding: 20px;
+  width: 50%;
+  text-align: left;
+}
+.table2 td{
+  background: white;
+  font-weight: 800;
+  padding: 7.5px;
+  border: 1px solid lightgray;
+}
+.table2 td:last-child{
+  font-weight: 500;
+}
+
+
 @media (max-width: 380px) {
     .matchday{
         display: none;
