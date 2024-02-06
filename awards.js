@@ -163,6 +163,36 @@ document.addEventListener("DOMContentLoaded", function () {
         return { teams: mostDefeatsPlayers, overallDefeats: maxOverallDefeats}
     }
 
+   
+
+
+    
+    
+    
+
+    function findPlayersWithMostDraws() {
+        let mostDrawsPlayers = [];
+        let maxOverallDraws = -1;
+
+        teams.forEach(team => {
+            let overallDraws = 0;
+            const overallMonth = team.monthlyData.find(monthData => monthData.month === "Overall");
+
+            if (overallMonth && typeof overallMonth.draws !== 'undefined') {
+                overallDraws = overallMonth.draws
+            }
+
+            if (overallDraws > maxOverallDraws) {
+                maxOverallDraws = overallDraws;
+                mostDrawsPlayers = [team.name];
+            } else if (overallDraws === maxOverallDraws) {
+                mostDrawsPlayers.push(team.name)
+            }
+        })
+
+        return { teams: mostDrawsPlayers, overallDraws: maxOverallDraws}
+    }
+
     function findPlayerWithLeastTotalApps(players) {
         let leastAppsPlayer = [];
         let minOverallApps = Infinity;
@@ -209,6 +239,77 @@ document.addEventListener("DOMContentLoaded", function () {
 
         return {player: mostYellowPlayer, overallYellow: maxOverallYellow}
     }
+
+    function findPlayersWithMostReds(players) {
+        let mostRedPlayer = [];
+        let maxOverallRed = -1;
+
+        players.forEach(player => {
+            let overallRed = 0;
+            const overallMonth = player.monthlyData.find(monthData => monthData.month === "Overall");
+
+            if (overallMonth && typeof overallMonth.red !== 'undefined') {
+                overallRed = overallMonth.red
+            }
+
+            if (overallRed > maxOverallRed) {
+                maxOverallRed = overallRed
+                mostRedPlayer = [player.name]
+            } else if (overallRed === maxOverallRed) {
+                mostRedPlayer.push(player.name)
+            }
+
+        })
+
+        return {player: mostRedPlayer, overallRed: maxOverallRed}
+    }
+
+    function findPlayerWithMostSlingers(players) {
+        let mostSlingerPlayer = [];
+        let maxOverallSlinger = -1;
+    
+        players.forEach(player => {
+            let overallSlinger = 0;
+            const overallMonth = player.monthlyData.find(monthData => monthData.month === "Overall");
+    
+            if (overallMonth && typeof overallMonth.slingers !== 'undefined') {
+                overallSlinger = overallMonth.slingers;
+            }
+    
+            if (overallSlinger > maxOverallSlinger) {
+                maxOverallSlinger = overallSlinger;
+                mostSlingerPlayer = [player.name];
+            } else if (overallSlinger === maxOverallSlinger) {
+                mostSlingerPlayer.push(player.name);
+            }
+        });
+    
+        return { player: mostSlingerPlayer, overallSlinger: maxOverallSlinger };
+    }
+
+    function findPlayersWithMostGoals(players) {
+        let mostGoalPlayer = [];
+        let maxOverallGoal = -1;
+    
+        players.forEach(player => {
+            let overallGoal = 0;
+            const overallMonth = player.monthlyData.find(monthData => monthData.month === "Overall");
+    
+            if (overallMonth && typeof overallMonth.goals !== 'undefined') {
+                overallGoal = overallMonth.goals;
+            }
+    
+            if (overallGoal > maxOverallGoal) {
+                maxOverallGoal = overallGoal;
+                mostGoalPlayer = [player.name];
+            } else if (overallGoal === maxOverallGoal) {
+                mostGoalPlayer.push(player.name);
+            }
+        });
+    
+        return { player: mostGoalPlayer, overallGoal: maxOverallGoal };
+    }
+    
     
 
     
@@ -234,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { category: "Highest Scoring Game", winner: "4 goals - 09/01/2024 (17:10)" },
                 { category: "Most Games in a Month", winner: "12 - January" },
                 { category: "Most Points in a Month", winner: "15 - Pele (January)" },
-                { category: "Most Defeats in a Month", winner: ["5 - Van Dijk", "Russian Keeper (January)"] },
+                { category: "Most Defeats in a Month", winner: "5 - Van Dijk, Russian Keeper (January)" },
                 { category: "Most Goals in a Month", winner: "18 - January" }
             ],
         },
@@ -242,12 +343,12 @@ document.addEventListener("DOMContentLoaded", function () {
             category: "goals",
             headers: ["Goals", ""],
             data: [
-                { category: "Most Goals", winner: "4 - Mane" },
+                { category: "Most Goals", winner: findPlayersWithMostGoals(players)},
                 { category: "First Goal", winner: "Pele (01/01/2024) " },
                 { category: "Tenth Goal", winner: "Caveman (08/01/2024) " },
                 { category: "Twentieth Gaol", winner: "Bale (05/02/2024" },
                 { category: "First Slinger", winner: "Ronaldo (04/01/2024)" },
-                { category: "Most Slingers", winner: "3 - Ronaldo" }
+                { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) }
             ],
         },
         {
@@ -265,7 +366,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { category: "First Yellow Card", winner: "Lewandowski (01/01/2024)" },
                 { category: "First Red Card", winner: "Messi (08/01/2024)" },
                 { category: "Most Yellow Cards", winner: findPlayersWithMostYellows(players)},
-                { category: "Most Red Cards", winners: ["1 - Messi", "Van Persie"] },
+                { category: "Most Red Cards", winners: findPlayersWithMostReds(players) },
             ],
         },
         {
@@ -279,6 +380,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { category: "Most Appearances", winner: findPlayerWithMostTotalApps(players) },
                 { category: "Most Wins", winner: findPlayerWithMostWins(players) }, // Ensure the "Most Wins" category is in the right position
                 { category: "Most Defeats", winner: findPlayersWithMostDefeats(teams) },
+                { category: "Most Draws", winner: findPlayersWithMostDraws(teams) },
                 { category: "Most Clean Sheets", winner: findPlayersWithMostCleanSheets(players) },
                 { category: "Most MOTM", winner: findPlayersWithMostMOTM(players) },
                 { category: "Most Points", winner: findPlayersWithMostPoints(teams) },

@@ -300,35 +300,6 @@ const matches = [
 window.matches = matches;
 
 
-// this is just to monitor the amount of goals there have been in the league
-
-function addAllGoals(matches) {
-    let totalGoals = 0;
-
-    matches.forEach(match => {
-        totalGoals += match.team1_score + match.team2_score;
-    });
-
-    return (totalGoals);
-}
-
-console.log("Total Goals", addAllGoals(matches))
-
-// monitoring the amount of slingers
-
-function addAllSlingers(matches) {
-    let totalSlingers = 0;
-
-    matches.forEach(match => {
-        totalSlingers += match.slingers.length; // Assuming 'slingers' is an array
-    });
-
-    return totalSlingers;
-}
-
-console.log("Total Slingers", addAllSlingers(matches));
-
-
 
 function getPlayerYellowCounts(matches) {
     const playerYellowCounts = {};
@@ -420,6 +391,20 @@ viewStats.forEach((viewStat, index) => {
         playerStats[index].classList.toggle("active");
         arrowIcons[index].classList.toggle("rotate");
     });
+});
+
+
+
+function filterMatches(category) {
+    const filteredMatches = (category === "all") ? matches : matches.filter(match => match.month === category);
+    renderMatches(filteredMatches);
+}
+
+
+let matchMonthType = document.getElementById('match-month');
+matchMonthType.addEventListener("change", () => {
+    const selectedCategory = matchMonthType.value;
+    filterMatches(selectedCategory);
 });
 
 
