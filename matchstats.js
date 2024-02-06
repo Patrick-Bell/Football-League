@@ -279,23 +279,25 @@ const matches = [
         month: "february",
         match_number: "14",
         date: "05/02/2024",
-        time: "TBD",
+        time: "17:05",
         condition: "Clear",
-        team1_score: 0, //home team
-        team2_score: 0, //away team
-        team1: [],
-        team2: [],
-        scorers: [],
-        assisters: [],
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Neuer", "Van Dijk", "Bale", "Eriksen", "Carragher", "Lewandowski"],
+        team2: ["Boxer", "Caveman", "Bowen", "Modric", "Beckham", "Zlatan"],
+        scorers: ["Bale", "Bowen"],
+        assisters: ["Eriksen", "Beckham"],
         slingers: [],
         penalties: [],
-        yellows: [],
+        yellows: ["Modric", "Carragher", "Zlatan", "Beckham"],
         reds: [],
         cleansheets: [],
-        motm: [],
-        events: []
+        motm: ["Modric"],
+        events: ["Modric won motm in wheel against Bowen & Caveman", "Beckham mis-hit shot leads to Bowen goal", "Bowen debut", "Messi & Van Persie both came out in the generator but are banned so served it this game"]
     },
 ]
+
+window.matches = matches;
 
 
 // this is just to monitor the amount of goals there have been in the league
@@ -420,4 +422,7 @@ viewStats.forEach((viewStat, index) => {
     });
 });
 
+
 });
+
+
