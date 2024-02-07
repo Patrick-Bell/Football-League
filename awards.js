@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { category: "Most Goals", winner: findPlayersWithMostGoals(players)},
                 { category: "First Goal", winner: "Pele (01/01/2024) " },
                 { category: "Tenth Goal", winner: "Caveman (08/01/2024) " },
-                { category: "Twentieth Gaol", winner: "Bale (05/02/2024" },
+                { category: "Twentieth Gaol", winner: "Bale (05/02/2024)" },
                 { category: "First Slinger", winner: "Ronaldo (04/01/2024)" },
                 { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) }
             ],

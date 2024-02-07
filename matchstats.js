@@ -382,23 +382,12 @@ function renderMatches(matches) {
 
 renderMatches(matches);
 
-let viewStats = document.querySelectorAll(".view-stats");
-let playerStats = document.querySelectorAll(".full-stats");
-let arrowIcons = document.querySelectorAll(".bxs-up-arrow-circle");
-
-viewStats.forEach((viewStat, index) => {
-    viewStat.addEventListener("click", () => {
-        playerStats[index].classList.toggle("active");
-        arrowIcons[index].classList.toggle("rotate");
-    });
-});
-
-
-
 function filterMatches(category) {
     const filteredMatches = (category === "all") ? matches : matches.filter(match => match.month === category);
     renderMatches(filteredMatches);
+    setupEventListeners();
 }
+
 
 
 let matchMonthType = document.getElementById('match-month');
@@ -408,6 +397,23 @@ matchMonthType.addEventListener("change", () => {
 });
 
 
+
+function setupEventListeners() {
+    let viewStats = document.querySelectorAll(".view-stats");
+    let playerStats = document.querySelectorAll(".full-stats");
+    let arrowIcons = document.querySelectorAll(".bxs-up-arrow-circle");
+
+    viewStats.forEach((viewStat, index) => {
+        viewStat.addEventListener("click", () => {
+            playerStats[index].classList.toggle("active");
+            arrowIcons[index].classList.toggle("rotate");
+        });
+    });
+}
+
+
+renderMatches(matches);
+setupEventListeners();
 });
 
 
