@@ -295,6 +295,27 @@ const matches = [
         motm: ["Modric"],
         events: ["Modric won motm in wheel against Bowen & Caveman", "Beckham mis-hit shot leads to Bowen goal", "Bowen debut", "Messi & Van Persie both came out in the generator but are banned so served it this game"]
     },
+    {
+        id: "15",
+        month: "february",
+        match_number: "15",
+        date: "08/02/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Russian Keeper", "Caveman", "Neymar", "Maradonna", "Carragher", "Lewandowski"],
+        team2: ["Stackers", "Van Dijk", "Bowen", "Kroos", "Assunco", "Ronaldo"],
+        scorers: ["Lewandowski", "Lewandowski", "Ronaldo"],
+        assisters: ["Neymar", "Russian Keeper", "Kroos"],
+        slingers: ["Ronaldo"],
+        penalties: [],
+        yellows: ["Kroos", "Russian Keeper", "Neymar", "Bowen"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Lewandowski"],
+        events: ["Lewandowski turn on Kroos for second goal", "Russian Keeper first win in 6 games"]
+    },
 ]
 
 window.matches = matches;
