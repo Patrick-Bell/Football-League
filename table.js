@@ -7,7 +7,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 4, draws: 1, losses: 2, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 1, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 2, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -61,7 +61,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 5, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 1, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 2, draws: 0, losses: 0, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -97,7 +97,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 1, losses: 1, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 1, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 2, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -187,7 +187,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 3, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 1, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 1, losses: 1, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -241,7 +241,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 0, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 1, draws: 0, losses: 0, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -259,7 +259,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 1, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 1, draws: 0, losses: 1, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 2, draws: 0, losses: 1, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -421,7 +421,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 4, draws: 0, losses: 2, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 1, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -493,7 +493,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 1, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -547,7 +547,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 3, draws: 0, losses: 2, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 1, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 1, draws: 0, losses: 1, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -637,7 +637,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 4, draws: 0, losses: 1, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 1, draws: 0, losses: 0, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -655,7 +655,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 3, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 1, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -763,7 +763,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 1, losses: 1, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 1, draws: 1, losses: 1, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -809,8 +809,16 @@ teams.forEach(team => {
 });
 
 
-teams.sort((a, b) => b.monthlyData[0].points - a.monthlyData[0].points);
-
+teams.sort((a, b) => {
+    // First, compare points in descending order
+    if (b.monthlyData[0].points !== a.monthlyData[0].points) {
+      return b.monthlyData[0].points - a.monthlyData[0].points;
+    }
+  
+    // If points are equal, compare gamesPlayed in ascending order
+    return a.monthlyData[0].gamesPlayed - b.monthlyData[0].gamesPlayed;
+  });
+  
 const tbody = document.querySelector("#scoreTable tbody")
 
 clearTable(); // Clear the table before rendering
@@ -893,14 +901,31 @@ monthTypeSelect.addEventListener('change', function () {
 switch (selectedMonth) {
     case "overall":
         teams.forEach((team, index) => renderTableData(team, tbody, index));
-        teams.sort((a, b) => b.monthlyData[0].points - a.monthlyData[0].points);
-        break;
+        teams.sort((a, b) => {
+            // First, compare points in descending order
+            if (b.monthlyData[0].points !== a.monthlyData[0].points) {
+              return b.monthlyData[0].points - a.monthlyData[0].points;
+            }
+          
+            // If points are equal, compare gamesPlayed in ascending order
+            return a.monthlyData[0].gamesPlayed - b.monthlyData[0].gamesPlayed;
+          });        break;
     default:
         const teamsInMonth = teams.map(team => {
             const monthData = getMonthlyDataForPlayer(team, selectedMonth);
             return { ...team, monthlyData: [monthData] };
         });
-        teamsInMonth.sort((a, b) => b.monthlyData[0].points - a.monthlyData[0].points);
+
+        teamsInMonth.sort((a, b) => {
+            // First, compare points in descending order
+            if (b.monthlyData[0].points !== a.monthlyData[0].points) {
+              return b.monthlyData[0].points - a.monthlyData[0].points;
+            }
+          
+            // If points are equal, compare gamesPlayed in ascending order
+            return a.monthlyData[0].gamesPlayed - b.monthlyData[0].gamesPlayed;
+          });
+
         teamsInMonth.forEach((team, index) => renderTableData(team, tbody, index));
         break;
 }

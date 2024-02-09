@@ -316,6 +316,27 @@ const matches = [
         motm: ["Lewandowski"],
         events: ["Lewandowski turn on Kroos for second goal", "Russian Keeper first win in 6 games"]
     },
+    {
+        id: "16",
+        month: "february",
+        match_number: "16",
+        date: "09/02/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Russian Keeper", "Puyol", "Bowen", "Pedri", "Assunco", "Ronaldo"],
+        team2: ["Stackers", "Van Dijk (red)", "Mane", "Eriksen", "Berbatov", "Kane"],
+        scorers: ["Ronaldo"],
+        assisters: ["Russian Keeper"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Mane", "Berbatov"],
+        reds: [],
+        cleansheets: ["Russian Keeper", "Puyol", "Bowen", "Pedri", "Assunco", "Ronaldo"],
+        motm: ["Ronaldo"],
+        events: ["Ronaldo fake shot before the goal", "Russian Keeper 2 assists in 2 games"]
+    },
 ]
 
 window.matches = matches;
