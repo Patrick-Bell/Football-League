@@ -36,6 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
         return totalAssists;
     }
 
+    function findTotalYellows(matches) {
+        let totalYellows = 0;
+        matches.forEach(match => {
+            totalYellows += match.yellows.length
+        });
+        return totalYellows;
+    }
+
+    function findTotalReds(matches) {
+        let totalReds = 0;
+        matches.forEach(match => {
+            totalReds += match.reds.length
+        })
+        return totalReds;
+    }
+
     function findPlayerWithMostTotalApps(players) {
         let mostAppsPlayer = null;
         let maxOverallApps = -1;
@@ -367,6 +383,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { category: "First Red Card", winner: "Messi (08/01/2024)" },
                 { category: "Most Yellow Cards", winner: findPlayersWithMostYellows(players)},
                 { category: "Most Red Cards", winners: findPlayersWithMostReds(players) },
+                { category: "Total Yellow Cards", winners: findTotalYellows(matches) },
+                { category: "Total Red Cards", winners: findTotalReds(matches) },
             ],
         },
         {

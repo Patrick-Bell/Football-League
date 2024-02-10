@@ -312,7 +312,7 @@ const players = [
              monthlyData: [
                 { month: "Overall", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "January", apps: 2, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 1, motm: 1 },
-               { month: "February", apps: 3, won: 2, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 1, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 2, motm: 1 },
+               { month: "February", apps: 3, won: 2, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 1, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 1 },
                { month: "March", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "April", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "May", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -914,6 +914,81 @@ const players = [
      ],
  },
 ]
+
+function findPlayerYellowCount(players) {
+  const playerYellowCounts = {};
+  let totalYellows = 0;
+
+  players.forEach(player => {
+    player.monthlyData.forEach(monthData => {
+      const yellowCards = monthData.yellow;
+
+      // Check if the player has yellow cards in this month
+      if (yellowCards > 0) {
+        // Check if the player is already in the map
+        if (playerYellowCounts[player.name]) {
+          // If yes, increment the count
+          playerYellowCounts[player.name] += yellowCards;
+        } else {
+          // If no, initialize the count to the yellow card count in this month
+          playerYellowCounts[player.name] = yellowCards;
+        }
+
+        // Increment the total yellow card count
+        totalYellows += yellowCards;
+      }
+    });
+  });
+
+  return { playerYellowCounts, totalYellows };
+}
+
+const { playerYellowCounts, totalYellows } = findPlayerYellowCount(players);
+
+console.log("Player Yellow Card Counts", playerYellowCounts);
+console.log("Total Yellow Cards", totalYellows);
+
+
+
+
+function findPlayerCleanSheet(players) {
+  const playerCleanSheetCount = {};
+  let totalCleanSheet = 0;
+
+  players.forEach(player => {
+    player.monthlyData.forEach(monthData => {
+      const cleanSheets = monthData.clean_sheets;
+
+      // Check if the player has yellow cards in this month
+      if (cleanSheets > 0) {
+        // Check if the player is already in the map
+        if (playerCleanSheetCount[player.name]) {
+          // If yes, increment the count
+          playerCleanSheetCount[player.name] += cleanSheets;
+        } else {
+          // If no, initialize the count to the yellow card count in this month
+          playerCleanSheetCount[player.name] = cleanSheets;
+        }
+
+        // Increment the total yellow card count
+        totalCleanSheet += cleanSheets;
+      }
+    });
+  });
+
+  return { playerCleanSheetCount, totalCleanSheet };
+}
+
+const { playerCleanSheetCount, totalCleanSheet } = findPlayerCleanSheet(players);
+
+console.log("Clean Sheet Player Check", playerCleanSheetCount);
+console.log("Total Clean Sheets", totalCleanSheet);
+
+
+
+
+
+
 
 window.players = players;
 

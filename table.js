@@ -909,7 +909,8 @@ switch (selectedMonth) {
           
             // If points are equal, compare gamesPlayed in ascending order
             return a.monthlyData[0].gamesPlayed - b.monthlyData[0].gamesPlayed;
-          });        break;
+          });        
+          break;
     default:
         const teamsInMonth = teams.map(team => {
             const monthData = getMonthlyDataForPlayer(team, selectedMonth);

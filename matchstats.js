@@ -335,7 +335,7 @@ const matches = [
         reds: [],
         cleansheets: ["Russian Keeper", "Puyol", "Bowen", "Pedri", "Assunco", "Ronaldo"],
         motm: ["Ronaldo"],
-        events: ["Ronaldo fake shot before the goal", "Russian Keeper 2 assists in 2 games"]
+        events: ["Ronaldo fake shot before the goal", "Russian Keeper 2 assists in 2 games", "Raul only player to not play from original players"]
     },
 ]
 
@@ -371,6 +371,34 @@ const { playerYellowCounts, totalYellows } = getPlayerYellowCounts(matches);
 console.log("Player Yellow Card Counts", playerYellowCounts);
 console.log("Total Yellow Cards", totalYellows);
 
+
+function checkCleanSheets(matches) {
+    const playerCleanSheetCounts = {};
+    let totalCleanSheets = 0;
+
+    matches.forEach(match => {
+        match.cleansheets.forEach(player => {
+            // Check if the player is already in the map
+            if (playerCleanSheetCounts[player]) {
+                // If yes, increment the count
+                playerCleanSheetCounts[player]++;
+            } else {
+                // If no, initialize the count to 1
+                playerCleanSheetCounts[player] = 1;
+            }
+
+            // Increment the total yellow card count
+            totalCleanSheets++;
+        });
+    });
+
+    return { playerCleanSheetCounts, totalCleanSheets };
+}
+
+const { playerCleanSheetCounts, totalCleanSheets } = checkCleanSheets(matches);
+
+console.log("Player Clean Sheet Counts", playerCleanSheetCounts);
+console.log("Total Clean Sheets", totalCleanSheets);
 
 
 
