@@ -337,6 +337,27 @@ const matches = [
         motm: ["Ronaldo"],
         events: ["Ronaldo fake shot before the goal", "Russian Keeper 2 assists in 2 games", "Raul only player to not play from original players"]
     },
+    {
+        id: "17",
+        month: "february",
+        match_number: "17",
+        date: "12/02/2024",
+        time: "11:40",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Russian Keeper", "Van Dijk", "Mane", "Modric", "Torres", "Benzema"],
+        team2: ["Boxer", "Van Dijk (red)", "Mahrez", "De Bruyne", "Berbatov", "Ronaldo"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Modric"],
+        reds: [],
+        cleansheets: ["Russian Keeper", "Van Dijk", "Mane", "Modric", "Torres", "Benzema", "Boxer", "Van Dijk (red)", "Mahrez", "De Bruyne", "Berbatov", "Ronaldo"],
+        motm: ["Van Dijk (red)"],
+        events: ["Second 0-0 ever", "Torres debut, so only Raul with no apps"]
+    },
 ]
 
 window.matches = matches;
