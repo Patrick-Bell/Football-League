@@ -358,6 +358,27 @@ const matches = [
         motm: ["Van Dijk (red)"],
         events: ["Second 0-0 ever", "Torres debut, so only Raul with no apps"]
     },
+    {
+        id: "18",
+        month: "february",
+        match_number: "18",
+        date: "12/02/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Boxer", "Van Dijk", "Neymar", "Pedri", "Carragher", "Benzema"],
+        team2: ["Neuer", "Puyol", "Mane", "Bastian", "Beckham", "Zlatan"],
+        scorers: ["Mane", "Pedri"],
+        assisters: ["Zlatan", "Carragher"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Mane", "Neuer", "Beckham"],
+        reds: ["Beckham"],
+        cleansheets: [],
+        motm: ["Pedri"],
+        events: ["First goal was a long ball Zlatan and Van Dijk tussle, bounces straight to Mane", "Mane booked for diving", "Beckham sending off"]
+    },
 ]
 
 window.matches = matches;
