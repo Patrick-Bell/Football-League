@@ -379,6 +379,27 @@ const matches = [
         motm: ["Pedri"],
         events: ["First goal was a long ball Zlatan and Van Dijk tussle, bounces straight to Mane", "Mane booked for diving", "Beckham sending off"]
     },
+    {
+        id: "19",
+        month: "february",
+        match_number: "19",
+        date: "13/02/2024",
+        time: "11:45",
+        condition: "Rain",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Stackers", "Van Dijk (red)", "Messi", "Bastian", "Ramos", "Kane"],
+        team2: ["Russian Keeper", "Caveman", "Mahrez", "Eriksen", "Robinho", "Ronaldo"],
+        scorers: ["Kane", "Robinho", "Robinho"],
+        assisters: ["Ramos", "Mahrez"],
+        slingers: ["Robinho", "Robinho"],
+        penalties: [],
+        yellows: ["Eriksen", "Ramos"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Robinho"],
+        events: ["Robinho 2 slingers in a game", "Russian Keeper made many great saves", "Best quality game to date", "Patrick birthday game"]
+    },
 ]
 
 window.matches = matches;
