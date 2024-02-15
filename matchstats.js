@@ -400,6 +400,27 @@ const matches = [
         motm: ["Robinho"],
         events: ["Robinho 2 slingers in a game", "Russian Keeper made many great saves", "Best quality game to date", "Patrick birthday game"]
     },
+    {
+        id: "20",
+        month: "february",
+        match_number: "20",
+        date: "15/02/2024",
+        time: "18:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Neuer", "Puyol", "Messi", "Eriksen", "Messi (ft)", "Jiminez"],
+        team2: ["Stackers", "Caveman", "Bowen", "Pedri", "Ramos", "Suarez"],
+        scorers: ["Bowen", "Suarez"],
+        assisters: ["Ramos", "Bowen"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Messi (ft)"],
+        reds: ["Messi (ft)"],
+        cleansheets: ["Stackers", "Caveman", "Bowen", "Pedri", "Ramos", "Suarez"],
+        motm: ["Bowen"],
+        events: ["Bowen cut in and great goal top corner", "Puyol rushed out for second goal and missed it", "Probably the worse team", "Messi (ft) second red card"]
+    },
 ]
 
 window.matches = matches;
