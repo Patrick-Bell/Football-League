@@ -421,6 +421,27 @@ const matches = [
         motm: ["Bowen"],
         events: ["Bowen cut in and great goal top corner", "Puyol rushed out for second goal and missed it", "Probably the worse team", "Messi (ft) second red card"]
     },
+    {
+        id: "21",
+        month: "february",
+        match_number: "21",
+        date: "17/02/2024",
+        time: "14:50",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 1, //away team
+        team1: ["Boxer", "Puyol", "Neymar", "De Bruyne", "Carragher", "Ronaldo"],
+        team2: ["Russian Keeper", "Van Dijk", "Bowen", "Kroos", "Torres", "Zlatan"],
+        scorers: ["Zlatan"],
+        assisters: ["Torres"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Zlatan", "De Bruyne"],
+        reds: [],
+        cleansheets: ["Russian Keeper", "Van Dijk", "Bowen", "Kroos", "Torres", "Zlatan"],
+        motm: ["Russian Keeper"],
+        events: ["Russian Keeper great saves shots from Ronaldo and Carragher", "Zlatan shouts back post and scores a tap in volley, first volley"]
+    },
 ]
 
 window.matches = matches;
