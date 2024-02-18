@@ -442,6 +442,48 @@ const matches = [
         motm: ["Russian Keeper"],
         events: ["Russian Keeper great saves shots from Ronaldo and Carragher", "Zlatan shouts back post and scores a tap in volley, first volley"]
     },
+    {
+        id: "22",
+        month: "february",
+        match_number: "22",
+        date: "18/02/2024",
+        time: "11:45",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Neuer", "Van Dijk (red)", "Bowen", "Bastian", "Ramos", "Kane"],
+        team2: ["Russian Keeper", "Puyol", "Mbappe", "Eriksen", "Berbatov", "Jiminez"],
+        scorers: ["Kane"],
+        assisters: ["Bastian"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Jiminez", "Bastian", "Eriksen"],
+        reds: [],
+        cleansheets: ["Neuer", "Van Dijk (red)", "Bowen", "Bastian", "Ramos", "Kane"],
+        motm: ["Ramos"],
+        events: ["Russian Keeper made loads of saves", "Kane goal was a deflection of Mbappe"]
+    },
+    {
+        id: "24",
+        month: "february",
+        match_number: "24",
+        date: "18/02/2024",
+        time: "16:40",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Boxer", "Caveman", "Mane", "Eriksen", "Ramos", "Kane"],
+        team2: ["Stackers", "Puyol", "Mbappe", "Pedri", "Carragher", "Suarez"],
+        scorers: ["Suarez", "Eriksen"],
+        assisters: ["Mbappe", "Mane"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Carragher", "Eriksen"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Eriksen"],
+        events: ["Mbappe flick assist to Suarez, bar and in", "Mane cross, Eriksen jumps in front of Carragher & Puyol and volleys it loops top corner post and in - best goal to date"]
+    },
 ]
 
 window.matches = matches;
