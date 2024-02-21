@@ -484,6 +484,27 @@ const matches = [
         motm: ["Eriksen"],
         events: ["Mbappe flick assist to Suarez, bar and in", "Mane cross, Eriksen jumps in front of Carragher & Puyol and volleys it loops top corner post and in - best goal to date"]
     },
+    {
+        id: "24",
+        month: "february",
+        match_number: "24",
+        date: "19/02/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Neuer", "Puyol", "Messi", "Eriksen", "Torres", "Lewandowski"],
+        team2: ["Boxer", "Van Dijk (red)", "Son", "De Bruyne", "Ramos", "Muller"],
+        scorers: [""],
+        assisters: [""],
+        slingers: [],
+        penalties: [],
+        yellows: ["Eriksen"],
+        reds: [],
+        cleansheets: ["Neuer", "Puyol", "Messi", "Eriksen", "Torres", "Lewandowski", "Boxer", "Van Dijk (red)", "Son", "De Bruyne", "Ramos", "Muller"],
+        motm: ["TBD"],
+        events: [""]
+    },
 ]
 
 window.matches = matches;
