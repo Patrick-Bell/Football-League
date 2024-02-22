@@ -69,6 +69,29 @@ document.addEventListener("DOMContentLoaded", function () {
         return { player: mostAppsPlayer, overallApps: maxOverallApps };
     }
 
+    function findPlayersWithMostAssists(players) {
+        let mostAssistsPlayers = [];
+        let maxOverallAssists = -1;
+    
+        players.forEach(player => {
+            let overallAsssists = 0;
+            const overallMonth = player.monthlyData.find(monthData => monthData.month === "Overall");
+    
+            if (overallMonth && typeof overallMonth.assists !== 'undefined') {
+                overallAsssists = overallMonth.assists;
+            }
+    
+            if (overallAsssists > maxOverallAssists) {
+                maxOverallAssists = overallAsssists;
+                mostAssistsPlayers = [player.name];
+            } else if (overallAsssists === maxOverallAssists) {
+                mostAssistsPlayers.push(player.name);
+            }
+        });
+    
+        return { players: mostAssistsPlayers, overallAsssists: maxOverallAssists };
+    }
+
     function findPlayerWithMostWins(players) {
         let mostWinsPlayer = null;
         let maxOverallWins = -1;
@@ -326,10 +349,84 @@ document.addEventListener("DOMContentLoaded", function () {
         return { player: mostGoalPlayer, overallGoal: maxOverallGoal };
     }
     
-    
 
-    
+    function findPlayersWithMostGoalsInSingleGame(matches) {
+    let topScorers = [];
+let topGoalsInSingleGame = 0;
 
+// Iterate through each match
+matches.forEach(match => {
+    // Combine goal scorers from both teams for the current match
+    const allScorers = match.scorers;
+
+    // Count goals for each scorer in the current match
+    const scorerGoals = {};
+    allScorers.forEach(scorer => {
+        scorerGoals[scorer] = (scorerGoals[scorer] || 0) + 1;
+    });
+
+    // Find the player(s) with the most goals in the current match
+    for (const scorer in scorerGoals) {
+        if (scorerGoals[scorer] > topGoalsInSingleGame) {
+            topScorers = [scorer];
+            topGoalsInSingleGame = scorerGoals[scorer];
+        } else if (scorerGoals[scorer] === topGoalsInSingleGame) {
+            // If there are multiple players with the same highest goal count
+            topScorers.push(scorer);
+        }
+    }
+});
+    return `${topGoalsInSingleGame} - ${topScorers.join(', ')}`
+}
+
+function findGameWithMostGoals(matches) {
+let mostGoalsInSingleGame = 0;
+let dateOfMostGoalsGame;
+let timeOfMostGoalsGame;
+
+// Iterate through each match
+matches.forEach(match => {
+    // Sum the scores of both teams in the current match
+    const totalGoalsInMatch = match.team1_score + match.team2_score;
+
+    // Update if the current match has more goals
+    if (totalGoalsInMatch > mostGoalsInSingleGame) {
+        mostGoalsInSingleGame = totalGoalsInMatch;
+        dateOfMostGoalsGame = match.date;
+        timeOfMostGoalsGame = match.time;
+    }
+});
+    return `${mostGoalsInSingleGame} goals - ${dateOfMostGoalsGame} (${timeOfMostGoalsGame})`
+}
+
+function findMonthWithMostGames(matches) {
+const matchesByMonth = {};
+
+// Iterate through each match
+matches.forEach(match => {
+    const month = match.month.toLowerCase();
+
+    // Update the match count for the current month
+    matchesByMonth[month] = (matchesByMonth[month] || 0) + 1;
+});
+
+// Find the month with the most matches
+let mostMatchesMonth;
+let mostMatchesCount = 0;
+
+for (const month in matchesByMonth) {
+    if (matchesByMonth[month] > mostMatchesCount) {
+        mostMatchesMonth = month;
+        mostMatchesCount = matchesByMonth[month];
+    }
+}
+    const capitalizedMonth = mostMatchesMonth.charAt(0).toUpperCase() + mostMatchesMonth.slice(1);
+
+    return `${(mostMatchesCount)} - ${capitalizedMonth}`
+
+}
+
+// Print the result    
     console.log(matches);
     console.log(players);
     console.log(teams)
@@ -348,8 +445,8 @@ document.addEventListener("DOMContentLoaded", function () {
             data: [
                 { category: "First Game", winner: "01/01/2024 at 13:30" },
                 { category: "Tenth Game", winner: "09/01/2024 at 12:00" },
-                { category: "Highest Scoring Game", winner: "4 goals - 09/01/2024 (17:10)" },
-                { category: "Most Games in a Month", winner: "12 - January" },
+                { category: "Highest Scoring Game", winner: findGameWithMostGoals(matches) },
+                { category: "Most Games in a Month", winner: findMonthWithMostGames(matches) },
                 { category: "Most Points in a Month", winner: "15 - Pele (January)" },
                 { category: "Most Defeats in a Month", winner: "5 - Van Dijk, Russian Keeper (January)" },
                 { category: "Most Goals in a Month", winner: "18 - January" }
@@ -364,7 +461,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 { category: "Tenth Goal", winner: "Caveman (08/01/2024) " },
                 { category: "Twentieth Gaol", winner: "Bale (05/02/2024)" },
                 { category: "First Slinger", winner: "Ronaldo (04/01/2024)" },
-                { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) }
+                { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) },
+                { category: "Most Goals in Single Game", winner: findPlayersWithMostGoalsInSingleGame(matches)}
+            ],
+        },
+        {
+            category: "assists",
+            headers: ["Assists", ""],
+            data: [
+                { category: "Most Assists", winner: findPlayersWithMostAssists(players)},
+                { category: "First Assist", winner: "Lewnadowski"},
+                { category: "Tenth Assist", winner: "Ronaldo"},
+                { category: "Twentieth Assist:", winner: "Carragher"}
             ],
         },
         {
