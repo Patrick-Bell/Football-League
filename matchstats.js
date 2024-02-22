@@ -502,8 +502,29 @@ const matches = [
         yellows: ["Eriksen"],
         reds: [],
         cleansheets: ["Neuer", "Puyol", "Messi", "Eriksen", "Torres", "Lewandowski", "Boxer", "Van Dijk (red)", "Son", "De Bruyne", "Ramos", "Muller"],
-        motm: ["TBD"],
+        motm: ["Boxer"],
         events: [""]
+    },
+    {
+        id: "25",
+        month: "february",
+        match_number: "25",
+        date: "22/02/2024",
+        time: "17:15",
+        condition: "Rain",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Boxer", "Puyol", "Pele", "Bastian", "Van Persie", "Suarez"],
+        team2: ["Neuer", "Caveman", "Mane", "Pedri", "Ramos", "Jiminez"],
+        scorers: ["Caveman", "Pele"],
+        assisters: ["Ramos"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Van Persie", "Bastian"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Caveman"],
+        events: ["Pele free kick bar and in with weaker foot because leg was loose"]
     },
 ]
 
