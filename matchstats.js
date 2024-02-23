@@ -526,6 +526,27 @@ const matches = [
         motm: ["Caveman"],
         events: ["Pele free kick bar and in with weaker foot because leg was loose"]
     },
+    {
+        id: "26",
+        month: "february",
+        match_number: "26",
+        date: "23/02/2024",
+        time: "17:20",
+        condition: "Rain",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Boxer", "Puyol", "Mane", "Pedri", "Van Persie (red)", "Lewandowski"],
+        team2: ["Stackers", "Van Dijk (orange)", "Mahrez", "Modric", "Ramos", "Suarez"],
+        scorers: ["Suarez", "Mane"],
+        assisters: ["Modric"],
+        slingers: ["Mane"],
+        penalties: [],
+        yellows: ["Suarez", "Pedri", "Ramos"],
+        reds: [],
+        cleansheets: [],
+        motm: [""],
+        events: ["Mane cut in before shot sent Ramos", "Modric proper playing for the draw even at the start", "Suarez forgot his yellow and swiped Lewandowski"]
+    },
 ]
 
 window.matches = matches;
