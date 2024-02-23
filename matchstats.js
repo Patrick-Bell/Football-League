@@ -13,7 +13,7 @@ const matches = [
         team2_score: 0,
         team1: ["Boxer", "Puyol", "Pele", "Kroos", "Ramos", "Lewandowski"],
         team2: ["Stackers", "Van Dijk", "Meymar", "De Bruyne", "Berbatov", "Ronaldo"],
-        scorers: ["Pele"],
+        scorers: ["Pele",],
         assisters: ["Lewandowski"],
         slingers: [],
         penalties: [],
@@ -530,29 +530,6 @@ const matches = [
 
 window.matches = matches;
 
-const matchesByMonth = {};
-
-// Iterate through each match
-matches.forEach(match => {
-    const month = match.month.toLowerCase();
-
-    // Update the match count for the current month
-    matchesByMonth[month] = (matchesByMonth[month] || 0) + 1;
-});
-
-// Find the month with the most matches
-let mostMatchesMonth;
-let mostMatchesCount = 0;
-
-for (const month in matchesByMonth) {
-    if (matchesByMonth[month] > mostMatchesCount) {
-        mostMatchesMonth = month;
-        mostMatchesCount = matchesByMonth[month];
-    }
-}
-
-// Print the result
-console.log(`The month with the most matches is ${mostMatchesMonth} with ${mostMatchesCount} games.`);
 
 // Initialize variables to keep track of the top scorer and goals in a single game
 

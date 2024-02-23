@@ -779,6 +779,7 @@ const teams = [
 
 ];
 
+
 window.teams = teams;
 
 

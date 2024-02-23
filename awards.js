@@ -426,6 +426,134 @@ for (const month in matchesByMonth) {
 
 }
 
+function findPlayerWithMostPointsInMonth(teams) {
+    const playerPointsByMonth = {};
+
+    // Iterate through each team
+    teams.forEach(team => {
+        // Iterate through each month's data for the team
+        team.monthlyData.forEach(monthData => {
+            const month = monthData.month.toLowerCase();
+
+            // Exclude "Overall" month
+            if (month !== "overall") {
+                // Update the points for the current month
+                const points = monthData.points;
+                if (!playerPointsByMonth[month] || points > playerPointsByMonth[month].points) {
+                    playerPointsByMonth[month] = { playerName: team.name, points: points };
+                }
+            }
+        });
+    });
+
+    // Find the month with the most points
+    let mostPointsMonth;
+    let mostPointsCount = 0;
+
+    for (const month in playerPointsByMonth) {
+        if (playerPointsByMonth[month].points > mostPointsCount) {
+            mostPointsMonth = month;
+            mostPointsCount = playerPointsByMonth[month].points;
+        }
+    }
+
+    if (mostPointsMonth) {
+        const capitalizedMonth = mostPointsMonth.charAt(0).toUpperCase() + mostPointsMonth.slice(1);
+        return `${mostPointsCount} - ${playerPointsByMonth[mostPointsMonth].playerName} (${capitalizedMonth})`;
+    } else {
+        return "No player has monthly data excluding 'Overall'.";
+    }
+}
+
+function findPlayersWithMostDefeatsInMonth(teams) {
+    const playerDefeatsByMonth = {};
+
+    // Iterate through each team
+    teams.forEach(team => {
+        // Iterate through each month's data for the team
+        team.monthlyData.forEach(monthData => {
+            const month = monthData.month.toLowerCase();
+
+            // Exclude "Overall" month
+            if (month !== "overall") {
+                // Update the defeats for the current month
+                const defeats = monthData.losses;
+                if (!playerDefeatsByMonth[month]) {
+                    // If the month entry does not exist, create it as an array
+                    playerDefeatsByMonth[month] = [{ playerName: team.name, defeats: defeats }];
+                } else if (defeats > playerDefeatsByMonth[month][0].defeats) {
+                    // If a player has more defeats, replace the array with a new one
+                    playerDefeatsByMonth[month] = [{ playerName: team.name, defeats: defeats }];
+                } else if (defeats === playerDefeatsByMonth[month][0].defeats) {
+                    // If multiple players have the same number of defeats, add them to the array
+                    playerDefeatsByMonth[month].push({ playerName: team.name, defeats: defeats });
+                }
+            }
+        });
+    });
+
+    // Find the month with the most defeats
+    let mostDefeatsMonth;
+    let mostDefeatsCount = 0;
+    let topPlayers = [];
+
+    for (const month in playerDefeatsByMonth) {
+        const defeats = playerDefeatsByMonth[month][0].defeats;
+        
+        if (defeats > mostDefeatsCount) {
+            mostDefeatsMonth = month;
+            mostDefeatsCount = defeats;
+            topPlayers = playerDefeatsByMonth[month];
+        } else if (defeats === mostDefeatsCount) {
+            // If multiple players have the same number of defeats, add them to the array
+            topPlayers.push(...playerDefeatsByMonth[month]);
+        }
+    }
+
+    if (mostDefeatsMonth) {
+        const capitalizedMonth = mostDefeatsMonth.charAt(0).toUpperCase() + mostDefeatsMonth.slice(1);
+        return [`${mostDefeatsCount} - ${topPlayers.map(player => `${player.playerName} (${capitalizedMonth})`).reverse().join(', ')}`];
+
+    } else {
+        return ["No player has monthly defeat data excluding 'Overall'."];
+    }
+}
+
+function findMonthsWithMostGoals(matches) {
+    const goalsByMonth = {};
+
+    // Iterate through each match
+    matches.forEach(match => {
+        const month = match.month.toLowerCase();
+        const goalsScored = match.team1_score + match.team2_score;
+
+        // Update the goals count for the current month
+        goalsByMonth[month] = (goalsByMonth[month] || 0) + goalsScored;
+    });
+
+    // Find the month(s) with the most goals scored
+    let mostGoalsCount = 0;
+    let topMonths = [];
+
+    for (const month in goalsByMonth) {
+        const goals = goalsByMonth[month];
+
+        if (goals > mostGoalsCount) {
+            mostGoalsCount = goals;
+            topMonths = [month];
+        } else if (goals === mostGoalsCount) {
+            topMonths.push(month);
+        }
+    }
+
+    const capitalizedMonths = topMonths.map(month => month.charAt(0).toUpperCase() + month.slice(1));
+
+    return `${mostGoalsCount} - ${capitalizedMonths.join(', ')}`;
+
+    
+}
+
+
 // Print the result    
     console.log(matches);
     console.log(players);
@@ -447,9 +575,9 @@ for (const month in matchesByMonth) {
                 { category: "Tenth Game", winner: "09/01/2024 at 12:00" },
                 { category: "Highest Scoring Game", winner: findGameWithMostGoals(matches) },
                 { category: "Most Games in a Month", winner: findMonthWithMostGames(matches) },
-                { category: "Most Points in a Month", winner: "15 - Pele (January)" },
-                { category: "Most Defeats in a Month", winner: "5 - Van Dijk, Russian Keeper (January)" },
-                { category: "Most Goals in a Month", winner: "18 - January" }
+                { category: "Most Points in a Month", winner: findPlayerWithMostPointsInMonth(teams) },
+                { category: "Most Defeats in a Month", winner: findPlayersWithMostDefeatsInMonth(teams) },
+                { category: "Most Goals in a Month", winner: findMonthsWithMostGoals(matches) }
             ],
         },
         {
