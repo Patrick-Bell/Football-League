@@ -566,7 +566,7 @@ const matches = [
         reds: [],
         cleansheets: [],
         motm: ["Neymar"],
-        events: []
+        events: ["Neymar slinger and post and in goals", "Pedri funny own goal", "New Muller lego (old one)"]
     },
 ]
 
