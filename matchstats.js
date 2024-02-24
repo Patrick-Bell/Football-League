@@ -544,8 +544,29 @@ const matches = [
         yellows: ["Suarez", "Pedri", "Ramos"],
         reds: [],
         cleansheets: [],
-        motm: [""],
+        motm: ["Mane"],
         events: ["Mane cut in before shot sent Ramos", "Modric proper playing for the draw even at the start", "Suarez forgot his yellow and swiped Lewandowski"]
+    },
+    {
+        id: "27",
+        month: "february",
+        match_number: "27",
+        date: "24/02/2024",
+        time: "15:10",
+        condition: "Rain",
+        team1_score: 4, //home team
+        team2_score: 3, //away team
+        team1: ["Russian Keeper", "Puyol", "Neymar", "Pedri", "Torres", "Muller"],
+        team2: ["Neuer", "Caveman", "Pele", "Eriksen", "Van Persie (orange)", "Benzema"],
+        scorers: ["Muller", "Neymar", "Ppedri (o.g)", "Neymar", "Pedri", "Benzema", "Benzema"],
+        assisters: ["Pedri", "Torres", "Van Persie (orange)", "Torres", "Torres", "Pele", "Van Persie (orange)"],
+        slingers: ["Neymar"],
+        penalties: [],
+        yellows: ["Russian Keeper", "Muller"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Neymar"],
+        events: []
     },
 ]
 
