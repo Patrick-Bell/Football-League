@@ -557,6 +557,39 @@ function findMonthsWithMostGoals(matches) {
 
 
 
+function findPlayersWithMostAssistsInSingleGame(matches) {
+    let topAssisters = [];
+let topAssistsInSingleGame = 0;
+
+// Iterate through each match
+matches.forEach(match => {
+    // Combine goal scorers from both teams for the current match
+    const allAssisters = match.assisters;
+
+    // Count goals for each scorer in the current match
+    const assistGame = {};
+    allAssisters.forEach(assister => {
+        assistGame[assister] = (assistGame[assister] || 0) + 1;
+    });
+
+    // Find the player(s) with the most goals in the current match
+    for (const assister in assistGame) {
+        if (assistGame[assister] > topAssistsInSingleGame) {
+            topAssisters = [assister];
+            topAssistsInSingleGame = assistGame[assister];
+        } else if (assistGame[assister] === topAssistsInSingleGame) {
+            // If there are multiple players with the same highest goal count
+            topAssisters.push(assister);
+        }
+    }
+});
+    return `${topAssistsInSingleGame} - ${topAssisters.join(', ')}`
+}
+
+
+
+
+
 
 // Print the result    
     console.log(matches);
@@ -604,7 +637,8 @@ function findMonthsWithMostGoals(matches) {
                 { category: "Most Assists", winner: findPlayersWithMostAssists(players)},
                 { category: "First Assist", winner: "Lewnadowski"},
                 { category: "Tenth Assist", winner: "Ronaldo"},
-                { category: "Twentieth Assist:", winner: "Carragher"}
+                { category: "Twentieth Assist:", winner: "Carragher"},
+                { category: "Most Assists in Single Game", winner: findPlayersWithMostAssistsInSingleGame(matches)}
             ],
         },
         {

@@ -558,7 +558,7 @@ const matches = [
         team2_score: 3, //away team
         team1: ["Russian Keeper", "Puyol", "Neymar", "Pedri", "Torres", "Muller"],
         team2: ["Neuer", "Caveman", "Pele", "Eriksen", "Van Persie (orange)", "Benzema"],
-        scorers: ["Muller", "Neymar", "Ppedri (o.g)", "Neymar", "Pedri", "Benzema", "Benzema"],
+        scorers: ["Muller", "Neymar", "Pedri (o.g)", "Neymar", "Pedri", "Benzema", "Benzema"],
         assisters: ["Pedri", "Torres", "Van Persie (orange)", "Torres", "Torres", "Pele", "Van Persie (orange)"],
         slingers: ["Neymar"],
         penalties: [],
@@ -566,7 +566,28 @@ const matches = [
         reds: [],
         cleansheets: [],
         motm: ["Neymar"],
-        events: ["Neymar slinger and post and in goals", "Pedri funny own goal", "New Muller lego (old one)"]
+        events: ["Neymar slinger and post and in goals", "Pedri funny own goal", "New Muller lego (old one)", "Muller good touch and ball roll for his goal"]
+    },
+    {
+        id: "28",
+        month: "february",
+        match_number: "28",
+        date: "25/02/2024",
+        time: "18:00",
+        condition: "Rain",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Russian Keeper", "Van Dijk (red)", "Messi", "Bastian", "Assunco", "Lewandowski"],
+        team2: ["Neuer", "Van Dijk (orange)", "Neymar", "Maradonna", "Robinho", "Muller"],
+        scorers: ["Van Dijk (red)"],
+        assisters: ["Lewandowski"],
+        slingers: ["Van Dijk (red)"],
+        penalties: [],
+        yellows: ["Muller", "Bastian"],
+        reds: [],
+        cleansheets: ["Russian Keeper", "Van Dijk (red)", "Messi", "Bastian", "Assunco", "Lewandowski"],
+        motm: ["Van Dijk (red)"],
+        events: []
     },
 ]
 
