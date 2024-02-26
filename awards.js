@@ -623,9 +623,11 @@ matches.forEach(match => {
             data: [
                 { category: "Most Goals", winner: findPlayersWithMostGoals(players)},
                 { category: "First Goal", winner: "Pele (01/01/2024) " },
-                { category: "Tenth Goal", winner: "Caveman (08/01/2024) " },
-                { category: "Twentieth Gaol", winner: "Bale (05/02/2024)" },
+                { category: "10th Goal", winner: "Caveman (08/01/2024) " },
+                { category: "20th Gaol", winner: "Bale (05/02/2024)" },
+                { category: "50th Goal", winner: "Benzema (24/02/2024)"},
                 { category: "First Slinger", winner: "Ronaldo (04/01/2024)" },
+                { category: "10th Slinger", winner: "Van Dijk (red) (25/02/2024)"},
                 { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) },
                 { category: "Most Goals in Single Game", winner: findPlayersWithMostGoalsInSingleGame(matches)}
             ],
@@ -636,8 +638,8 @@ matches.forEach(match => {
             data: [
                 { category: "Most Assists", winner: findPlayersWithMostAssists(players)},
                 { category: "First Assist", winner: "Lewnadowski"},
-                { category: "Tenth Assist", winner: "Ronaldo"},
-                { category: "Twentieth Assist:", winner: "Carragher"},
+                { category: "10th Assist", winner: "Ronaldo"},
+                { category: "20th Assist:", winner: "Carragher"},
                 { category: "Most Assists in Single Game", winner: findPlayersWithMostAssistsInSingleGame(matches)}
             ],
         },
