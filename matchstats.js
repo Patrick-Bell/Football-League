@@ -575,8 +575,8 @@ const matches = [
         date: "25/02/2024",
         time: "18:00",
         condition: "Rain",
-        team1_score: 1, //home team
-        team2_score: 0, //away team
+        team1_score: 2, //home team
+        team2_score: 2, //away team
         team1: ["Russian Keeper", "Van Dijk (red)", "Messi", "Bastian", "Assunco", "Lewandowski"],
         team2: ["Neuer", "Van Dijk (orange)", "Neymar", "Maradonna", "Robinho", "Muller"],
         scorers: ["Van Dijk (red)"],
@@ -588,6 +588,27 @@ const matches = [
         cleansheets: ["Russian Keeper", "Van Dijk (red)", "Messi", "Bastian", "Assunco", "Lewandowski"],
         motm: ["Van Dijk (red)"],
         events: []
+    },
+    {
+        id: "29",
+        month: "february",
+        match_number: "29",
+        date: "26/02/2024",
+        time: "11:20",
+        condition: "Wind",
+        team1_score: 2, //home team
+        team2_score: 2, //away team
+        team1: ["Stackers", "Van Dijk (red)", "Bowen", "Pedri", "Messi (ft)", "Suarez"],
+        team2: ["Neuer", "Caveman", "Son", "Modric", "Van Persie (orange)", "Kane"],
+        scorers: ["Kane", "Pedri", "Suarez", "Kane"],
+        assisters: ["Son", "Messi (ft)", "Pedri", "Son"],
+        slingers: ["Kane", "Suarez"],
+        penalties: [],
+        yellows: ["Van Persie (orange)", "Bowen"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Kane"],
+        events: ["Suarez good slinger, first to react", "Pedri going mental, got it back for his team", "Kane shot deflected of Van Dijk and looped in", "Suares bites Son at the end"]
     },
 ]
 
