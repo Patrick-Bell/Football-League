@@ -602,6 +602,7 @@ matches.forEach(match => {
             headers: ["Player of the Month", ""],
             data: [
                 { month: "January", winner: "Pele" },
+                { month: "February", winner: "Russian Keeper"},
             ],
         },
         {
