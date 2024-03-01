@@ -615,21 +615,21 @@ const matches = [
         month: "march",
         match_number: "30",
         date: "01/03/2024",
-        time: "",
-        condition: "",
-        team1_score: 0, //home team
-        team2_score: 0, //away team
-        team1: [],
-        team2: [],
-        scorers: [],
-        assisters: [],
-        slingers: [],
+        time: "17:20",
+        condition: "Wind",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Russian Keeper", "Ferdinand", "Mbappe", "Kroos", "Torres", "Benzema"],
+        team2: ["Allison", "Risse", "Mane", "De Bruyne", "Van Persie (red)", "Ronaldo"],
+        scorers: ["Torres", "De Bruyne", "Mbappe"],
+        assisters: ["Benzema", "Mane", "Benzema"],
+        slingers: ["Torres"],
         penalties: [],
-        yellows: [],
+        yellows: ["De Bruyne", "Ferdinand"],
         reds: [],
         cleansheets: [],
-        motm: [],
-        events: []
+        motm: ["Benzema"],
+        events: ["First game of March, new players in", "Raul quits the league"]
     },
 ]
 
