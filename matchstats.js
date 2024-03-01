@@ -610,6 +610,27 @@ const matches = [
         motm: ["Kane"],
         events: ["Suarez good slinger, first to react", "Pedri going mental, got it back for his team", "Kane shot deflected of Van Dijk and looped in", "Suares bites Son at the end"]
     },
+    {
+        id: "30",
+        month: "march",
+        match_number: "30",
+        date: "01/03/2024",
+        time: "",
+        condition: "",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: [],
+        team2: [],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: []
+    },
 ]
 
 window.matches = matches;

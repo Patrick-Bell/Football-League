@@ -364,6 +364,9 @@ img {
     justify-content: center;
     margin: auto auto;
 }
+.own-goal-stat{
+  color: red;
+}
 
 /* search feature */
 
