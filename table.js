@@ -812,6 +812,150 @@ const teams = [
             { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
         ]
     },
+    {
+        name: "Ronaldinho",
+        monthlyData: [
+            { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "November", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+        ]
+    },
+    {
+        name: "Baldy",
+        monthlyData: [
+            { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "November", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+        ]
+    },
+    {
+        name: "2-Face",
+        monthlyData: [
+            { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "November", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+        ]
+    },
+    {
+        name: "Allison",
+        monthlyData: [
+            { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "November", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+        ]
+    },
+    {
+        name: "Russian Def",
+        monthlyData: [
+            { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "November", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+        ]
+    },
+    {
+        name: "Ferdinand",
+        monthlyData: [
+            { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "November", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+        ]
+    },
+    {
+        name: "Risse",
+        monthlyData: [
+            { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "November", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+        ]
+    },
+    {
+        name: "Beckham",
+        monthlyData: [
+            { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "November", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+        ]
+    },
 
 ];
 
@@ -877,14 +1021,21 @@ function renderTableData(team, tbody, index) {
     cell5.textContent = team.monthlyData[0].losses;
     cell6.textContent = team.monthlyData[0].points;
 
+    const totalRows = teams.length
+    const bottomRowsRange = totalRows - 5;
+    const leftLegue = team.name
+
     if (index === 0) {
         row.style.background = "gold";
     } else if (index >= 1 && index <= 4) {
         row.style.background = "cyan";
     } else if (index === 5) {
         row.style.background = "orange";
-    } else if (index >= 38 && index < 43) {
+    } else if (index  >= bottomRowsRange) {
         row.style.background = "red";
+    } else if (leftLegue === "Raul") {
+        row.style.background = "black"
+        row.style.color = "white"
     } else {
         row.style.background = "white";
     }
@@ -924,8 +1075,8 @@ function getMonthlyDataForPlayer(team, selectedMonth) {
         // If the player has data for the selected month, use it
         return monthData;
     } else {
-        // If the player doesn't have data for the selected month, return default data
-        return { month: selectedMonth, gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 };
+        // If the player doesn't have data for the selected month, return null or an empty object
+        return {}; // or return {};
     }
 }
 

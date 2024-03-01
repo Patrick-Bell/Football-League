@@ -499,6 +499,13 @@ tbody{
   background: orange;
   margin: 5px;
 }
+.eliminated{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  margin: 5px;
+}
 
 /* log in */
 .login-container{

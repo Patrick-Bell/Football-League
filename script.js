@@ -35,11 +35,11 @@ let awayRM = document.querySelector(".away-rm");
 let awayST = document.querySelector(".away-st");
 
 let positions = {
-  GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney"],
-  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol"],
-  LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Raul", "Carragher", "Torres"],
+  GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
+  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse"],
+  LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
-  RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen"],
+  RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen", "Beckham"],
   ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan"]
 };
 
@@ -63,11 +63,11 @@ function getRandomTeam() {
 generateTeams.addEventListener("click", () => {
   // Reset the players array
   positions = {
-    GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney"],
-    DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol"],
-    LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Raul", "Carragher", "Torres"],
+    GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
+    DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse"],
+    LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho"],
     MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
-    RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen"],
+    RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen", "Beckham"],
     ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan"]
   };
 
@@ -98,11 +98,11 @@ resetBtn.addEventListener("click", () => {
 
 
 positions = {
-  GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney"],
-  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol"],
-  LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Raul", "Carragher", "Torres"],
+  GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
+  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse"],
+  LM: ["Messi (ft)", "Assunco", "Van Persie", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
-  RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen"],
+  RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen", "Beckham"],
   ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan"]
 };
 
