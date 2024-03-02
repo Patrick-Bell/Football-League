@@ -670,7 +670,7 @@ const matches = [
         yellows: ["Ronaldinho", "Zlatan"],
         reds: [],
         cleansheets: [],
-        motm: [],
+        motm: ["Torres"],
         events: []
     },
 ]
