@@ -631,6 +631,48 @@ const matches = [
         motm: ["Benzema"],
         events: ["First game of March, new players in", "Raul quits the league"]
     },
+    {
+        id: "31",
+        month: "march",
+        match_number: "31",
+        date: "02/03/2024",
+        time: "11:40",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Allison", "Puyol", "Mane", "Kroos", "Van Persie (red)", "Suarez"],
+        team2: ["2-Face", "Russian Def", "Mbappe", "Pogba", "Assunco", "Ronaldo"],
+        scorers: ["Ronaldo", "Mane", "Mbappe"],
+        assisters: ["Pogba", "Kroos"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Assunco", "Pogba"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Pogba"],
+        events: []
+    },
+    {
+        id: "32",
+        month: "march",
+        match_number: "32",
+        date: "02/03/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Allison", "Caveman", "Mane", "Kroos", "Ronaldinho", "Zlatan"],
+        team2: ["Russian Keeper", "Van Dijk (orange)", "Beckham (lego)", "Pogba", "Torres", "Benzema"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Ronaldinho", "Zlatan"],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: []
+    },
 ]
 
 window.matches = matches;
