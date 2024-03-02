@@ -669,7 +669,7 @@ const matches = [
         penalties: [],
         yellows: ["Ronaldinho", "Zlatan"],
         reds: [],
-        cleansheets: [],
+        cleansheets: ["Allison", "Caveman", "Mane", "Kroos", "Ronaldinho", "Zlatan", "Russian Keeper", "Van Dijk (orange)", "Beckham (lego)", "Pogba", "Torres", "Benzema"],
         motm: ["Torres"],
         events: []
     },
