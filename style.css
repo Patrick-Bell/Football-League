@@ -330,6 +330,10 @@ img {
   background: red;
   color: white;
 }
+.player-card.eliminated-card{
+  background: black;
+  color: white;
+}
 .suspended{
   text-align: center;
   font-weight: 900;
