@@ -673,6 +673,27 @@ const matches = [
         motm: ["Torres"],
         events: []
     },
+    {
+        id: "33",
+        month: "march",
+        match_number: "33",
+        date: "03/03/2024",
+        time: "17:40",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["2-Face", "Puyol", "Neymar", "Kroos", "Assunco", "Kane"],
+        team2: ["Neuer", "Baldy", "Son", "Pedri", "Torres", "Benzema"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Torres", "Benzema"],
+        reds: [],
+        cleansheets: ["2-Face", "Puyol", "Neymar", "Kroos", "Assunco", "Kane", "Neuer", "Baldy", "Son", "Pedri", "Torres", "Benzema"],
+        motm: ["2-Face"],
+        events: ["Torres & Benzema heated argument and some rounders thrown", "2-Face brilliant save onto the bar"]
+    },
 ]
 
 window.matches = matches;
