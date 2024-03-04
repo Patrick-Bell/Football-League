@@ -694,6 +694,27 @@ const matches = [
         motm: ["2-Face"],
         events: ["Torres & Benzema heated argument and some rounders thrown", "2-Face brilliant save onto the bar"]
     },
+    {
+        id: "34",
+        month: "march",
+        match_number: "34",
+        date: "04/03/2024",
+        time: "17:20",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Allison", "Ferdinand", "Son", "Bastian", "Messi (ft)", "Benzema"],
+        team2: ["Bruney", "Caveman", "Pele", "Modric", "Van Persie (red)", "Muller"],
+        scorers: ["Pele", "Messi (ft)", "Ferdinand"],
+        assisters: ["Modric", "Benzema", "Son"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Benzema"],
+        reds: [],
+        cleansheets: [],
+        motm: ["2-Face"],
+        events: ["Ferdinand long shot bar and in"]
+    },
 ]
 
 window.matches = matches;
