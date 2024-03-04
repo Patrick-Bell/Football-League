@@ -712,7 +712,7 @@ const matches = [
         yellows: ["Benzema"],
         reds: [],
         cleansheets: [],
-        motm: ["2-Face"],
+        motm: ["Ferdinand"],
         events: ["Ferdinand long shot bar and in"]
     },
 ]
