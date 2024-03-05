@@ -1098,7 +1098,7 @@ const players = [
     { month: "Overall", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "January", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "February", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
-    { month: "March", apps: 2, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
+    { month: "March", apps: 1, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "April", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "May", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "June", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -1188,9 +1188,7 @@ function calculateTotalAppsForMonths(players, targetMonths) {
       if (targetMonths.includes(monthData.month) && typeof monthData.apps === 'number' && !isNaN(monthData.apps)) {
         totalApps += monthData.apps;
         console.log(`Added ${monthData.apps} apps for ${player.name} in ${monthData.month}. Total: ${totalApps}`);
-      } else {
-        console.error(`Invalid 'apps' value for ${player.name} - ${monthData.month}: ${monthData.apps}`);
-      }
+      } 
     });
   });
 
@@ -1199,7 +1197,7 @@ function calculateTotalAppsForMonths(players, targetMonths) {
 
 const targetMonths = ['January', 'February', 'March'];
 const totalAppsForTargetMonths = calculateTotalAppsForMonths(players, targetMonths);
-console.log(`Total Appearances for all players in ${targetMonths.join(', ')}: ${totalAppsForTargetMonths}`);
+console.log(`[Checking...] Total Appearances for all players in ${targetMonths.join(', ')}: ${totalAppsForTargetMonths}`);
 
 
 

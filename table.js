@@ -763,7 +763,7 @@ const teams = [
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 4, draws: 1, losses: 1, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 4, draws: 2, losses: 1, points: 0 },
             { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -960,7 +960,30 @@ const teams = [
 ];
 
 
+
 window.teams = teams;
+
+function calculateTotalGamesPlayedForTeams(teams) {
+    let totalWins = 0;
+    let totalDraws = 0;
+    let totalLosses = 0;
+
+    // Iterate through each team in the array
+    teams.forEach(team => {
+        // Iterate through monthly data for each team
+        team.monthlyData.forEach(monthData => {
+            totalWins += monthData.wins || 0;
+            totalDraws += monthData.draws || 0;
+            totalLosses += monthData.losses || 0;
+            console.log(`player: ${team.name} wins: ${team.wins}, ${team.draws}, ${team.losses}`)
+        });
+    });
+
+    return totalWins + totalDraws + totalLosses;
+}
+
+const totalGamesPlayedForTeams = calculateTotalGamesPlayedForTeams(teams);
+console.log(`Total Games Played for all teams: ${totalGamesPlayedForTeams}`);
 
 
 teams.forEach(team => {

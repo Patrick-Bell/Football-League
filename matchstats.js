@@ -12,7 +12,7 @@ const matches = [
         team1_score: 1,
         team2_score: 0,
         team1: ["Boxer", "Puyol", "Pele", "Kroos", "Ramos", "Lewandowski"],
-        team2: ["Stackers", "Van Dijk", "Neymar", "De Bruyne", "Berbatov", "Ronaldo"],
+        team2: ["Stackers", "Van Dijk (orange)", "Neymar", "De Bruyne", "Berbatov", "Ronaldo"],
         scorers: ["Pele",],
         assisters: ["Lewandowski"],
         slingers: [],
@@ -157,7 +157,7 @@ const matches = [
         condition: "Sleet",
         team1_score: 1, //home team
         team2_score: 0, //away team
-        team1: ["Stackers", "Puyol", "Pele", "Kroos", "Van Persie", "Suarez"],
+        team1: ["Stackers", "Puyol", "Pele", "Kroos", "Van Persie (orange)", "Suarez"],
         team2: ["Russian Keeper", "Caveman", "Neymar", "De Bruyne", "Ramos", "Zlatan"],
         scorers: ["Pele"],
         assisters: [],
@@ -165,7 +165,7 @@ const matches = [
         penalties: [],
         yellows: ["Caveman", "Suarez", "Zlatan", "Ramos"],
         reds: [],
-        cleansheets: ["Stackers", "Puyol", "Pele", "Kroos", "Van Persie", "Suarez"],
+        cleansheets: ["Stackers", "Puyol", "Pele", "Kroos", "Van Persie (orange)", "Suarez"],
         motm: ["Pele"],
         events: ["Pele nice neymar touch", "Pele snake move on De Bruyne"]
     },
@@ -178,7 +178,7 @@ const matches = [
         condition: "Clear",
         team1_score: 2, //home team
         team2_score: 0, //away team
-        team1: ["Boxer", "Caveman", "Mane", "Modric", "Van Persie", "Muller"],
+        team1: ["Boxer", "Caveman", "Mane", "Modric", "Van Persie (orange)", "Muller"],
         team2: ["Stackers", "Van Dijk (orange)", "Messi", "Kroos", "Messi (ft)", "Suarez"],
         scorers: ["Caveman", "Mane"],
         assisters: ["Muller"],
@@ -186,7 +186,7 @@ const matches = [
         penalties: [],
         yellows: ["Muller", "Messi", "Messi (ft)", "Kroos", "Modric"],
         reds: ["Messi"],
-        cleansheets: ["Boxer", "Caveman", "Mane", "Modric", "Van Persie", "Muller"],
+        cleansheets: ["Boxer", "Caveman", "Mane", "Modric", "Van Persie (orange)", "Muller"],
         motm: ["Caveman"],
         events: ["Caveman goal hit the ground then looped onto bar and in"]
     },
@@ -199,7 +199,7 @@ const matches = [
         condition: "Windy",
         team1_score: 0, //home team
         team2_score: 1, //away team
-        team1: ["Russian Keeper", "Caveman", "Son", "Kroos", "Van Persie", "Muller"],
+        team1: ["Russian Keeper", "Caveman", "Son", "Kroos", "Van Persie (orange)", "Muller"],
         team2: ["Neuer", "Van Dijk (orange)", "Pele", "Modric", "Assunco", "Ronaldo"],
         scorers: ["Ronaldo"],
         assisters: ["Assunco"],
@@ -221,9 +221,9 @@ const matches = [
         team1_score: 1, //home team
         team2_score: 3, //away team
         team1: ["Russian Keeper", "Van Dijk (orange)", "Mane", "Eriksen", "Assunco", "Zlatan"],
-        team2: ["Neuer", "Puyol", "Pele", "Maradonnna", "Van Persie", "Ronaldo"],
+        team2: ["Neuer", "Puyol", "Pele", "Maradonna", "Van Persie (orange)", "Ronaldo"],
         scorers: ["Mane", "Puyol", "Ronaldo", "Pele"],
-        assisters: ["Van Dijk (orange)", "Ronaldo", "Van Persie"],
+        assisters: ["Van Dijk (orange)", "Ronaldo", "Van Persie (orange)"],
         slingers: ["Puyol", "Ronaldo"],
         penalties: [],
         yellows: ["Ronaldo"],
@@ -263,13 +263,13 @@ const matches = [
         team1_score: 1, //home team
         team2_score: 0, //away team
         team1: ["Neuer", "Van Dijk (orange)", "Pele", "De Bruyne", "Assunco", "Lewandowski"],
-        team2: ["Boxer", "Van Dijk (red)", "Son", "Kroos", "Van Persie", "Benzema"],
+        team2: ["Boxer", "Van Dijk (red)", "Son", "Kroos", "Van Persie (orange)", "Benzema"],
         scorers: ["Assunco"],
         assisters: [],
         slingers: [],
         penalties: [],
-        yellows: ["Van Persie", "Son"],
-        reds: ["Van Persie"],
+        yellows: ["Van Persie (orange)", "Son"],
+        reds: ["Van Persie (orange)"],
         cleansheets: ["Neuer", "Van Dijk (orange)", "Pele", "De Bruyne", "Assunco", "Lewandowski"],
         motm: ["Assunco"],
         events: ["Assunco free-kick, bar and in", "Van Persie sent off, clipped Assunco that led to the free kick"]
@@ -514,13 +514,13 @@ const matches = [
         condition: "Rain",
         team1_score: 1, //home team
         team2_score: 1, //away team
-        team1: ["Boxer", "Puyol", "Pele", "Bastian", "Van Persie", "Suarez"],
+        team1: ["Boxer", "Puyol", "Pele", "Bastian", "Van Persie (orange)", "Suarez"],
         team2: ["Neuer", "Caveman", "Mane", "Pedri", "Ramos", "Jiminez"],
         scorers: ["Caveman", "Pele"],
         assisters: ["Ramos"],
         slingers: [],
         penalties: [],
-        yellows: ["Van Persie", "Bastian"],
+        yellows: ["Van Persie (orange)", "Bastian"],
         reds: [],
         cleansheets: [],
         motm: ["Caveman"],
@@ -721,20 +721,34 @@ window.matches = matches;
 
 function countPlayerGamesPlayed(matches) {
     let playerGames = {};
+    let uniquePlayers = new Set();
 
-    matches.forEach(match => {
+    matches.forEach((match, index) => {
         // Count games for team 1
         match.team1.forEach(player => {
             playerGames[player] = (playerGames[player] || 0) + 1;
+            uniquePlayers.add(player);
         });
 
         // Count games for team 2
         match.team2.forEach(player => {
             playerGames[player] = (playerGames[player] || 0) + 1;
+            uniquePlayers.add(player);
         });
     });
 
+    console.log("Player Games Played:", playerGames);
+    console.log("Number of Unique Players:", uniquePlayers.size);
     return playerGames;
+}
+
+const playerGamesPlayed = countPlayerGamesPlayed(matches);
+
+// Print out all players and their total games
+for (const player in playerGamesPlayed) {
+    if (playerGamesPlayed.hasOwnProperty(player)) {
+        console.log(`${player}: ${playerGamesPlayed[player]} games played`);
+    }
 }
 
 function calculateTotalAppearances(matches) {
