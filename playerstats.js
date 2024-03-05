@@ -371,7 +371,7 @@ const players = [
              monthlyData: [
                 { month: "Overall", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "January", apps: 4, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 3, red: 0, clean_sheets: 1, motm: 0 },
-               { month: "February", apps: 4, won: 1, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 1, red: 1.1, clean_sheets: 2, motm: 0 },
+               { month: "February", apps: 2, won: 0, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 1, red: 1.1, clean_sheets: 2, motm: 0 },
                { month: "March", apps: 1, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "April", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "May", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -569,7 +569,7 @@ const players = [
              monthlyData: [
                { month: "Overall", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "January", apps: 1, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 1.1, clean_sheets: 0, motm: 0 },
-               { month: "February", apps: 1, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+               { month: "February", apps: 4, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "March", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "April", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "May", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -592,7 +592,7 @@ const players = [
                 { month: "Overall", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "January", apps: 3, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
                { month: "February", apps: 4, won: 0, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
-               { month: "March", apps: 4, won: 2, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 3, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 2, motm: 1 },
+               { month: "March", apps: 4, won: 2, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 3, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 2, motm: 1 },
                { month: "April", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "May", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "June", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -812,7 +812,7 @@ const players = [
                 { month: "Overall", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "January", apps: 1, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
                { month: "February", apps: 1, won: 0, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
-               { month: "March", apps: 2, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+               { month: "March", apps: 3, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "April", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "May", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "June", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -1155,7 +1155,7 @@ const players = [
   ],
 },
 {
-  id: 45,
+  id: 53,
    name: "Ronaldinho",
    picture: "",
    position: "LM",
@@ -1177,6 +1177,31 @@ const players = [
   ],
 },
 ]
+
+function calculateTotalAppsForMonths(players, targetMonths) {
+  let totalApps = 0;
+
+  // Iterate through player data array
+  players.forEach(player => {
+    // Iterate through monthly data for each player
+    player.monthlyData.forEach(monthData => {
+      if (targetMonths.includes(monthData.month) && typeof monthData.apps === 'number' && !isNaN(monthData.apps)) {
+        totalApps += monthData.apps;
+        console.log(`Added ${monthData.apps} apps for ${player.name} in ${monthData.month}. Total: ${totalApps}`);
+      } else {
+        console.error(`Invalid 'apps' value for ${player.name} - ${monthData.month}: ${monthData.apps}`);
+      }
+    });
+  });
+
+  return totalApps;
+}
+
+const targetMonths = ['January', 'February', 'March'];
+const totalAppsForTargetMonths = calculateTotalAppsForMonths(players, targetMonths);
+console.log(`Total Appearances for all players in ${targetMonths.join(', ')}: ${totalAppsForTargetMonths}`);
+
+
 
 function findPlayerYellowCount(players) {
   const playerYellowCounts = {};

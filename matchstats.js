@@ -12,7 +12,7 @@ const matches = [
         team1_score: 1,
         team2_score: 0,
         team1: ["Boxer", "Puyol", "Pele", "Kroos", "Ramos", "Lewandowski"],
-        team2: ["Stackers", "Van Dijk", "Meymar", "De Bruyne", "Berbatov", "Ronaldo"],
+        team2: ["Stackers", "Van Dijk", "Neymar", "De Bruyne", "Berbatov", "Ronaldo"],
         scorers: ["Pele",],
         assisters: ["Lewandowski"],
         slingers: [],
@@ -31,7 +31,7 @@ const matches = [
         condition: "Clear",
         team1_score: 0,
         team2_score: 1,
-        team1: ["Russian Keeper", "Van Dijk", "Mane", "Bastian", "Messi (ft)", "Zlatan"],
+        team1: ["Russian Keeper", "Van Dijk (orange)", "Mane", "Bastian", "Messi (ft)", "Zlatan"],
         team2: ["Stackers", "Caveman", "Neymar", "De Bruyne", "Robinho", "Muller"],
         scorers: ["De Bruyne"],
         assisters: [],
@@ -74,14 +74,14 @@ const matches = [
         team1_score: 0,
         team2_score: 2,
         team1: ["Neuer", "Caveman", "Bale", "Eriksen", "Berbatov", "Zlatan"],
-        team2: ["Stackers", "Van Dijk", "Son", "Bastian", "Beckham", "Lewandowski"],
+        team2: ["Stackers", "Van Dijk (orange)", "Son", "Bastian", "Beckham", "Lewandowski"],
         scorers: ["Son", "Lewandowski"],
         assisters: ["Bastian"],
         slingers: [],
         penalties: [],
         yellows: ["Neuer"],
         reds: [],
-        cleansheets: ["Stackers", "Van Dijk", "Son", "Bastian", "Beckham", "Lewandowski"],
+        cleansheets: ["Stackers", "Van Dijk (orange)", "Son", "Bastian", "Beckham", "Lewandowski"],
         motm: ["Bastian"],
         events: ["Son scored by not giving honor", "motm decided by genetrator"]
     },
@@ -94,7 +94,7 @@ const matches = [
         condition: "Clear",
         team1_score: 1, //home team
         team2_score: 0, //away team
-        team1: ["Stackers", "Van Dijk", "Pele", "De Bruyne", "Van Persie (red)", "Jiminez"],
+        team1: ["Stackers", "Van Dijk (orange)", "Pele", "De Bruyne", "Van Persie (red)", "Jiminez"],
         team2: ["Neuer", "Puyol", "Mahrez", "Eriksen", "Berbatov", "Benzema"],
         scorers: ["De Bruyne"],
         assisters: ["Van Persie (red)"],
@@ -102,7 +102,7 @@ const matches = [
         penalties: [],
         yellows: [],
         reds: [],
-        cleansheets: ["Stackers", "Van Dijk", "Pele", "De Bruyne", "Van Persie (red)", "Jiminez"],
+        cleansheets: ["Stackers", "Van Dijk (orange)", "Pele", "De Bruyne", "Van Persie (red)", "Jiminez"],
         motm: ["De Bruyne"],
         events: ["Neuer made loads of saves", "De Bruyne beat Van Persie (red) for motm on random generator"]
     },
@@ -116,14 +116,14 @@ const matches = [
         team1_score: 0, //home team
         team2_score: 0, //away team
         team1: ["Stackers", "Van Dijk (red)", "Mbappe", "Maradonna", "Beckham", "Benzema"],
-        team2: ["Boxer", "Van Dijk", "Mahrez", "Modric", "Robinho", "Zlatan"],
+        team2: ["Boxer", "Van Dijk (orange)", "Mahrez", "Modric", "Robinho", "Zlatan"],
         scorers: [],
         assisters: [],
         slingers: [],
         penalties: [],
         yellows: ["Zlatan"],
         reds: [],
-        cleansheets: ["Stackers", "Van Dijk (red)", "Mbappe", "Maradonna", "Beckham", "Benzema", "Boxer", "Van Dijk", "Mahrez", "Modric", "Robinho", "Zlatan"],
+        cleansheets: ["Stackers", "Van Dijk (red)", "Mbappe", "Maradonna", "Beckham", "Benzema", "Boxer", "Van Dijk (orange)", "Mahrez", "Modric", "Robinho", "Zlatan"],
         motm: ["Boxer"],
         events: ["5 woodwork, no goals", "Boxer made some very good saves"]
     },
@@ -137,7 +137,7 @@ const matches = [
         team1_score: 2, //home team
         team2_score: 0, //away team
         team1: ["Boxer", "Caveman", "Mane", "De Bruyne", "Messi (ft)", "Ronaldo"],
-        team2: ["Russian Keeper", "Van Dijk", "Neymar", "Bastian", "Robinho", "Lewandowski"],
+        team2: ["Russian Keeper", "Van Dijk (orange)", "Neymar", "Bastian", "Robinho", "Lewandowski"],
         scorers: ["Ronaldo", "Mane"],
         assisters: ["De Bruyne", "Messi (ft)"],
         slingers: ["Ronaldo"],
@@ -220,10 +220,10 @@ const matches = [
         condition: "Clear",
         team1_score: 1, //home team
         team2_score: 3, //away team
-        team1: ["Russian Keeper", "Van Dijk", "Mane", "Eriksen", "Assunco", "Zlatan"],
+        team1: ["Russian Keeper", "Van Dijk (orange)", "Mane", "Eriksen", "Assunco", "Zlatan"],
         team2: ["Neuer", "Puyol", "Pele", "Maradonnna", "Van Persie", "Ronaldo"],
         scorers: ["Mane", "Puyol", "Ronaldo", "Pele"],
-        assisters: ["Van Dijk", "Ronaldo", "Van Persie"],
+        assisters: ["Van Dijk (orange)", "Ronaldo", "Van Persie"],
         slingers: ["Puyol", "Ronaldo"],
         penalties: [],
         yellows: ["Ronaldo"],
@@ -283,7 +283,7 @@ const matches = [
         condition: "Clear",
         team1_score: 1, //home team
         team2_score: 1, //away team
-        team1: ["Neuer", "Van Dijk", "Bale", "Eriksen", "Carragher", "Lewandowski"],
+        team1: ["Neuer", "Van Dijk (orange)", "Bale", "Eriksen", "Carragher", "Lewandowski"],
         team2: ["Boxer", "Caveman", "Bowen", "Modric", "Beckham", "Zlatan"],
         scorers: ["Bale", "Bowen"],
         assisters: ["Eriksen", "Beckham"],
@@ -305,7 +305,7 @@ const matches = [
         team1_score: 2, //home team
         team2_score: 1, //away team
         team1: ["Russian Keeper", "Caveman", "Neymar", "Maradonna", "Carragher", "Lewandowski"],
-        team2: ["Stackers", "Van Dijk", "Bowen", "Kroos", "Assunco", "Ronaldo"],
+        team2: ["Stackers", "Van Dijk (orange)", "Bowen", "Kroos", "Assunco", "Ronaldo"],
         scorers: ["Lewandowski", "Lewandowski", "Ronaldo"],
         assisters: ["Neymar", "Russian Keeper", "Kroos"],
         slingers: ["Ronaldo"],
@@ -346,7 +346,7 @@ const matches = [
         condition: "Clear",
         team1_score: 0, //home team
         team2_score: 0, //away team
-        team1: ["Russian Keeper", "Van Dijk", "Mane", "Modric", "Torres", "Benzema"],
+        team1: ["Russian Keeper", "Van Dijk (orange)", "Mane", "Modric", "Torres", "Benzema"],
         team2: ["Boxer", "Van Dijk (red)", "Mahrez", "De Bruyne", "Berbatov", "Ronaldo"],
         scorers: [],
         assisters: [],
@@ -354,7 +354,7 @@ const matches = [
         penalties: [],
         yellows: ["Modric"],
         reds: [],
-        cleansheets: ["Russian Keeper", "Van Dijk", "Mane", "Modric", "Torres", "Benzema", "Boxer", "Van Dijk (red)", "Mahrez", "De Bruyne", "Berbatov", "Ronaldo"],
+        cleansheets: ["Russian Keeper", "Van Dijk (orange)", "Mane", "Modric", "Torres", "Benzema", "Boxer", "Van Dijk (red)", "Mahrez", "De Bruyne", "Berbatov", "Ronaldo"],
         motm: ["Van Dijk (red)"],
         events: ["Second 0-0 ever", "Torres debut, so only Raul with no apps"]
     },
@@ -367,7 +367,7 @@ const matches = [
         condition: "Clear",
         team1_score: 1, //home team
         team2_score: 1, //away team
-        team1: ["Boxer", "Van Dijk", "Neymar", "Pedri", "Carragher", "Benzema"],
+        team1: ["Boxer", "Van Dijk (orange)", "Neymar", "Pedri", "Carragher", "Benzema"],
         team2: ["Neuer", "Puyol", "Mane", "Bastian", "Beckham", "Zlatan"],
         scorers: ["Mane", "Pedri"],
         assisters: ["Zlatan", "Carragher"],
@@ -431,14 +431,14 @@ const matches = [
         team1_score: 0, //home team
         team2_score: 1, //away team
         team1: ["Boxer", "Puyol", "Neymar", "De Bruyne", "Carragher", "Ronaldo"],
-        team2: ["Russian Keeper", "Van Dijk", "Bowen", "Kroos", "Torres", "Zlatan"],
+        team2: ["Russian Keeper", "Van Dijk (orange)", "Bowen", "Kroos", "Torres", "Zlatan"],
         scorers: ["Zlatan"],
         assisters: ["Torres"],
         slingers: [],
         penalties: [],
         yellows: ["Zlatan", "De Bruyne"],
         reds: [],
-        cleansheets: ["Russian Keeper", "Van Dijk", "Bowen", "Kroos", "Torres", "Zlatan"],
+        cleansheets: ["Russian Keeper", "Van Dijk (orange)", "Bowen", "Kroos", "Torres", "Zlatan"],
         motm: ["Russian Keeper"],
         events: ["Russian Keeper great saves shots from Ronaldo and Carragher", "Zlatan shouts back post and scores a tap in volley, first volley"]
     },
@@ -719,7 +719,40 @@ const matches = [
 
 window.matches = matches;
 
+function countPlayerGamesPlayed(matches) {
+    let playerGames = {};
 
+    matches.forEach(match => {
+        // Count games for team 1
+        match.team1.forEach(player => {
+            playerGames[player] = (playerGames[player] || 0) + 1;
+        });
+
+        // Count games for team 2
+        match.team2.forEach(player => {
+            playerGames[player] = (playerGames[player] || 0) + 1;
+        });
+    });
+
+    return playerGames;
+}
+
+function calculateTotalAppearances(matches) {
+    let totalAppearances = 0;
+
+    matches.forEach(match => {
+        totalAppearances += match.team1.length + match.team2.length;
+    });
+
+    return totalAppearances;
+}
+
+const totalAppearances = calculateTotalAppearances(matches);
+
+// Log the result
+console.log("Total Appearances in All Matches:", totalAppearances);
+
+// Ex
 // Initialize variables to keep track of the top scorer and goals in a single game
 
 function getPlayerYellowCounts(matches) {
