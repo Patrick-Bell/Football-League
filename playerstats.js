@@ -1409,7 +1409,7 @@ function renderPlayers(players) {
     <div class="stat-num">${player.monthlyData[0].yellow}</div>
   </div>
   <div class="statistic-container">
-    <div class="stat-bold"><i class='bx bxs-card' style='color:#ff1f00'  ></i>Red Cards</div>
+    <div class="stat-bold"><i class='bx bxs-card' style='color:#ff1f00'></i>Red Cards</div>
     <div class="stat-num">${player.monthlyData[0].red}</div>
   </div>
   <div class="statistic-container">

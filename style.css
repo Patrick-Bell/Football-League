@@ -658,6 +658,42 @@ img{
   font-weight: 500;
 }
 
+/* dshboard */
+.large-dash-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 1rem;
+  margin: 20px;
+}
+
+.dash-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Single column for dash-container content */
+  gap: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 6px 8px rgba(0, 0, 0, 0.4);
+  margin: 20px;
+}
+
+.dash-divide{
+  border-top: 1px solid lightgrey;
+  padding: 7px;
+}
+.dash-title{
+  font-size: 1.5rem;
+  color: black;
+}
+.dash-text{
+  text-align: center;
+  margin-top: -10px;
+}
+
+@media (max-width: 650px){
+  .large-dash-container{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: auto auto;
+  }
+}
 
 @media (max-width: 380px) {
     .matchday{

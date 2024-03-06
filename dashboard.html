@@ -81,9 +81,58 @@
   <section class="home-section">
       <div class="text">Football League</div>
       <div class="filter-container"></div>
+
+      <div class="large-dash-container">
+        <div class="dash-container">
+          <h1 class="dash-title">GOALS</h1>
+          <h5 class="dash-text">If Goals are the same, whoever has a better ratio is ranked higher.</h5>
+        <div class="goal-container"></div>
+      </div>
+      <div class="dash-container">
+        <h1 class="dash-title">ASSISTS</h1>
+        <h5 class="dash-text">If Assists are the same, whoever has a better ratio is ranked higher.</h5>
+        <div class="assist-container"></div>
+      </div>
+      <div class="dash-container">
+        <h1 class="dash-title">CLEAN SHEETS</h1>
+        <h5 class="dash-text">If Clean Sheets are the same, whoever has a better ratio is ranked higher.</h5>
+        <div class="cleansheet-container"></div>
+      </div>
+      <div class="dash-container">
+        <h1 class="dash-title">POINTS</h1>
+        <h5 class="dash-text">If Points are the same, whoever has a better ratio is ranked higher.</h5>
+        <div class="point-container"></div>
+      </div>
+      <div class="dash-container">
+        <h1 class="dash-title">GOAL CONTRIBUTOR</h1>
+        <h5 class="dash-text">Calculated by Goals + Assists. If Contributions are the same, whoever has a better ratio is ranked higher.</h5>
+        <div class="contributor-container"></div>
+      </div>
+      <div class="dash-container">
+        <h1 class="dash-title">UNBEATEN PERCENTAGE</h1>
+        <h5 class="dash-text">Must play at least <u><i>5</i></u> games to qualify. If Unbeaten % is the same, whoever has played more games is ranked higher.</h5>
+        <div class="unbeaten-container"></div>
+      </div>
+      <div class="dash-container">
+        <h1 class="dash-title">APPS</h1>
+        <h5 class="dash-text">Each match is <u><i>45</i></u> minutes long. For this stat, extra time is not taken into consideration.</h5>
+        <div class="app-container"></div>
+      </div>
+      <div class="dash-container">
+        <h1 class="dash-title">CARDS</h1>
+        <h5 class="dash-text">Calculated by Yellow Cards + Red Cards. If Cards are the same, whoever has a higher ratio is ranked higher.</h5>
+        <div class="card-container"></div>
+      </div>
+
+      </div>
+
   </section>
 
-  <script src="script.js"></script>
-  <script src="server.js"></script>
+
+
+  <script src="script.js" defer></script>
+  <script src="playerstats.js" defer></script>
+  <script src="table.js"></script>
+  <script src="dashboard.js" defer></script>
 </body>
 </html>
