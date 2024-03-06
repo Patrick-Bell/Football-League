@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return `
             <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
                 <div class="stat-bold">${index + 1}. ${scorer.name}</div>
-                <div class="stat-num">${scorer.monthlyData[0].goals} - ${(scorer.monthlyData[0].goals / scorer.monthlyData[0].apps).toFixed(2)} goals per game</div>
+                <div class="stat-num">${scorer.monthlyData[0].goals} - ${(scorer.monthlyData[0].goals / scorer.monthlyData[0].apps).toFixed(2)} p/game</div>
             </div>
         `;
     });
@@ -54,7 +54,7 @@ const dashboardAssists = top5Assisters.map((scorer, index) => {
     return `
         <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
             <div class="stat-bold">${index + 1}. ${scorer.name}</div>
-            <div class="stat-num stat-dash">${scorer.monthlyData[0].assists} - ${(scorer.monthlyData[0].assists / scorer.monthlyData[0].apps).toFixed(2)} assists per game</div>
+            <div class="stat-num stat-dash">${scorer.monthlyData[0].assists} - ${(scorer.monthlyData[0].assists / scorer.monthlyData[0].apps).toFixed(2)} p/game</div>
         </div>
     `;
 });
