@@ -112,7 +112,7 @@ cleanSheetContainer.innerHTML = cleanSheetHTMLString;
     return `
         <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
             <div class="stat-bold">${index + 1}. ${scorer.name}</div>
-            <div class="stat-num stat-dash">${scorer.monthlyData[0].points} - ${(scorer.monthlyData[0].points / scorer.monthlyData[0].gamesPlayed).toFixed(2)} points per game</div>
+            <div class="stat-num stat-dash">${scorer.monthlyData[0].points} - ${(scorer.monthlyData[0].points / scorer.monthlyData[0].gamesPlayed).toFixed(2)} p/game</div>
             </div>
     `;
 
@@ -135,7 +135,7 @@ const dashboardContributors = top5Contributors.map((scorer, index) => {
     return `
         <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
             <div class="stat-bold">${index + 1}. ${scorer.name}</div>
-            <div class="stat-num stat-dash">${totalGoalsAndAssists} - ${(totalGoalsAndAssists / totalGamesPlayed).toFixed(2)} contributions per game</div>
+            <div class="stat-num stat-dash">${totalGoalsAndAssists} - ${(totalGoalsAndAssists / totalGamesPlayed).toFixed(2)}  p/game</div>
             </div>
     `;
 });
@@ -191,7 +191,7 @@ const dashboardApps = top5Apps.map((scorer, index) => {
 return`
 <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
         <div class="stat-bold">${index + 1}. ${scorer.name}</div>
-        <div class="stat-num">${scorer.monthlyData[0].apps} - ${(scorer.monthlyData[0].apps * 45)} mins played</div>
+        <div class="stat-num">${scorer.monthlyData[0].apps} - ${(scorer.monthlyData[0].apps * 45)} mins</div>
     </div>
 `});
 const appHTMLString = dashboardApps.join('');
@@ -221,8 +221,7 @@ const dashboardCards = top5Carders.map((scorer, index) => {
             <div class="stat-num">
                 <i class='bx bxs-card' style='color:#fbff00'></i>${scorer.monthlyData[0].yellow}
                 <i class='bx bxs-card' style='color:#ff1f00'></i>${scorer.monthlyData[0].red}
-                - Total: ${scorer.monthlyData[0].yellow + scorer.monthlyData[0].red}
-                - ${((scorer.monthlyData[0].yellow + scorer.monthlyData[0].red) / scorer.monthlyData[0].apps).toFixed(2)} cards per game
+                - ${((scorer.monthlyData[0].yellow + scorer.monthlyData[0].red) / scorer.monthlyData[0].apps).toFixed(2)} p/game
             </div>           
         </div>
     `;
