@@ -715,6 +715,27 @@ const matches = [
         motm: ["Ferdinand"],
         events: ["Ferdinand long shot bar and in"]
     },
+    {
+        id: "35",
+        month: "march",
+        match_number: "35",
+        date: "07/03/2024",
+        time: "17:20",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Russian Keeper", "Van Dijk (orange)", "Messi", "Pogba", "Ronaldinho", "Muller"],
+        team2: ["Neuer", "Baldy", "Bale", "Kroos", "Assunco", "Zlatan"],
+        scorers: ["Assunco", "Bale", "Muller"],
+        assisters: ["Assunco", "Messi"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Assunco", "Neuer"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Assunco"],
+        events: ["Muller disallowed slinger, ref blew whistle - from then he gave him everything, scored right at the end from a cross, no sound, got in front of Baldy", "Assunco free kick", "Bale post and in - best team goal"]
+    },
 ]
 
 window.matches = matches;

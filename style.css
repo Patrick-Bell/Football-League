@@ -321,13 +321,17 @@ img {
     border: 1px solid black;
 }
 .player-card.highlighted {
-  background: yellow;
+  background: linear-gradient(45deg, rgb(243, 243, 136), yellow);
 }
 .player-card.nothighlighted  {
   background: #E4E9F7;
 }
 .player-card.banned {
-  background: red;
+  background: linear-gradient(45deg, rgb(237, 138, 138), red);
+  color: white;
+}
+.player-card.potm{
+  background: linear-gradient(45deg, rgb(223, 119, 223), purple);
   color: white;
 }
 .player-card.eliminated-card{
@@ -687,7 +691,7 @@ img{
   margin-top: -10px;
 }
 
-@media (max-width: 650px){
+@media (max-width: 700px){
   .large-dash-container{
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
