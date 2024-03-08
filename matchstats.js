@@ -757,6 +757,27 @@ const matches = [
         motm: ["Jiminez"],
         events: ["Zlatan had Ferdiand all game, got him sent off pretty much", "Jiminez slinger during extra time, Pedri unbeaten record stays"]
     },
+    {
+        id: "37",
+        month: "march",
+        match_number: "37",
+        date: "08/03/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Bruney", "Van Dijk (red)", "Bale", "Pedri", "Ronaldinho", "Zlatan"],
+        team2: ["2-Face", "Russian Def", "Bowen", "Maradonna", "Assunco", "Benzema"],
+        scorers: ["Bale", "Bowen", "Bowen"],
+        assisters: [],
+        slingers: [],
+        penalties: ["Bale"],
+        yellows: ["Maradonna", "Benzema", "Ronaldinho", "Assunco"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Bowen"],
+        events: ["Bowen missed pen but got the rebound", "Bowen dirty nutmeg on Ronaldinho"]
+    },
 ]
 
 window.matches = matches;
