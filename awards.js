@@ -53,20 +53,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function findPlayerWithMostTotalApps(players) {
-        let mostAppsPlayer = null;
+        let mostAppsPlayers = [];
         let maxOverallApps = -1;
+    
         players.forEach(player => {
             let overallApps = 0;
             const overallMonth = player.monthlyData.find(monthData => monthData.month === "Overall");
+    
             if (overallMonth && typeof overallMonth.apps !== 'undefined') {
                 overallApps = overallMonth.apps;
             }
+    
             if (overallApps > maxOverallApps) {
                 maxOverallApps = overallApps;
-                mostAppsPlayer = player.name;
+                mostAppsPlayers = [player.name];
+            } else if (overallApps === maxOverallApps) {
+                mostAppsPlayers.push(player.name);
             }
         });
-        return { player: mostAppsPlayer, overallApps: maxOverallApps };
+    
+        return { players: mostAppsPlayers, overallApps: maxOverallApps };
     }
 
     function findPlayersWithMostAssists(players) {

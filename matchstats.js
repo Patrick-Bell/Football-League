@@ -736,6 +736,27 @@ const matches = [
         motm: ["Assunco"],
         events: ["Muller disallowed slinger, ref blew whistle - from then he gave him everything, scored right at the end from a cross, no sound, got in front of Baldy", "Assunco free kick", "Bale post and in - best team goal"]
     },
+    {
+        id: "36",
+        month: "march",
+        match_number: "36",
+        date: "08/03/2024",
+        time: "11:50",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Caveman", "Bowen", "Kroos", "Beckham", "Zlatan"],
+        team2: ["Boxer", "Ferdinand", "Son", "Pedri", "Ramos", "Jiminez"],
+        scorers: ["Kroos", "Jiminez"],
+        assisters: ["Bowen", "Ramos"],
+        slingers: ["Jiminez"],
+        penalties: [],
+        yellows: ["Ferdinand", "Kroos"],
+        reds: ["Ferdinand"],
+        cleansheets: [],
+        motm: ["Jiminez"],
+        events: ["Zlatan had Ferdiand all game, got him sent off pretty much", "Jiminez slinger during extra time, Pedri unbeaten record stays"]
+    },
 ]
 
 window.matches = matches;
