@@ -1013,6 +1013,10 @@ teams.forEach(team => {
 });
 
 
+
+
+
+
 teams.sort((a, b) => {
     // First, compare points in descending order
     if (b.monthlyData[0].points !== a.monthlyData[0].points) {
@@ -1029,14 +1033,17 @@ clearTable(); // Clear the table before rendering
 teams.forEach((team, index) => renderTableData(team, tbody, index));
 
 function renderTableData(team, tbody, index) {
-    const row = tbody.insertRow();
-    const cell1 = row.insertCell(0);
-    const cell2 = row.insertCell(1);
-    const cell3 = row.insertCell(2);
-    const cell4 = row.insertCell(3);
-    const cell5 = row.insertCell(4);
-    const cell6 = row.insertCell(5);
 
+    const row = tbody.insertRow();
+    const cell0 = row.insertCell(0)
+    const cell1 = row.insertCell(1);
+    const cell2 = row.insertCell(2);
+    const cell3 = row.insertCell(3);
+    const cell4 = row.insertCell(4);
+    const cell5 = row.insertCell(5);
+    const cell6 = row.insertCell(6);
+
+    cell0.textContent = index + 1
     cell1.textContent = team.name;
     cell2.textContent = team.monthlyData[0].gamesPlayed;
     cell3.textContent = team.monthlyData[0].wins;
