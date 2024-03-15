@@ -799,6 +799,27 @@ const matches = [
         motm: ["Risse"],
         events: ["Jiminez top corner bar and in pen", "Zlatan header on Kroos"]
     },
+    {
+        id: "39",
+        month: "march",
+        match_number: "39",
+        date: "15/03/2024",
+        time: "13:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Ferdinand", "Bale", "Maradonna", "Van Persie (red)", "Suarez"],
+        team2: ["Allison", "Caveman", "Beckham (lego)", "Pogba", "Van Persie (orange)", "Muller"],
+        scorers: ["Pogba", "Maradonna"],
+        assisters: ["Muller", "Maradonna"],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: [],
+        motm: ["Suarez"],
+        events: []
+    },
 ]
 
 window.matches = matches;
