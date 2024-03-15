@@ -778,6 +778,27 @@ const matches = [
         motm: ["Bowen"],
         events: ["Bowen missed pen but got the rebound", "Bowen dirty nutmeg on Ronaldinho"]
     },
+    {
+        id: "38",
+        month: "march",
+        match_number: "38",
+        date: "11/03/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Bruney", "Risse", "Beckham", "Kroos", "Ronaldinho", "Jiminez"],
+        team2: ["2-Face", "Van Dijk (orange)", "Mane", "Maradonnna", "Carragher", "Zlatan"],
+        scorers: ["Jiminez", "Zlatan"],
+        assisters: ["Carragher"],
+        slingers: [],
+        penalties: ["Jiminez"],
+        yellows: ["Van Dijk (orange)", "Kroos", "Ronaldinho", "Carragher"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Risse"],
+        events: ["Jiminez top corner bar and in pen", "Zlatan header on Kroos"]
+    },
 ]
 
 window.matches = matches;

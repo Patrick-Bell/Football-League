@@ -462,12 +462,23 @@ img {
 /* table */
 table{
   width: 100%;
-
+}
+.flag-img{
+  height: 15px;
+  width: 15px;
 }
 th{
   background: #11101D;
   color: white;
   font-size: 12px;
+}
+#scoreTable th:nth-child(2){
+  text-align: left;
+  padding: 0 10px;
+}
+#scoreTable td:nth-child(2){
+  text-align: left;
+  padding: 0 10px;
 }
 tbody{
   font-size: 12px;

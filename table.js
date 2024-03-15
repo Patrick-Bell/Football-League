@@ -4,6 +4,8 @@ const monthTypeSelect = document.getElementById("month-type");
 const teams = [
     {
         name: "Stackers",
+        form: ["W", "L"],
+        country: "https://flagicons.lipis.dev/flags/4x3/us.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 4, draws: 1, losses: 2, points: 0 },
@@ -22,6 +24,8 @@ const teams = [
     },
     {
         name: "Neuer",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/de.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 3, draws: 0, losses: 3, points: 0 },
@@ -40,6 +44,8 @@ const teams = [
     },
     {
         name: "Boxer",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 4, draws: 1, losses: 1, points: 0 },
@@ -58,6 +64,8 @@ const teams = [
     },
     {
         name: "Russian Keeper",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/ru.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 5, points: 0 },
@@ -76,6 +84,8 @@ const teams = [
     },
     {
         name: "Caveman",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 4, draws: 0, losses: 4, points: 0 },
@@ -94,6 +104,8 @@ const teams = [
     },
     {
         name: "Van Dijk (red)",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/nl.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 1, losses: 1, points: 0 },
@@ -112,11 +124,12 @@ const teams = [
     },
     {
         name: "Van Dijk (orange)",
+        country: "https://flagicons.lipis.dev/flags/4x3/nl.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 3, draws: 1, losses: 5, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 2, draws: 4, losses: 2, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 0, draws: 1, losses: 1, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 2, losses: 1, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -130,11 +143,13 @@ const teams = [
     },
     {
         name: "Kroos",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/de.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 3, draws: 0, losses: 3, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 1, draws: 0, losses: 2, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 2, draws: 3, losses: 1, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 2, draws: 4, losses: 1, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -148,6 +163,8 @@ const teams = [
     },
     {
         name: "Bastian",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/de.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 2, points: 0 },
@@ -166,6 +183,8 @@ const teams = [
     },
     {
         name: "De Bruyne",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/be.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 3, draws: 0, losses: 2, points: 0 },
@@ -184,6 +203,8 @@ const teams = [
     },
     {
         name: "Eriksen",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/dk.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 3, points: 0 },
@@ -202,11 +223,13 @@ const teams = [
     },
     {
         name: "Maradonna",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/ar.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 1, losses: 0, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 1, draws: 0, losses: 1, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 1, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 1, draws: 1, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -220,6 +243,8 @@ const teams = [
     },
     {
         name: "Modric",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/hr.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 2, draws: 1, losses: 1, points: 0 },
@@ -238,6 +263,8 @@ const teams = [
     },
     {
         name: "Pedri",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/es.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 0, points: 0 },
@@ -256,6 +283,8 @@ const teams = [
     },
     {
         name: "Assunco",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/br.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 1, points: 0 },
@@ -274,6 +303,8 @@ const teams = [
     },
     {
         name: "Robinho",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/br.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 1, losses: 1, points: 0 },
@@ -292,6 +323,8 @@ const teams = [
     },
     {
         name: "Messi (ft)",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/ar.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 3, points: 0 },
@@ -310,6 +343,8 @@ const teams = [
     },
     {
         name: "Van Persie (orange)",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/nl.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 3, draws: 0, losses: 1, points: 0 },
@@ -328,6 +363,8 @@ const teams = [
     },
     {
         name: "Mbappe",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/fr.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 1, losses: 0, points: 0 },
@@ -346,6 +383,8 @@ const teams = [
     },
     {
         name: "Bale",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-wls.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 1, points: 0 },
@@ -364,6 +403,8 @@ const teams = [
     },
     {
         name: "Son",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/kr.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 1, points: 0 },
@@ -382,6 +423,8 @@ const teams = [
     },
     {
         name: "Mahrez",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/dz.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 1, losses: 1, points: 0 },
@@ -400,6 +443,8 @@ const teams = [
     },
     {
         name: "Pele",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/br.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 5, draws: 0, losses: 1, points: 0 },
@@ -418,11 +463,13 @@ const teams = [
     },
     {
         name: "Mane",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/sn.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 4, draws: 0, losses: 2, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 0, draws: 5, losses: 1, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 0, draws: 1, losses: 2, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 2, losses: 2, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -436,6 +483,8 @@ const teams = [
     },
     {
         name: "Neymar",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/br.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 4, points: 0 },
@@ -454,6 +503,8 @@ const teams = [
     },
     {
         name: "Messi",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/ar.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 1, points: 0 },
@@ -472,6 +523,8 @@ const teams = [
     },
     {
         name: "Benzema",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/fr.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 1, losses: 1, points: 0 },
@@ -490,6 +543,8 @@ const teams = [
     },
     {
         name: "Kane",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -508,6 +563,8 @@ const teams = [
     },
     {
         name: "Lewandowski",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/pl.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 2, draws: 0, losses: 1, points: 0 },
@@ -526,11 +583,13 @@ const teams = [
     },
     {
         name: "Jiminez",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/mx.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 0, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 0, draws: 1, losses: 2, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 0, draws: 1, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 2, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -544,6 +603,8 @@ const teams = [
     },
     {
         name: "Ronaldo",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/pt.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 3, draws: 0, losses: 2, points: 0 },
@@ -562,6 +623,8 @@ const teams = [
     },
     {
         name: "Suarez",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/uy.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 2, points: 0 },
@@ -580,6 +643,8 @@ const teams = [
     },
     {
         name: "Muller",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/de.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 2, draws: 0, losses: 1, points: 0 },
@@ -598,11 +663,13 @@ const teams = [
     },
     {
         name: "Zlatan",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/se.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 1, losses: 4, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 1, draws: 2, losses: 0, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 1, draws: 2, losses: 1, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 1, draws: 3, losses: 1, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -616,11 +683,13 @@ const teams = [
     },
     {
         name: "Carragher",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 0, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 1, draws: 3, losses: 1, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 1, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -634,6 +703,8 @@ const teams = [
     },
     {
         name: "Puyol",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/es.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 4, draws: 0, losses: 1, points: 0 },
@@ -652,6 +723,8 @@ const teams = [
     },
     {
         name: "Berbatov",
+        form: ["L", "L", "L", "W", "L", "D", "L"],
+        country: "https://flagicons.lipis.dev/flags/4x3/rs.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 3, points: 0 },
@@ -670,6 +743,8 @@ const teams = [
     },
     {
         name: "Ramos",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/es.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 2, points: 0 },
@@ -688,6 +763,8 @@ const teams = [
     },
     {
         name: "Raul",
+        form: [],
+        country: "https://flagicons.lipis.dev/flags/4x3/es.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -706,6 +783,8 @@ const teams = [
     },
     {
         name: "Van Persie (red)",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/nl.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 0, losses: 0, points: 0 },
@@ -724,6 +803,8 @@ const teams = [
     },
     {
         name: "Beckham",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 1, draws: 1, losses: 0, points: 0 },
@@ -742,6 +823,8 @@ const teams = [
     },
     {
         name: "Torres",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/es.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -760,6 +843,8 @@ const teams = [
     },
     {
         name: "Bowen",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -778,11 +863,13 @@ const teams = [
     },
     {
         name: "Bruney",
+        form: ["L", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 2, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 1, losses: 2, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -796,6 +883,8 @@ const teams = [
     },
     {
         name: "Pogba",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/fr.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -814,11 +903,13 @@ const teams = [
     },
     {
         name: "Ronaldinho",
+        form: ["D", "L", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/br.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 0, draws: 1, losses: 2, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 2, losses: 2, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -832,6 +923,8 @@ const teams = [
     },
     {
         name: "Baldy",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/mx.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -850,11 +943,13 @@ const teams = [
     },
     {
         name: "2-Face",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/es.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 2, draws: 1, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 2, draws: 2, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -868,6 +963,8 @@ const teams = [
     },
     {
         name: "Allison",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/br.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -886,6 +983,8 @@ const teams = [
     },
     {
         name: "Russian Def",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/ru.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -904,6 +1003,8 @@ const teams = [
     },
     {
         name: "Ferdinand",
+        form: ["W", "L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -922,11 +1023,13 @@ const teams = [
     },
     {
         name: "Risse",
+        form: ["L", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/no.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 1, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 1, losses: 1, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -940,11 +1043,13 @@ const teams = [
     },
     {
         name: "Beckham (lego)",
+        form: ["D", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 0, draws: 1, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 2, losses: 0, points: 0 },
             { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -1035,25 +1140,28 @@ teams.forEach((team, index) => renderTableData(team, tbody, index));
 function renderTableData(team, tbody, index) {
 
     const row = tbody.insertRow();
-    const cell0 = row.insertCell(0)
+    const cell0 = row.insertCell(0);
     const cell1 = row.insertCell(1);
     const cell2 = row.insertCell(2);
     const cell3 = row.insertCell(3);
     const cell4 = row.insertCell(4);
     const cell5 = row.insertCell(5);
     const cell6 = row.insertCell(6);
+    const cell7 = row.insertCell(7)
 
-    cell0.textContent = index + 1
-    cell1.textContent = team.name;
+    cell0.textContent = index + 1;
+    cell1.innerHTML = `<img src="${team.country}" alt="${team.name}" class="flag-img"> ${team.name}`;
     cell2.textContent = team.monthlyData[0].gamesPlayed;
     cell3.textContent = team.monthlyData[0].wins;
     cell4.textContent = team.monthlyData[0].draws;
     cell5.textContent = team.monthlyData[0].losses;
     cell6.textContent = team.monthlyData[0].points;
 
-    const totalRows = teams.length
+
+    // Styling based on conditions
+    const totalRows = teams.length;
     const bottomRowsRange = totalRows - 5;
-    const leftLegue = team.name
+    const leftLeague = team.name;
 
     if (index === 0) {
         row.style.background = "gold";
@@ -1063,14 +1171,60 @@ function renderTableData(team, tbody, index) {
         row.style.background = "orange";
     } else if (index >= bottomRowsRange) {
         row.style.background = "red";
-    } else if (leftLegue === "Raul") {
+    } else if (leftLeague === "Raul") {
         row.style.background = "black";
         row.style.color = "white";
     } else {
         row.style.background = "white";
     }
-    
+
+    /*
+    const formCellContent = document.createElement('div');
+
+    // Check if the player has a 'form' property and it's an array
+    if (Array.isArray(team.form)) {
+        team.form.forEach(char => {
+            let span = document.createElement('span');
+            span.textContent = char;
+
+            // Apply styles based on the character
+            switch (char) {
+                case 'W':
+                    span.style.backgroundColor = 'green';
+                    span.style.color = 'white';
+                    break;
+                case 'D':
+                    span.style.backgroundColor = 'grey';
+                    span.style.color = 'white';
+                    break;
+                case 'L':
+                    span.style.backgroundColor = 'red';
+                    span.style.color = 'white';
+                    break;
+                default:
+                    // Handle other cases or leave it unstyled
+            }
+
+            // Optionally, you can set other styles
+            span.style.padding = '0 5px'; // Adjust padding as needed
+
+            // Append the span to formCellContent
+            formCellContent.appendChild(span);
+        });
+    } else {
+        // Handle the case where player.form is not an array or is missing
+        // You might want to provide a default value or skip rendering this part
+        formCellContent.textContent = 'N/A';
+    }
+
+    // Append formCellContent to cell7
+    cell7.appendChild(formCellContent);
+
+    */
+
 }
+
+
 
 
 
