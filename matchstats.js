@@ -820,6 +820,49 @@ const matches = [
         motm: ["Suarez"],
         events: []
     },
+    {
+        id: "40",
+        month: "march",
+        match_number: "40",
+        date: "16/03/2024",
+        time: "13:45",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 2, //away team
+        team1: ["Neuer", "Risse", "Messi", "Eriksen", "Carragher", "Muller"],
+        team2: ["Russian Keeper", "Van Dijk (orange)", "Bowen", "De Bruyne", "Robinho", "Jiminez"],
+        scorers: ["De Bruyne", "Bowen"],
+        assisters: ["De Bruyne"],
+        slingers: ["Bowen"],
+        penalties: [],
+        yellows: ["Messi", "Carragher", "Van Dijk (orange)"],
+        reds: [],
+        cleansheets: ["Russian Keeper", "Van Dijk (orange)", "Bowen", "De Bruyne", "Robinho", "Jiminez"],
+        motm: ["De Bruyne"],
+        events: ["De Bruyne free kick bar and in", "Messi misses great chance by Muller", "Bowen skip past Messi, he just missed him", "Messi rushed by Muller and Neuer at the end of the game"]
+    },
+    {
+        id: "41",
+        month: "march",
+        match_number: "41",
+        date: "16/03/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 1, //away team
+        team1: ["2-Face", "Puyol", "Beckham (lego)", "Eriksen", "Messi (ft)", "Benzema"],
+        team2: ["Boxer", "Van Dijk (orange)", "Mane", "Bastian", "Van Persie (red)", "Jiminez"],
+        scorers: ["Bastian"],
+        assisters: ["Van Persie (red)"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Messi (ft)"],
+        reds: [],
+        cleansheets: ["Boxer", "Van Dijk (orange)", "Mane", "Bastian", "Van Persie (red)", "Jiminez"],
+        motm: ["Boxer"],
+        events: []
+    },
+    
 ]
 
 window.matches = matches;
