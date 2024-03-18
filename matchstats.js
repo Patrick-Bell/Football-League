@@ -862,6 +862,48 @@ const matches = [
         motm: ["Boxer"],
         events: []
     },
+    {
+        id: "42",
+        month: "march",
+        match_number: "42",
+        date: "18/03/2024",
+        time: "13:30",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Boxer", "Russian Def", "Son", "Pogba", "Ramos", "Kane"],
+        team2: ["Bruney", "Caveman", "Bowen", "De Bruyne", "Van Persie (red)", "Benzema"],
+        scorers: ["Caveman (o.g)", "Ramos", "Benzema"],
+        assisters: ["Kane", "Van Persie (red)"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Russian Def", "Benzema"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Pogba"],
+        events: []
+    },
+    {
+        id: "43",
+        month: "march",
+        match_number: "43",
+        date: "18/03/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Puyol", "Neymar", "Kroos", "Beckham", "Benzema"],
+        team2: ["Allison", "Baldy", "Mahrez", "De Bruyne", "Assunco", "Ronaldo"],
+        scorers: ["Neymar", "De Bruyne"],
+        assisters: ["Benzema", "Assunco"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Beckham", "Kroos"],
+        reds: ["Allison", "Russian Def"],
+        cleansheets: [],
+        motm: ["De Bruyne"],
+        events: ["Neymar meats Baldy at the end and Baldy reacts and beef breaks out, Allison jumps in helping Neymar because he is brazilian"]
+    },
     
 ]
 
