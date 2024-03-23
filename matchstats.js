@@ -968,25 +968,25 @@ const matches = [
         events: ["Ref sacked, Muller meat Maradonna who did go flying but play stopped and ref said play on, Muller scored slinger and after the game ref disallows it, Damien ref", "Messi (ft) banned as he should have missed last game, would have been with De Bruyne too"],
     },
     {
-        id: "46",
+        id: "47",
         month: "march",
-        match_number: "46",
+        match_number: "47",
         date: "23/03/2024",
-        time: "",
+        time: "12:05",
         condition: "Clear",
-        team1_score: 0, //home team
-        team2_score: 0, //away team
-        team1: [],
-        team2: [],
-        scorers: [],
-        assisters: [],
+        team1_score: 2, //home team
+        team2_score: 2, //away team
+        team1: ["2-Face", "Baldy", "Mane", "Maradonna", "Beckham", "Lewandowski"],
+        team2: ["Allison", "Van Dijk (orange)", "Beckham (lego)", "Pedri", "Van Persie (red)", "Benzema"],
+        scorers: ["Lewandowski", "Beckham (lego)", "Baldy", "Beckham (lego)"],
+        assisters: ["Baldy", "Van Persie (red)", "Mane", "Van Persie (red)"],
         slingers: [],
         penalties: [],
-        yellows: [],
+        yellows: ["Beckham (lego)"],
         reds: [],
         cleansheets: [],
-        motm: [],
-        events: [],
+        motm: ["Baldy"],
+        events: ["Beckham second goal he got in front of other Beckham farted on him and then scored"],
     },
 ]
 
