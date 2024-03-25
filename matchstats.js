@@ -922,7 +922,7 @@ const matches = [
         yellows: ["Berbatov"],
         reds: [],
         cleansheets: [],
-        motm: ["tbd"],
+        motm: ["Mane"],
         events: ["Lewandowski slinger, cut inside and shot weaker foot.", "Eriksen at fault for both goals, own goal prevented Mane scoring kicked it hit bar and in", "For Mane goal, he bumped into Mahrez"]
     },
     {
@@ -964,7 +964,7 @@ const matches = [
         yellows: [],
         reds: [],
         cleansheets: [],
-        motm: ["tbd"],
+        motm: ["De Bruyne"],
         events: ["Ref sacked, Muller meat Maradonna who did go flying but play stopped and ref said play on, Muller scored slinger and after the game ref disallows it, Damien ref", "Messi (ft) banned as he should have missed last game, would have been with De Bruyne too"],
     },
     {
