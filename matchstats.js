@@ -988,6 +988,27 @@ const matches = [
         motm: ["Baldy"],
         events: ["Beckham second goal he got in front of other Beckham farted on him and then scored"],
     },
+    {
+        id: "48",
+        month: "march",
+        match_number: "48",
+        date: "25/03/2024",
+        time: "17:20",
+        condition: "Clear",
+        team1_score: 4, //home team
+        team2_score: 1, //away team
+        team1: ["Bruney", "Puyol", "Messi", "Modric", "Van Persie (orange)", "Ronldo"],
+        team2: ["2-Face", "Baldy", "Bale", "Bastian", "Van Persie (red)", "Zlatan"],
+        scorers: ["Zlatan", "Ronaldo", "Ronaldo", "Ronaldo", "Messi"],
+        assisters: ["Bale", "Modric", "Bruney", "Modric"],
+        slingers: ["Messi"],
+        penalties: [],
+        yellows: ["Zlatan", "Ronaldo"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Ronaldo"],
+        events: ["Ronaldo, first hatrick in the league, 1. Top corner near post 2. Touch from Bruney kick, turn and finesse top corner bar and in 3. Touch and shot far post post and in", "Messi slinger at the end"],
+    },
 ]
 
 window.matches = matches;

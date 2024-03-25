@@ -633,6 +633,7 @@ matches.forEach(match => {
                 { category: "10th Goal", winner: "Caveman (08/01/2024) " },
                 { category: "20th Gaol", winner: "Bale (05/02/2024)" },
                 { category: "50th Goal", winner: "Benzema (24/02/2024)"},
+                { category: "100th Goal", winner: "Ronaldo (25/03/2024)"},
                 { category: "First Slinger", winner: "Ronaldo (04/01/2024)" },
                 { category: "10th Slinger", winner: "Van Dijk (red) (25/02/2024)"},
                 { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) },
@@ -664,6 +665,8 @@ matches.forEach(match => {
             headers: ["Disciplinary", ""],
             data: [
                 { category: "First Yellow Card", winner: "Lewandowski (01/01/2024)" },
+                { category: "50th Yellow Card", winner: "Eriksen (18/02/2024"},
+                { category: "100th Yellow Card", winner: "Ronaldo (25/03/2024)"},
                 { category: "First Red Card", winner: "Messi (08/01/2024)" },
                 { category: "Most Yellow Cards", winner: findPlayersWithMostYellows(players)},
                 { category: "Most Red Cards", winners: findPlayersWithMostReds(players) },
