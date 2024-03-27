@@ -1009,6 +1009,27 @@ const matches = [
         motm: ["Ronaldo"],
         events: ["Ronaldo, first hatrick in the league, 1. Top corner near post 2. Touch from Bruney kick, turn and finesse top corner bar and in 3. Touch and shot far post post and in", "Messi slinger at the end"],
     },
+    {
+        id: "49",
+        month: "march",
+        match_number: "49",
+        date: "27/03/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 3, //away team
+        team1: ["Bruney", "Risse", "Mbappe", "Eriksen", "Van Persie (red)", "Muller"],
+        team2: ["Russian Keeper", "Van Dijk (red)", "Bale", "Pogba", "Ramos", "Zlatan"],
+        scorers: ["Ramos", "Zlatan", "Pogba", "Mbappe"],
+        assisters: ["Pogba", "Russian Keeper", "Ramos", "Risse"],
+        slingers: ["Pogba"],
+        penalties: [],
+        yellows: ["Risse"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Pogba"],
+        events: ["Pogba one of the best goals, controlled the ball, composure, fake shot and then when Bruney took a step, he chipped it over him in the slinger, dirty goal"],
+    },
 ]
 
 window.matches = matches;

@@ -492,7 +492,7 @@ function findPlayersWithMostDefeatsInMonth(teams) {
                     playerDefeatsByMonth[month] = [{ playerName: team.name, defeats: defeats }];
                 } else if (defeats === playerDefeatsByMonth[month][0].defeats) {
                     // If multiple players have the same number of defeats, add them to the array
-                    playerDefeatsByMonth[month].push({ playerName: team.name, defeats: defeats });
+                    playerDefeatsByMonth[month].push({ playerName: team.name, defeats: defeats, month: team.month });
                 }
             }
         });
@@ -648,7 +648,7 @@ matches.forEach(match => {
                 { category: "First Assist", winner: "Lewnadowski"},
                 { category: "10th Assist", winner: "Ronaldo"},
                 { category: "20th Assist:", winner: "Carragher"},
-                { category: "50th Assist", winner: "Benzema (04/03/2024"},
+                { category: "50th Assist", winner: "Benzema (04/03/2024)"},
                 { category: "Most Assists in Single Game", winner: findPlayersWithMostAssistsInSingleGame(matches)}
             ],
         },
@@ -665,7 +665,7 @@ matches.forEach(match => {
             headers: ["Disciplinary", ""],
             data: [
                 { category: "First Yellow Card", winner: "Lewandowski (01/01/2024)" },
-                { category: "50th Yellow Card", winner: "Eriksen (18/02/2024"},
+                { category: "50th Yellow Card", winner: "Eriksen (18/02/2024)"},
                 { category: "100th Yellow Card", winner: "Ronaldo (25/03/2024)"},
                 { category: "First Red Card", winner: "Messi (08/01/2024)" },
                 { category: "Most Yellow Cards", winner: findPlayersWithMostYellows(players)},
