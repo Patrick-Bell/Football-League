@@ -1030,6 +1030,48 @@ const matches = [
         motm: ["Pogba"],
         events: ["Pogba one of the best goals, controlled the ball, composure, fake shot and then when Bruney took a step, he chipped it over him in the slinger, dirty goal"],
     },
+    {
+        id: "50",
+        month: "march",
+        match_number: "50",
+        date: "28/03/2024",
+        time: "11:25",
+        condition: "Rain",
+        team1_score: 0, //home team
+        team2_score: 3, //away team
+        team1: ["Neuer", "Risse", "Messi", "Eriksen", "Van Persie (red)", "Ronaldo"],
+        team2: ["Boxer", "Baldy", "Pele", "Modric", "Messi (ft)", "Jiminez"],
+        scorers: ["Jiminez", "Pele", "Pele"],
+        assisters: ["Pele", "Messi (ft)"],
+        slingers: [],
+        penalties: ["Pele"],
+        yellows: ["Messi", "Van Persie (red)", "Van Dijk (red)"],
+        reds: [],
+        cleansheets: ["Boxer", "Baldy", "Pele", "Modric", "Messi (ft)", "Jiminez"],
+        motm: ["Pele"],
+        events: ["Pele beat Baldy in motm wheel", "Boxer and Baldy played amazingly"],
+    },
+    {
+        id: "51",
+        month: "march",
+        match_number: "51",
+        date: "28/03/2024",
+        time: "17:10",
+        condition: "Rain",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["2-Face", "Baldy", "Mbappe", "Maradonna", "Torres", "Muller"],
+        team2: ["Neuer", "Risse", "Neymar", "Pedri", "Berbatov", "Suarez"],
+        scorers: ["Muller"],
+        assisters: ["Mbappe"],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: ["2-Face", "Baldy", "Mbappe", "Maradonna", "Torres", "Muller"],
+        motm: ["Baldy"],
+        events: ["Baldy 2 W's times in a day", "Risse 2 L's in a day"],
+    },
 ]
 
 window.matches = matches;

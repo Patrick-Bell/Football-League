@@ -615,8 +615,9 @@ matches.forEach(match => {
             category: "games",
             headers: ["Matches", ""],
             data: [
-                { category: "First Game", winner: "01/01/2024 at 13:30" },
-                { category: "Tenth Game", winner: "09/01/2024 at 12:00" },
+                { category: "1st Game", winner: "01/01/2024 at 13:30" },
+                { category: "10th Game", winner: "09/01/2024 at 12:00" },
+                { category: "50th Game", winner: "28/03/2024 at 11:25) "},
                 { category: "Highest Scoring Game", winner: findGameWithMostGoals(matches) },
                 { category: "Most Games in a Month", winner: findMonthWithMostGames(matches) },
                 { category: "Most Points in a Month", winner: findPlayerWithMostPointsInMonth(teams) },
