@@ -1072,6 +1072,27 @@ const matches = [
         motm: ["Baldy"],
         events: ["Baldy 2 W's times in a day", "Risse 2 L's in a day"],
     },
+    {
+        id: "52",
+        month: "march",
+        match_number: "52",
+        date: "29/03/2024",
+        time: "16:10",
+        condition: "Rain",
+        team1_score: 3, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Baldy", "Mane", "Maradonna", "Van Persie (red)", "Jiminez"],
+        team2: ["Allison", "Caveman", "Bowen", "Modric", "Carragher", "Lewandowski"],
+        scorers: ["Van Persie (red)", "Jiminez", "Mane", "Carragher"],
+        assisters: ["Jiminez", "Mane", "Jiminez"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Jiminez", "Maradonna", "Carragher", "Baldy"],
+        reds: ["Jiminez"],
+        cleansheets: [],
+        motm: ["Mane"],
+        events: [],
+    },
 ]
 
 window.matches = matches;
