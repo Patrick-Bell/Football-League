@@ -433,7 +433,7 @@ for (const month in matchesByMonth) {
 }
 
 function findPlayerWithMostPointsInMonth(teams) {
-    const playerPointsByMonth = {};
+    const playerPoints = []; // Object to track total points for each player
 
     // Iterate through each team
     teams.forEach(team => {
@@ -443,33 +443,38 @@ function findPlayerWithMostPointsInMonth(teams) {
 
             // Exclude "Overall" month
             if (month !== "overall") {
-                // Update the points for the current month
+                const playerName = team.name;
                 const points = monthData.points;
-                if (!playerPointsByMonth[month] || points > playerPointsByMonth[month].points) {
-                    playerPointsByMonth[month] = { playerName: team.name, points: points };
+
+                // Update total points for the player
+                if (!playerPoints[playerName] || points > playerPoints[playerName].points) {
+                    playerPoints[playerName] = { points: points, month: month };
                 }
             }
         });
     });
 
-    // Find the month with the most points
-    let mostPointsMonth;
+    let mostPointsPlayer;
     let mostPointsCount = 0;
 
-    for (const month in playerPointsByMonth) {
-        if (playerPointsByMonth[month].points > mostPointsCount) {
-            mostPointsMonth = month;
-            mostPointsCount = playerPointsByMonth[month].points;
+    // Find the player with the most points
+    for (const playerName in playerPoints) {
+        if (playerPoints[playerName].points > mostPointsCount) {
+            mostPointsPlayer = playerName;
+            mostPointsCount = playerPoints[playerName].points;
         }
     }
 
-    if (mostPointsMonth) {
-        const capitalizedMonth = mostPointsMonth.charAt(0).toUpperCase() + mostPointsMonth.slice(1);
-        return `${mostPointsCount} - ${playerPointsByMonth[mostPointsMonth].playerName} (${capitalizedMonth})`;
+    if (mostPointsPlayer) {
+        const capitalizedMonth = playerPoints[mostPointsPlayer].month.charAt(0).toUpperCase() + playerPoints[mostPointsPlayer].month.slice(1);
+        return `${mostPointsCount} - ${mostPointsPlayer} (${capitalizedMonth})`;
     } else {
         return "No player has monthly data excluding 'Overall'.";
     }
 }
+
+
+
 
 function findPlayersWithMostDefeatsInMonth(teams) {
     const playerDefeatsByMonth = {};
@@ -609,6 +614,7 @@ matches.forEach(match => {
             data: [
                 { month: "January", winner: "Pele" },
                 { month: "February", winner: "Russian Keeper"},
+                { month: "March", winner: "Benzema"}
             ],
         },
         {
