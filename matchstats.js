@@ -1135,6 +1135,48 @@ const matches = [
         motm: [],
         events: ["Jiminez initally came out to play Baldy for the month, but he is banned, then Benzema came out and won", "Benzema played def/mid"],
     },
+    {
+        id: "55",
+        month: "april",
+        match_number: "55",
+        date: "01/04/2024",
+        time: "13:00",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["2-Face", "Caveman", "Son", "Pedri", "Ronaldinho", "Muller"],
+        team2: ["Boxer", "Russian Def", "Pele", "Eriksen", "Carragher", "Jiminez"],
+        scorers: ["Jiminez", "Pedri", "Muller"],
+        assisters: ["Muller", "Pedri"],
+        slingers: ["Jiminez", "Muller"],
+        penalties: [],
+        yellows: ["Ronaldinho"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Pedri"],
+        events: ["Jiminez free kick slinger", "Pedri diving header", "Muller hit the side net, went around the goal into the slinger"],
+    },
+    {
+        id: "56",
+        month: "april",
+        match_number: "56",
+        date: "01/04/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Neuer", "Risse", "Bowen", "Pogba", "Carragher", "Zlatan"],
+        team2: ["2-Face", "Russian Def", "Son", "Eriksen", "Assunco", "Suarez"],
+        scorers: ["Son", "Son", "Pogba"],
+        assisters: ["Assunco", "Carragher"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Son", "Bowen", "Carragher", "Assunco", "Zlatan"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Son"],
+        events: ["Pogba injury"],
+    },
 ]
 
 window.matches = matches;
