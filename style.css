@@ -389,6 +389,10 @@ img {
     padding: 10px;
     min-width: 100%;
 }
+.total-games{
+  text-align: center;
+  margin: 10px 0 5px 0;
+}
 .team{
   line-height: 0;
 }

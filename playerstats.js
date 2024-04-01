@@ -1176,6 +1176,28 @@ const players = [
     { month: "December", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
   ],
 },
+{
+  id: 54,
+   name: "Trippier",
+   picture: "",
+   position: "DEF",
+   joined: "Arriving...",
+   monthlyData: [
+    { month: "Overall", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "January", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "February", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "March", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "April", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "May", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "June", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "July", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "November", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+    { month: "December", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+  ],
+},
 ]
 
 function calculateTotalAppsForMonths(players, targetMonths) {

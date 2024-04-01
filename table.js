@@ -1061,6 +1061,26 @@ const teams = [
             { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
         ]
     },
+    {
+        name: "Trippier",
+        form: ["D", "D"],
+        country: "https://flagicons.lipis.dev/flags/4x3/gb-eng.svg",
+        monthlyData: [
+            { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "November", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+            { month: "December", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+        ]
+    },
 
 ];
 

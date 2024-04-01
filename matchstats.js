@@ -1340,9 +1340,25 @@ function renderMatches(matches) {
 
 renderMatches(matches);
 
+const matchesLength = document.querySelector('.total-games')
+
+function findTotalMatches(category) {
+    const filteredMatches = (category === "all") ? matches : matches.filter(match => match.month === category);
+    const numOfGames = filteredMatches.length
+    console.log(numOfGames)
+    matchesLength.innerHTML = `Total Games: <strong>${numOfGames}</strong>`
+
+    if (numOfGames === 0) {
+        matchesLength.innerHTML = `No Games Played.`
+    }
+}
+
+findTotalMatches('all')
+
 function filterMatches(category) {
     const filteredMatches = (category === "all") ? matches : matches.filter(match => match.month === category);
     renderMatches(filteredMatches);
+    findTotalMatches(category)
     setupEventListeners();
 }
 
