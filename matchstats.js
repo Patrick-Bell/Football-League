@@ -1111,7 +1111,7 @@ const matches = [
         yellows: ["Beckham", "Beckham (lego)", "Ronaldinho"],
         reds: [],
         cleansheets: ["Allison", "Van Dijk (orange)", "Son", "De Bruyne", "Ronaldinho", "Benzema", "Bruney", "Baldy", "Beckham (lego)", "Bastian", "Beckham", "Zlatan"],
-        motm: [],
+        motm: ["Baldy"],
         events: [],
     },
     {
@@ -1132,7 +1132,7 @@ const matches = [
         yellows: ["Van Persie (red)", "Benzema", "Maradonna"],
         reds: [],
         cleansheets: [],
-        motm: [],
+        motm: ["Bale"],
         events: ["Jiminez initally came out to play Baldy for the month, but he is banned, then Benzema came out and won", "Benzema played def/mid"],
     },
     {
@@ -1176,6 +1176,27 @@ const matches = [
         cleansheets: [],
         motm: ["Son"],
         events: ["Pogba injury"],
+    },
+    {
+        id: "57",
+        month: "april",
+        match_number: "57",
+        date: "02/04/2024",
+        time: "11:35",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 0, //away team
+        team1: ["Allison", "Baldy", "Neymar", "Pedri", "Torres", "Zlatan"],
+        team2: ["Neuer", "Russian Def", "Messi", "Maradonna", "Robinho", "Suarez"],
+        scorers: ["Pedri", "Neymar"],
+        assisters: ["Torres"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Maradonna", "Russian Def", "Zlatan"],
+        reds: [],
+        cleansheets: ["Allison", "Baldy", "Neymar", "Pedri", "Torres", "Zlatan"],
+        motm: ["Pedri"],
+        events: ["Pedri free kick top corner post and in", "Torres cross and Neymar first time shot"],
     },
 ]
 

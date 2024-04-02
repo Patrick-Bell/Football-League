@@ -37,7 +37,7 @@ let awayST = document.querySelector(".away-st");
 let positions = {
   GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
   DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse"],
-  LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho"],
+  LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho", "Henry"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
   RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen", "Beckham"],
   ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan"]
@@ -65,7 +65,7 @@ generateTeams.addEventListener("click", () => {
   positions = {
     GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
     DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse"],
-    LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho"],
+    LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho", "Henry"],
     MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
     RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen", "Beckham"],
     ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan"]
@@ -100,7 +100,7 @@ resetBtn.addEventListener("click", () => {
 positions = {
   GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
   DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse"],
-  LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho"],
+  LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho", "Henry"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
   RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen", "Beckham"],
   ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan"]

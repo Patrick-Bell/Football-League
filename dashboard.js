@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 
-    const top5Scorers = sortedGoalPlayers.slice(0, 5);
+    const top5Scorers = sortedGoalPlayers.slice(0, 10);
     const goalContainer = document.querySelector(".goal-container");
     const dashboardGoals = top5Scorers.map((scorer, index) => {
         const isTopScorer = index === 0;
@@ -45,7 +45,7 @@ const sortedAssistPlayers = players.sort((a, b) => {
     return assistsDiff;
 });
 
-const top5Assisters = sortedAssistPlayers.slice(0, 5);
+const top5Assisters = sortedAssistPlayers.slice(0, 10);
 const assistContainer = document.querySelector(".assist-container");
 const dashboardAssists = top5Assisters.map((scorer, index) => {
     const isTopAssister = index === 0;
@@ -76,7 +76,7 @@ assistContainer.innerHTML = assistersHTMLString;
     })
 
 
-    const top5CleanSheets = sortedCleanSheetPlayers.slice(0, 5);
+    const top5CleanSheets = sortedCleanSheetPlayers.slice(0, 10);
     const cleanSheetContainer = document.querySelector(".cleansheet-container");
     const dashboardCleanSheets = top5CleanSheets.map((scorer, index) => {
     const isTopCleanSheetPlayer = index === 0;
@@ -104,7 +104,7 @@ cleanSheetContainer.innerHTML = cleanSheetHTMLString;
        return pointsDiff
     })
 
-    const top5Points = sortedPoints.slice(0, 5);
+    const top5Points = sortedPoints.slice(0, 10);
     const pointsContainer = document.querySelector(".point-container");
     const dashboardPoint = top5Points.map((scorer, index) => {
         const isTopPoints = index === 0
@@ -123,7 +123,7 @@ cleanSheetContainer.innerHTML = cleanSheetHTMLString;
     // Display top goal contributions = goals + assists
 
     const sortedGoalContributor = players.sort((a, b) => (b.monthlyData[0].goals + b.monthlyData[0].assists) - (a.monthlyData[0].goals + a.monthlyData[0].assists));
-const top5Contributors = sortedGoalContributor.slice(0, 5);
+const top5Contributors = sortedGoalContributor.slice(0, 10);
 const contributorContainer = document.querySelector(".contributor-container");
 
 const dashboardContributors = top5Contributors.map((scorer, index) => {
@@ -162,7 +162,7 @@ const sortedUnbeaten = filteredUnbeaten.sort((a, b) => {
     return unbeatenB - unbeatenA;
 });
 
-const top5Unbeaten = sortedUnbeaten.slice(0, 5);
+const top5Unbeaten = sortedUnbeaten.slice(0, 10);
 const unbeatenContainer = document.querySelector(".unbeaten-container");
 
 const dashboardUnbeaten = top5Unbeaten.map((scorer, index) => {
@@ -182,7 +182,7 @@ unbeatenContainer.innerHTML = unbeatenHTMLString;
 
 // top app'd players
 const sortedAppPlayers = players.sort((a, b) => b.monthlyData[0].apps - a.monthlyData[0].apps);
-const top5Apps = sortedAppPlayers.slice(0, 5);
+const top5Apps = sortedAppPlayers.slice(0, 10);
 const appContainer = document.querySelector(".app-container");
 const dashboardApps = top5Apps.map((scorer, index) => {
     const isTopAppPlayer = index === 0;
@@ -209,7 +209,7 @@ const sortedCardPlayers = players.sort((a, b) => {
     return cardsDiff;
 });
 
-const top5Carders = sortedCardPlayers.slice(0, 5);
+const top5Carders = sortedCardPlayers.slice(0, 10);
 const cardContainer = document.querySelector(".card-container");
 const dashboardCards = top5Carders.map((scorer, index) => {
     const isTopScorer = index === 0;
