@@ -1198,6 +1198,48 @@ const matches = [
         motm: ["Pedri"],
         events: ["Pedri free kick top corner post and in", "Torres cross and Neymar first time shot"],
     },
+    {
+        id: "58",
+        month: "april",
+        match_number: "58",
+        date: "03/04/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Bruney", "Russian Def", "Mahrez", "Pedri", "Torres", "Suarez"],
+        team2: ["Boxer", "Ferdinand", "Pele", "Pogba", "Ramos", "Zlatan"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Ramos", "Ferdinand", "Zlatan"],
+        reds: [],
+        cleansheets: ["Bruney", "Russian Def", "Mahrez", "Pedri", "Torres", "Suarez", "Boxer", "Ferdinand", "Pele", "Pogba", "Ramos", "Zlatan"],
+        motm: [],
+        events: [],
+    },
+    {
+        id: "59",
+        month: "april",
+        match_number: "59",
+        date: "04/04/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["2-Face", "Van Dijk (red)", "Beckham (lego)", "Eriksen", "Torres", "Muller"],
+        team2: ["Stackers", "Baldy", "Mahrez", "Kroos", "Henry", "Zlatan"],
+        scorers: ["Henry", "Beckham (lego)"],
+        assisters: ["Baldy", "Torres"],
+        slingers: ["Beckham (lego)"],
+        penalties: [],
+        yellows: ["Zlatan", "Eriksen", "Muller"],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: ["Beckham (lego) first time touch under Mahrez and hits it frmo far into far corner slinger, up there for best goal", "Henry debut and goal"],
+    },
 ]
 
 window.matches = matches;
