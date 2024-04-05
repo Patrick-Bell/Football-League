@@ -1240,6 +1240,27 @@ const matches = [
         motm: [],
         events: ["Beckham (lego) first time touch under Mahrez and hits it frmo far into far corner slinger, up there for best goal", "Henry debut and goal"],
     },
+    {
+        id: "60",
+        month: "april",
+        match_number: "60",
+        date: "05/04/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Caveman", "Mbappe", "Pedri", "Carragher", "Ronaldo"],
+        team2: ["Boxer", "Van Dijk (orange)", "Bowen", "Bastian", "Torres", "Zlatan"],
+        scorers: ["Bowen", "Ronaldo"],
+        assisters: ["Zlatan", "Mbappe"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Carragher", "Torres", "Zlatan", "Pedri"],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: [],
+    },
 ]
 
 window.matches = matches;
@@ -1416,7 +1437,7 @@ function findTotalMatches(category) {
     }
 }
 
-findTotalMatches('all')
+findTotalMatches('april')
 
 function filterMatches(category) {
     const filteredMatches = (category === "all") ? matches : matches.filter(match => match.month === category);
