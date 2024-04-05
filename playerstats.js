@@ -1511,6 +1511,7 @@ function filterAndRenderCombined(selectedPosition, selectedCategories, selectedM
 
   function getMonthlyDataForPlayer(player, selectedMonth) {
       const monthData = player.monthlyData.find(month => month.month.toLowerCase() === selectedMonth.toLowerCase());
+      console.log('The monthly data is looking like this', monthData)
   
       if (monthData) {
           // If the player has data for the selected month, use it
