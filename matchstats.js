@@ -1216,7 +1216,7 @@ const matches = [
         yellows: ["Ramos", "Ferdinand", "Zlatan"],
         reds: [],
         cleansheets: ["Bruney", "Russian Def", "Mahrez", "Pedri", "Torres", "Suarez", "Boxer", "Ferdinand", "Pele", "Pogba", "Ramos", "Zlatan"],
-        motm: [],
+        motm: ["Russian Def"],
         events: [],
     },
     {
@@ -1237,7 +1237,7 @@ const matches = [
         yellows: ["Zlatan", "Eriksen", "Muller"],
         reds: [],
         cleansheets: [],
-        motm: [],
+        motm: ["Henry"],
         events: ["Beckham (lego) first time touch under Mahrez and hits it frmo far into far corner slinger, up there for best goal", "Henry debut and goal"],
     },
     {
@@ -1258,7 +1258,28 @@ const matches = [
         yellows: ["Carragher", "Torres", "Zlatan", "Pedri"],
         reds: [],
         cleansheets: [],
-        motm: [],
+        motm: ["Bowen"],
+        events: [],
+    },
+    {
+        id: "61",
+        month: "april",
+        match_number: "61",
+        date: "06/04/2024",
+        time: "15:50",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Neuer", "Trippier", "Messi", "Pedri", "Torres", "Suarez"],
+        team2: ["Stackers", "Baldy", "Bowen", "Kroos", "Van Persie (orange)", "Kane"],
+        scorers: ["Torres", "Bowen"],
+        assisters: ["Pedri", "Baldy"],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: [],
+        motm: ["Bowen"],
         events: [],
     },
 ]
@@ -1293,7 +1314,7 @@ const playerGamesPlayed = countPlayerGamesPlayed(matches);
 // Print out all players and their total games
 for (const player in playerGamesPlayed) {
     if (playerGamesPlayed.hasOwnProperty(player)) {
-        console.log(`${player}: ${playerGamesPlayed[player]} games played`);
+       // console.log(`${player}: ${playerGamesPlayed[player]} games played`);
     }
 }
 
