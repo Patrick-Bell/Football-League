@@ -1314,7 +1314,7 @@ const playerGamesPlayed = countPlayerGamesPlayed(matches);
 // Print out all players and their total games
 for (const player in playerGamesPlayed) {
     if (playerGamesPlayed.hasOwnProperty(player)) {
-       // console.log(`${player}: ${playerGamesPlayed[player]} games played`);
+       //console.log(`${player}: ${playerGamesPlayed[player]} games played`);
     }
 }
 
@@ -1458,7 +1458,7 @@ function findTotalMatches(category) {
     }
 }
 
-findTotalMatches('april')
+findTotalMatches('all')
 
 function filterMatches(category) {
     const filteredMatches = (category === "all") ? matches : matches.filter(match => match.month === category);

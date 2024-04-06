@@ -726,6 +726,9 @@ img{
     display: block;
     text-align: center;
   }
+  .num-players{
+    font-size: 0.85rem;
+  }
 }
 
 

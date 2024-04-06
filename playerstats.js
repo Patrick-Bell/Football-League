@@ -1378,7 +1378,8 @@ function renderPlayers(players) {
     // Use map to create an array of HTML strings for each player
     const playerCardsHTML = players.map(player => {
       let playersNum = players.length
-      numberOfPlayers.innerHTML = `Number of Players -<strong>${playersNum} </strong> /55`
+      let percentage = ((playersNum / 55) * 100).toFixed(2) + ' %'
+      numberOfPlayers.innerHTML = `Number of Players -<strong>${playersNum} </strong> /55 - <strong>${percentage}</strong> `
       // console.log(numberOfPlayers)
       const yellowCards = player.monthlyData[0].yellow;
       const redCards = player.monthlyData[0].red
