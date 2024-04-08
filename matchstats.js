@@ -20,7 +20,8 @@ const matches = [
         yellows: ["Lewandowski", "Boxer"],
         reds: [],
         cleansheets: ["Boxer", "Puyol", "Pele", "Kroos", "Ramos", "Lewandowski"],
-        motm: "Pele"
+        motm: "Pele",
+        events: [],
     },
     {
         id: 2,
@@ -1282,9 +1283,74 @@ const matches = [
         motm: ["Bowen"],
         events: [],
     },
+    {
+        id: "62",
+        month: "april",
+        match_number: "62",
+        date: "08/04/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Allison", "Van Dijk (orange)", "Pele", "Pogba", "Carragher", "Muller"],
+        team2: ["Russian Keeper", "Risse", "Mahrez", "Bastian", "Henry", "Suarez"],
+        scorers: ["Muller", "Risse", "Suarez"],
+        assisters: ["Pele", "Suarez", "Henry"],
+        slingers: ["Suarez"],
+        penalties: [],
+        yellows: ["Suarez", "Mahrez", "Bastian", "Carragher"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Suarez"],
+        events: ["Suarez shot deflected on VVD and looped over into the slinger"],
+    },
 ]
 
 window.matches = matches;
+
+function get50thYellowCard(matches) {
+    let yellowCardCount = 0;
+
+    for (const match of matches) {
+        for (const player of match.yellows) {
+            yellowCardCount++;
+            if (yellowCardCount === 100) {
+                console.log("Reached 50th Yellow Card in Match:", match.match_number);
+                return ({ player: player, date: match.date, game: match.match_number});
+            }
+        }
+    }
+
+    return null; // Return null if the 50th yellow card is not found
+}
+
+function findFifthRedCard(matches) {
+    let redCards = 0
+
+    for (const match of matches) {
+        for (const player of match.reds) {
+            redCards++
+            if (redCards === 5) {
+                console.log("Reached 5th Red Card in Match:", match.match_number);
+                return ({ player: player, date: match.date, game: match.match_number})
+
+            }
+        }
+    }
+
+    return null
+}
+
+
+const playerof5thRedCard = findFifthRedCard(matches)
+console.log('Player of 5th red card', playerof5thRedCard)
+
+// Example usage
+const playerOf50thYellowCard = get50thYellowCard(matches);
+console.log("Player of 50th Yellow Card:", playerOf50thYellowCard);
+
+
+
 
 function countPlayerGamesPlayed(matches) {
     let playerGames = {};
@@ -1335,6 +1401,40 @@ console.log("Total Appearances in All Matches:", totalAppearances);
 
 // Ex
 // Initialize variables to keep track of the top scorer and goals in a single game
+
+function getPlayerRedCounts(matches) {
+    const playerRedCount = {};
+    const redCards = [];
+
+    matches.forEach(match => {
+        match.reds.forEach(player => {
+            if (playerRedCount[player]) {
+                playerRedCount[player].count++;
+                playerRedCount[player].dates.push(match.date);
+                playerRedCount[player].id.push(match.match_number);
+            } else {
+                playerRedCount[player] = {
+                    count: 1,
+                    dates: [match.date],
+                    id: [match.match_number] // Initialize id as an array
+                };
+            }
+            redCards.push({ player, date: match.date, match_number: match.match_number });
+        });
+    });
+
+    return { playerRedCount, redCards };
+}
+
+const { playerRedCount, redCards } = getPlayerRedCounts(matches);
+
+console.log("Player Red Card Counts", playerRedCount);
+console.log("Total Red Cards", redCards);
+
+
+
+
+
 
 function getPlayerYellowCounts(matches) {
     const playerYellowCounts = {};
