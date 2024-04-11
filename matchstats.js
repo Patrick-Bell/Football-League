@@ -1304,6 +1304,27 @@ const matches = [
         motm: ["Suarez"],
         events: ["Suarez shot deflected on VVD and looped over into the slinger"],
     },
+    {
+        id: "63",
+        month: "april",
+        match_number: "63",
+        date: "11/04/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 1, //away team
+        team1: ["Bruney", "Puyol", "Bale", "Pedri", "Van Persie (orange)", "Lewandowski"],
+        team2: ["Stackers", "Risse", "Son", "Bastian", "Van Persie (red)", "Suarez"],
+        scorers: ["Suarez"],
+        assisters: ["Van Persie (red)"],
+        slingers: ["Suarez"],
+        penalties: [],
+        yellows: ["Bastian", "Risse", "Son"],
+        reds: ["Bastian"],
+        cleansheets: ["Stackers", "Risse", "Son", "Bastian", "Van Persie (red)", "Suarez"],
+        motm: ["Stackers"],
+        events: ["Suarez took a shot from a cross, sliced it and it curled in the air then bouced and bounced the other way over Bruney.", "Stackers tip shot onto the post"],
+    },
 ]
 
 window.matches = matches;
