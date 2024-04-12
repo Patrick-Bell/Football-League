@@ -1325,6 +1325,27 @@ const matches = [
         motm: ["Stackers"],
         events: ["Suarez took a shot from a cross, sliced it and it curled in the air then bouced and bounced the other way over Bruney.", "Stackers tip shot onto the post"],
     },
+    {
+        id: "64",
+        month: "april",
+        match_number: "64",
+        date: "12/04/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["2-Face", "Trippier", "Pele", "Modric", "Messi (ft)", "Lewandowski"],
+        team2: ["Russian Keeper", "Caveman", "Bale", "De Bruyne", "Assunco", "Suarez"],
+        scorers: ["Suarez", "Assunco", "Lewandowski"],
+        assisters: ["De Bruyne", "Bale", "Trippier"],
+        slingers: [],
+        penalties: [],
+        yellows: ["De Bruyne", "Messi (ft)"],
+        reds: [],
+        cleansheets: ["Stackers", "Risse", "Son", "Bastian", "Van Persie (red)", "Suarez"],
+        motm: ["Caveman"],
+        events: ["Bale outside foot pass to Assunco"],
+    },
 ]
 
 window.matches = matches;
