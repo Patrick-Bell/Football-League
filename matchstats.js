@@ -1346,6 +1346,48 @@ const matches = [
         motm: ["Caveman"],
         events: ["Bale outside foot pass to Assunco"],
     },
+    {
+        id: "65",
+        month: "april",
+        match_number: "65",
+        date: "13/04/2024",
+        time: "16:05",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Boxer", "Caveman", "Mahrez", "Kroos", "Berbatov", "Lewandowski"],
+        team2: ["Russian Keeper", "Risse", "Son", "Pogba", "Robinho", "Jiminez"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: ["Boxer", "Caveman", "Mahrez", "Kroos", "Berbatov", "Lewandowski", "Russian Keeper", "Risse", "Son", "Pogba", "Robinho", "Jiminez"],
+        motm: ["Caveman"],
+        events: [],
+    },
+    {
+        id: "66",
+        month: "april",
+        match_number: "66",
+        date: "15/04/2024",
+        time: "17:10",
+        condition: "Wind",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Allison", "Russian Def", "Bowen", "Modric", "Ramos", "Kane"],
+        team2: ["Stackers", "Puyol", "Neymar", "Kroos", "Messi (ft)", "Jiminez"],
+        scorers: ["Kane"],
+        assisters: [],
+        slingers: ["Kane"],
+        penalties: [],
+        yellows: ["Kroos", "Neymar"],
+        reds: ["Neymar"],
+        cleansheets: ["Allison", "Russian Def", "Bowen", "Modric", "Ramos", "Kane"],
+        motm: ["Stackers"],
+        events: ["Stackers is the first player on a losing team to win motm, made loads of saves", "Neymar and Bowen tussle all game"],
+    },
 ]
 
 window.matches = matches;
@@ -1636,5 +1678,7 @@ function setupEventListeners() {
 renderMatches(matches);
 setupEventListeners();
 });
+
+
 
 
