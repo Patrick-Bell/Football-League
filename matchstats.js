@@ -1388,6 +1388,27 @@ const matches = [
         motm: ["Stackers"],
         events: ["Stackers is the first player on a losing team to win motm, made loads of saves", "Neymar and Bowen tussle all game"],
     },
+    {
+        id: "67",
+        month: "april",
+        match_number: "67",
+        date: "15/04/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Allison", "Van Dijk (red)", "Messi", "Maradonna", "Robinho", "Lewandowski"],
+        team2: ["2-Face", "Puyol", "Mbappe", "Modric", "Van Persie (red)", "Suarez"],
+        scorers: ["Messi"],
+        assisters: ["Lewandowski"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Modric"],
+        reds: [],
+        cleansheets: ["Allison", "Van Dijk (red)", "Messi", "Maradonna", "Robinho", "Lewandowski"],
+        motm: ["Maradonna"],
+        events: ["Messi touch in front of Puyol and far corner"],
+    },
 ]
 
 window.matches = matches;
