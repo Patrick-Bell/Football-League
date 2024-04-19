@@ -2,8 +2,28 @@ document.addEventListener("DOMContentLoaded", function() {
    
     document.getElementById("player1").addEventListener("change", comparePlayers);
     document.getElementById("player2").addEventListener("change", comparePlayers);
+
+    const player1FootballerMenu = document.querySelector('.player1menu');
+    const player2FootballerMenu = document.querySelector('.player2menu')
+
+    let footballPlayers = ["Boxer", "Russian Keeper", "Neuer", "Stackers", "Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Kroos", "Bastian", "De Bruyne", "Eriksen", "Maradonna", "Modric", 
+    "Assunco", "Robinho", "Messi (ft)", "Van Persie (orange)", "Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", 
+    "Suarez", "Muller", "Zlatan", "Beckham", "Berbatov", "Puyol", "Carragher", "Ramos", "Torres", "Bowen", "Bruney", "Pogba", "Allison", "2-Face", "Ferdinand", "Risse", "Russian Def", 
+    "Baldy", "Beckham (lego)", "Ronaldinho", "Trippier", "Henry"]
+
+    footballPlayers.forEach((player) => {
+        const option = document.createElement('option')
+        option.value = player
+        option.text = player
+        player1FootballerMenu.add(option)
+        player2FootballerMenu.add(option.cloneNode(true))
+})
     initializePage();
 });
+
+
+
+
 
 function initializePage() {
 const overallCompareContainer = document.querySelector(".player-compare-container");
