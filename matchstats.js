@@ -1430,6 +1430,27 @@ const matches = [
         motm: ["Mahrez"],
         events: ["Mahrez ran into Modric (own team mate) and went down and ref gave a free kick not realising Modric then takes a quick one and they score from it"],
     },
+    {
+        id: "69",
+        month: "april",
+        match_number: "69",
+        date: "24/04/2024",
+        time: "13:05",
+        condition: "Wind",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Boxer", "Ferdinand", "Pele", "Pedri", "Carragher", "Suarez"],
+        team2: ["Neuer", "Russian Def", "Messi", "Kroos", "Berbatov", "Ronaldo"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Berbatov", "Messi"],
+        reds: [],
+        cleansheets: ["Boxer", "Ferdinand", "Pele", "Pedri", "Carragher", "Suarez", "Neuer", "Russian Def", "Messi", "Kroos", "Berbatov", "Ronaldo"],
+        motm: ["Russian Def"],
+        events: [],
+    },
 ]
 
 window.matches = matches;
