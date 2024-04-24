@@ -1409,6 +1409,27 @@ const matches = [
         motm: ["Maradonna"],
         events: ["Messi touch in front of Puyol and far corner"],
     },
+    {
+        id: "68",
+        month: "april",
+        match_number: "68",
+        date: "21/04/2024",
+        time: "15:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Boxer", "Puyol", "Mahrez", "Modric", "Ronaldinho", "Suarez"],
+        team2: ["Bruney", "Baldy", "Son", "Kroos", "Berbatov", "Lewandowski"],
+        scorers: ["Mahrez"],
+        assisters: ["Modric"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Son", "Kroos", "Berbatov", "Lewandowski"],
+        reds: [],
+        cleansheets: ["Boxer", "Puyol", "Mahrez", "Modric", "Ronaldinho", "Suarez"],
+        motm: ["Mahrez"],
+        events: ["Mahrez ran into Modric (own team mate) and went down and ref gave a free kick not realising Modric then takes a quick one and they score from it"],
+    },
 ]
 
 window.matches = matches;
