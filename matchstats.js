@@ -1456,7 +1456,7 @@ const matches = [
         month: "april",
         match_number: "70",
         date: "25/04/2024",
-        time: "13:05",
+        time: "12:15",
         condition: "Clear",
         team1_score: 0, //home team
         team2_score: 1, //away team
@@ -1471,6 +1471,27 @@ const matches = [
         cleansheets: ["Stackers", "Trippier", "Mahrez", "Pedri", "Robinho", "Zlatan"],
         motm: ["Pedri"],
         events: [],
+    },
+    {
+        id: "71",
+        month: "april",
+        match_number: "71",
+        date: "25/04/2024",
+        time: "13:05",
+        condition: "Rain",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Bruney", "Van Dijk (orange)", "Bale", "Maradonna", "Ronaldinho", "Jiminez"],
+        team2: ["2-Face", "Puyol", "Pele", "De Bruyne", "Van Persie (orange)", "Zlatan"],
+        scorers: ["Bale"],
+        assisters: ["Ronaldinho"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Ronaldinho", "Van Persie (orange)"],
+        reds: [],
+        cleansheets: ["Bruney", "Van Dijk (orange)", "Bale", "Maradonna", "Ronaldinho", "Jiminez"],
+        motm: [""],
+        events: ["Bale tight angle, Damien shot it top corner post and in"],
     },
 ]
 
