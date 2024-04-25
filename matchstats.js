@@ -1451,6 +1451,27 @@ const matches = [
         motm: ["Russian Def"],
         events: [],
     },
+     {
+        id: "70",
+        month: "april",
+        match_number: "70",
+        date: "25/04/2024",
+        time: "13:05",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 1, //away team
+        team1: ["Neuer", "Risse", "Mane", "Kroos", "Beckham", "Suarez"],
+        team2: ["Stackers", "Trippier", "Mahrez", "Pedri", "Robinho", "Zlatan"],
+        scorers: ["Pedri"],
+        assisters: ["Zlatan"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Robinho", "Mane", "Trippier", "Mahrez"],
+        reds: [],
+        cleansheets: ["Stackers", "Trippier", "Mahrez", "Pedri", "Robinho", "Zlatan"],
+        motm: ["Pedri"],
+        events: [],
+    },
 ]
 
 window.matches = matches;
