@@ -1490,8 +1490,29 @@ const matches = [
         yellows: ["Ronaldinho", "Van Persie (orange)"],
         reds: [],
         cleansheets: ["Bruney", "Van Dijk (orange)", "Bale", "Maradonna", "Ronaldinho", "Jiminez"],
-        motm: [""],
+        motm: ["Bale"],
         events: ["Bale tight angle, Damien shot it top corner post and in"],
+    },
+    {
+        id: "72",
+        month: "april",
+        match_number: "72",
+        date: "26/04/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 3, //home team
+        team2_score: 1, //away team
+        team1: ["Russian Keeper", "Van Dijk (orange)", "Mahrez", "Kroos", "Assunco", "Benzema"],
+        team2: ["Allison", "Van Dijk (red)", "Messi", "Modric", "Robinho", "Ronaldo"],
+        scorers: ["Modric", "Benzema", "Mahrez", "Mahrez"],
+        assisters: ["Messi", "Kroos", "Russian Keeper", "Van Dijk (orange)"],
+        slingers: ["Modric"],
+        penalties: [],
+        yellows: ["Kroos"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Mahrez"],
+        events: ["Benzema side foot shot", "Mahrez proper meated Messi and dribbled forward and post and in"],
     },
 ]
 
