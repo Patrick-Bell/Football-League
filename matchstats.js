@@ -1514,6 +1514,27 @@ const matches = [
         motm: ["Mahrez"],
         events: ["Benzema side foot shot", "Mahrez proper meated Messi and dribbled forward and post and in"],
     },
+    {
+        id: "73",
+        month: "april",
+        match_number: "73",
+        date: "27/04/2024",
+        time: "1710",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 2, //away team
+        team1: ["2-Face", "Puyol", "Beckham (lego)", "Modric", "Van Persie (orange)", "Lewandowski"],
+        team2: ["Neuer", "Ferdinand", "Bowen", "Pogba", "Henry", "Suarez"],
+        scorers: ["Lewandowski", "Lewandowski", "Ferdinand", "Suarez"],
+        assisters: ["Pogba"],
+        slingers: ["Ferdinand"],
+        penalties: ["Lewandowski"],
+        yellows: ["Ferdinand", "Pogba", "Beckham (lego)"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Lewandowski"],
+        events: [],
+    },
 ]
 
 window.matches = matches;
