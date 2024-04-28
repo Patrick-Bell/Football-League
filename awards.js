@@ -641,8 +641,10 @@ matches.forEach(match => {
                 { category: "20th Gaol", winner: "Bale (05/02/2024)" },
                 { category: "50th Goal", winner: "Benzema (24/02/2024)"},
                 { category: "100th Goal", winner: "Ronaldo (25/03/2024)"},
+                { category: "150th Goal", winner: "Suarez (27/04/2024)"},
                 { category: "First Slinger", winner: "Ronaldo (04/01/2024)" },
                 { category: "10th Slinger", winner: "Van Dijk (red) (25/02/2024)"},
+                { category: "25th Slinger", winner: "Modric (26/04/2024)"},
                 { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) },
                 { category: "Most Goals in Single Game", winner: findPlayersWithMostGoalsInSingleGame(matches)}
             ],

@@ -1554,7 +1554,7 @@ const matches = [
         reds: [],
         cleansheets: ["Bruney", "Puyol", "Son", "De Bruyne", "Robinho", "Kane"],
         motm: ["De Bruyne"],
-        events: [],
+        events: ["Robinho funny cross", "Son killer through ball leads to goal", "Puyol and VVD (orange) 30th appearance"],
     },
 ]
 
