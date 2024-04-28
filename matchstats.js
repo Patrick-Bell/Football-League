@@ -1535,6 +1535,27 @@ const matches = [
         motm: ["Lewandowski"],
         events: [],
     },
+    {
+        id: "74",
+        month: "april",
+        match_number: "74",
+        date: "28/04/2024",
+        time: "11:50",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Bruney", "Puyol", "Son", "De Bruyne", "Robinho", "Kane"],
+        team2: ["Russian Keeper", "Van Dijk (orange)", "Mane", "Pogba", "Van Persie (orange)", "Ronaldo"],
+        scorers: ["De Bruyne"],
+        assisters: ["Kane"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Van Persie (orange)", "Pogba"],
+        reds: [],
+        cleansheets: ["Bruney", "Puyol", "Son", "De Bruyne", "Robinho", "Kane"],
+        motm: ["De Bruyne"],
+        events: [],
+    },
 ]
 
 window.matches = matches;
