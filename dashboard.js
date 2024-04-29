@@ -122,9 +122,10 @@ cleanSheetContainer.innerHTML = cleanSheetHTMLString;
 
     // Display top goal contributions = goals + assists
 
-    const sortedGoalContributor = players.sort((a, b) => (b.monthlyData[0].goals + b.monthlyData[0].assists) - (a.monthlyData[0].goals + a.monthlyData[0].assists));
+const sortedGoalContributor = players.sort((a, b) => (b.monthlyData[0].goals + b.monthlyData[0].assists) - (a.monthlyData[0].goals + a.monthlyData[0].assists));
 const top5Contributors = sortedGoalContributor.slice(0, 10);
 const contributorContainer = document.querySelector(".contributor-container");
+
 
 const dashboardContributors = top5Contributors.map((scorer, index) => {
     const isTopContributor = index === 0;

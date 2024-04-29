@@ -1556,9 +1556,50 @@ const matches = [
         motm: ["De Bruyne"],
         events: ["Robinho funny cross", "Son killer through ball leads to goal", "Puyol and VVD (orange) 30th appearance"],
     },
+    {
+        id: "75",
+        month: "april",
+        match_number: "75",
+        date: "29/04/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Bruney", "Van Dijk (red)", "Mbappe", "Pedri", "Torres", "Suarez"],
+        team2: ["Allison", "Van Dijk (orange)", "Son", "De Bruyne", "Carragher", "Zlatan"],
+        scorers: ["Suarez", "De Bruyne", "Suarez"],
+        assisters: ["Carragher", "Mbappe"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Pedri", "Carragher"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Suarez"],
+        events: ["Suarez wins the month, scores a free kick", "Pedri booked for diving", "new minifigures came today (modric, rm), ramos, kaka, haaland (aguero)"],
+    },
 ]
 
 window.matches = matches;
+
+
+function countPlayerGoals(matches, playerName) {
+    let cleansheetScore = 0;
+
+    for (const match of matches) {
+        for (const cleansheet of match.cleansheets) {
+            if (cleansheet === playerName) {
+                cleansheetScore++;
+            }
+        }
+    }
+
+    return cleansheetScore;
+}
+
+// Call the function to count goals scored by Suarez
+const vanDijkCs = countPlayerGoals(matches, "Van Dijk (orange)");
+console.log("VVD orange clean sheets:", vanDijkCs); // Output: Suarez
+
 
 function get50thYellowCard(matches) {
     let yellowCardCount = 0;
