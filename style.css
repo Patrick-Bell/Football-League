@@ -529,6 +529,13 @@ tbody{
   background: black;
   margin: 5px;
 }
+table tr:hover{
+  background: black !important;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  
+}
 
 /* log in */
 .login-container{
