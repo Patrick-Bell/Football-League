@@ -1577,6 +1577,27 @@ const matches = [
         motm: ["Suarez"],
         events: ["Suarez wins the month, scores a free kick", "Pedri booked for diving", "new minifigures came today (modric, rm), ramos, kaka, haaland (aguero)"],
     },
+    {
+        id: "76",
+        month: "april",
+        match_number: "76",
+        date: "29/04/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Risse", "Bowen", "Modric", "Beckham", "Lewandowski"],
+        team2: ["Neuer", "Russian Def", "Neymar", "Eriksen", "Ronaldinho", "Jiminez"],
+        scorers: ["Neymar", "Lewandowski", "Beckham"],
+        assisters: ["Beckham", "Lewandowski"],
+        slingers: ["Beckham"],
+        penalties: ["Neymar"],
+        yellows: ["Bowen", "Ronaldinho"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Beckham"],
+        events: [],
+    },
 ]
 
 window.matches = matches;
