@@ -1523,7 +1523,7 @@ function renderPlayers(players) {
       const bannedClass = hasActiveRedCard ? 'banned' : '';
       const eliminatedPlayers = player.name === "Raul";
       const isEliminated = eliminatedPlayers ? 'eliminated-card' : '';
-      const playerOfTheMonth = player.name === "Benzema";
+      const playerOfTheMonth = player.name === "Suarez";
       const isPOTM = playerOfTheMonth ? 'potm' : "";
 
         return `

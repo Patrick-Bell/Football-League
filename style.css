@@ -532,9 +532,7 @@ tbody{
 table tr:hover{
   background: black !important;
   color: white;
-  font-weight: 800;
-  letter-spacing: 2px;
-  
+  font-size: 1rem;  
 }
 
 /* log in */
