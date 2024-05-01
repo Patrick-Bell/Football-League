@@ -1,4 +1,4 @@
-const monthTypeSelect = document.getElementById("month-type");
+ const monthTypeSelect = document.getElementById("month-type");
 
 
 const teams = [
@@ -1187,10 +1187,6 @@ const teams = [
         country: "https://flagicons.lipis.dev/flags/4x3/ar.svg",
         monthlyData: [
             { month: "Overall", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "January", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "February", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "March", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-            { month: "April", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "July", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
@@ -1401,7 +1397,7 @@ function getMonthlyDataForPlayer(team, selectedMonth) {
         return monthData;
     } else {
         // If the player doesn't have data for the selected month, return null or an empty object
-        return {}; // or return {};
+        return null // or return {};
     }
 }
 
