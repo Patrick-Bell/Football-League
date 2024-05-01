@@ -529,7 +529,7 @@ tbody{
   background: black;
   margin: 5px;
 }
-table tr:hover{
+#scoreTable tr:hover{
   background: black !important;
   color: white;
   font-size: 1rem;  

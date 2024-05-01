@@ -1581,7 +1581,7 @@ const matches = [
         id: "76",
         month: "april",
         match_number: "76",
-        date: "29/04/2024",
+        date: "30/04/2024",
         time: "17:05",
         condition: "Clear",
         team1_score: 2, //home team
@@ -1596,6 +1596,27 @@ const matches = [
         reds: [],
         cleansheets: [],
         motm: ["Beckham"],
+        events: [],
+    },
+    {
+        id: "77",
+        month: "may",
+        match_number: "77",
+        date: "01/05/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Neuer", "Van Dijk (orange)", "Neymar", "Bastian", "Van Persie (red)", "Jiminez"],
+        team2: ["Boxer", "Puyol", "Beckham (lego)", "Pedri", "Marquez", "Haaland"],
+        scorers: ["Marquez", "Jiminez"],
+        assisters: ["Pedri", "Van Persie (red)"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Bastian"],
+        reds: [],
+        cleansheets: [],
+        motm: [],
         events: [],
     },
 ]
