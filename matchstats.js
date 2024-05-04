@@ -1619,6 +1619,48 @@ const matches = [
         motm: [],
         events: [],
     },
+    {
+        id: "78",
+        month: "may",
+        match_number: "78",
+        date: "03/05/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 0, //away team
+        team1: ["Stackers", "Risse", "Bale", "Kroos", "Van Persie (red)", "Suarez"],
+        team2: ["Russian Keeper", "Van Dijk (red)", "Pele", "Modric", "Carragher", "Zlatan"],
+        scorers: ["Suarez", "Bale"],
+        assisters: ["Kroos"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Suarez", "Risse", "Modric", "Zlatan"],
+        reds: [],
+        cleansheets: ["Stackers", "Risse", "Bale", "Kroos", "Van Persie (red)", "Suarez"],
+        motm: ["Bale"],
+        events: ["Suarez free kick", "Bale wins motm by the wheel by a mm"],
+    },
+    {
+        id: "79",
+        month: "may",
+        match_number: "79",
+        date: "04/05/2024",
+        time: "15:05",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["2-Face", "Van Dijk (red)", "Mahrez", "Pedri", "Carragher", "Haaland"],
+        team2: ["Boxer", "Risse", "Neymar", "Modric", "Joaquin", "Benzema"],
+        scorers: ["Neymar", "Benzema", "Mahrez"],
+        assisters: ["Modric", "Haaland"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Joaquin", "Benzema"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Neymar"],
+        events: [],
+    },
 ]
 
 window.matches = matches;
