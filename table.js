@@ -1,4 +1,4 @@
-const monthTypeSelect = document.getElementById("month-type");
+ const monthTypeSelect = document.getElementById("month-type");
 
 
 const teams = [
@@ -1401,7 +1401,7 @@ function getMonthlyDataForPlayer(team, selectedMonth) {
         return monthData;
     } else {
         // If the player doesn't have data for the selected month, return null or an empty object
-        return {}; // or return {};
+        return {} // or return {};
     }
 }
 
