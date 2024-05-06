@@ -1661,6 +1661,27 @@ const matches = [
         motm: ["Neymar"],
         events: [],
     },
+    {
+        id: "80",
+        month: "may",
+        match_number: "80",
+        date: "05/05/2024",
+        time: "18:45",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Allison", "Baldy", "Mane", "Eriksen", "Henry", "Kane"],
+        team2: ["Boxer", "Trippier", "Kaka", "Kroos", "Robinho", "Ronaldo"],
+        scorers: ["Kaka", "Eriksen", "Kane"],
+        assisters: ["Robinho", "Eriksen"],
+        slingers: [],
+        penalties: ["Eriksen"],
+        yellows: ["Ronaldo", "Kaka", "Eriksen"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Eriksen"],
+        events: ["Eriksen unreal skill on Robinho, flicked it off his back leg and it lobbed over", "Eriksen hanging on the bar from a Robinho free kick and he blocked a definite goal"],
+    },
 ]
 
 window.matches = matches;
