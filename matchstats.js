@@ -1703,6 +1703,27 @@ const matches = [
         motm: [""],
         events: [],
     },
+    {
+        id: "82",
+        month: "may",
+        match_number: "82",
+        date: "07/05/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["2-Face", "Ramos (lego)", "Mane", "Modric", "Berbatov", "Lewandowski"],
+        team2: ["Boxer", "Risse", "Kaka", "Maradonna", "Assunco", "Zlatan"],
+        scorers: ["Zlatan", "Berbatov"],
+        assisters: ["Kaka", "Modric"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Assunco", "Maradonna"],
+        reds: ["Maradonna"],
+        cleansheets: [],
+        motm: ["Berbatov"],
+        events: ["Zlatan half volley bar and in from Kaka cross on Assunco side"],
+    },
 ]
 
 window.matches = matches;
