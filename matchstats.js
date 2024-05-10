@@ -1724,6 +1724,27 @@ const matches = [
         motm: ["Berbatov"],
         events: ["Zlatan half volley bar and in from Kaka cross on Assunco side"],
     },
+     {
+        id: "83",
+        month: "may",
+        match_number: "83",
+        date: "010/05/2024",
+        time: "17:10",
+        condition: "Sun",
+        team1_score: 0, //home team
+        team2_score: 2, //away team
+        team1: ["Allison", "Puyol", "Son", "Eriksen", "Messi (ft)", "Lewandowski"],
+        team2: ["Neuer", "Ramos (lego)", "Bale", "Bastian", "Ramos", "Ronaldo"],
+        scorers: ["Ronaldo", "Bale"],
+        assisters: ["Ramos", "Neuer"],
+        slingers: ["Ronaldo"],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: ["Neuer", "Ramos (lego)", "Bale", "Bastian", "Ramos", "Ronaldo"],
+        motm: ["Neuer"],
+        events: ["Ronaldo back heel slinger goal", "Bale touch from Neuer pass cut in on Eriksen and side netting far corner"],
+    },
 ]
 
 window.matches = matches;
