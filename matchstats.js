@@ -1826,8 +1826,29 @@ const matches = [
         yellows: ["Ronaldinho", "Jiminez"],
         reds: ["Ronaldinho"],
         cleansheets: ["Bruney", "Trippier", "Mane", "De Bruyne", "Assunco", "Jiminez", "Allison", "Van Dijk (orange)", "Kaka", "Eriksen", "Ronaldinho", "Kane"],
-        motm: [],
-        events: ['Meeting at the end of the game everyone attended to discuss potential rule changes with too many yellow cards being shown and ref abuse'],
+        motm: ["Allison"],
+        events: ['Jiminez suspended but came out twice in a row so played', 'Meeting at the end of the game everyone attended to discuss potential rule changes with too many yellow cards being shown and ref abuse'],
+    },
+    {
+        id: "88",
+        month: "may",
+        match_number: "88",
+        date: "14/05/2024",
+        time: "13:15",
+        condition: "Clear",
+        team1_score: 4, //home team
+        team2_score: 1, //away team
+        team1: ["2-Face", "Puyol", "Bale", "Eriksen", "Robinho", "Haaland"],
+        team2: ["Allison", "Risse", "Pele", "De Bruyne", "Van Persie (orange)", "Lewandowski"],
+        scorers: ["Haaland", "Pele", "Robinho", "Bale", "Risse (o.g)"],
+        assisters: ["2-Face", "Lewandowski", "Bale", "Eriksen"],
+        slingers: ["Bale"],
+        penalties: [],
+        yellows: ["De Bruyne"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Bale"],
+        events: ["Haaland turn on Risse for first goal", "Bale long shot slinger"],
     },
 ]
 
