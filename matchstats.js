@@ -1827,7 +1827,7 @@ const matches = [
         reds: ["Ronaldinho"],
         cleansheets: ["Bruney", "Trippier", "Mane", "De Bruyne", "Assunco", "Jiminez", "Allison", "Van Dijk (orange)", "Kaka", "Eriksen", "Ronaldinho", "Kane"],
         motm: [],
-        events: [],
+        events: ['Meeting at the end of the game everyone attended to discuss potential rule changes with too many yellow cards being shown and ref abuse'],
     },
 ]
 
