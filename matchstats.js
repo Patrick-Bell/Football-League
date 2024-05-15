@@ -1889,7 +1889,7 @@ const matches = [
         yellows: ["Neymar", "Maradonna", "Ramos"],
         reds: [],
         cleansheets: [],
-        motm: [],
+        motm: ["Benzema"],
         events: ["Kane little flick to Neymar for the assist"],
     },
 ]
