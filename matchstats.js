@@ -1886,7 +1886,7 @@ const matches = [
         assisters: ["Beckham (lego", "Kane"],
         slingers: [],
         penalties: ["Beckham (lego)"],
-        yellows: [],
+        yellows: ["Neymar", "Maradonna", "Ramos"],
         reds: [],
         cleansheets: [],
         motm: [],
