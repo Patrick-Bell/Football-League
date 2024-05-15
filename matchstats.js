@@ -1850,6 +1850,27 @@ const matches = [
         motm: ["Bale"],
         events: ["Haaland turn on Risse for first goal", "Bale long shot slinger"],
     },
+    {
+        id: "89",
+        month: "may",
+        match_number: "89",
+        date: "14/05/2024",
+        time: "22:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Allison", "Baldy", "Bale", "Kroos", "Henry", "Haaland"],
+        team2: ["2-Face", "Russian Def", "Kaka", "Maradonna", "Beckham", "Muller"],
+        scorers: ["Bale", "Muller"],
+        assisters: ["Henry", "Kaka"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Beckham", "Russian Def"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Kaka"],
+        events: [],
+    },
 ]
 
 
