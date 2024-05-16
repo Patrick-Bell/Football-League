@@ -1525,14 +1525,17 @@ function renderPlayers(players) {
       const isEliminated = eliminatedPlayers ? 'eliminated-card' : '';
       const playerOfTheMonth = player.name === "Suarez";
       const isPOTM = playerOfTheMonth ? 'potm' : "";
+      const banned = player.name === "Son" || player.name === "Messi (ft)"
+      const isBanned = banned ? 'player-ban' : ''
 
         return `
-        <div class="player-card ${highlightClass} ${bannedClass} ${isEliminated} ${isPOTM}" data-player-id="${playerId}">
+        <div class="player-card ${highlightClass} ${bannedClass} ${isEliminated} ${isPOTM} ${isBanned}" data-player-id="${playerId}">
                 <div class="suspended">
                     ${highlightClass === 'highlighted' ? 'SUSPENDED (1) GAME' : ''}
                     ${bannedClass === 'banned' ? 'SUSPENDED (1) GAME' : ''}
                     ${isEliminated === 'eliminated-card' ? "Left League" : ''}
                     ${isPOTM === 'potm' ? "Player of the Month" : ''}
+                    ${isBanned === 'player-ban' ? 'Banned until 16/07' : ''}
                 </div>
     <div class="stat-bold player-name"><i class="bi-brightness-high-fill"></i>${player.name} (${player.position})</div>
     <img class="player-img" src="${player.picture}" alt="">

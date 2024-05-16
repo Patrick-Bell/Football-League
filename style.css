@@ -334,6 +334,10 @@ img {
   background: linear-gradient(45deg, rgb(223, 119, 223), purple);
   color: white;
 }
+.player-card.player-ban{
+  background: darkred;
+  color: white;
+}
 .player-card.eliminated-card{
   background: black;
   color: white;
