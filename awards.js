@@ -661,6 +661,7 @@ matches.forEach(match => {
                 { category: "20th Assist:", winner: "Carragher"},
                 { category: "50th Assist", winner: "Benzema (04/03/2024)"},
                 { category: "100th Assist", winner: "Pedri (06/04/2024)"},
+                { category: "150th Assist", winner: "Haaland (17/05/2024)"},
                 { category: "Most Assists in Single Game", winner: findPlayersWithMostAssistsInSingleGame(matches)}
             ],
         },

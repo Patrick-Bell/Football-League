@@ -1208,6 +1208,24 @@ const teams = [
 
 window.teams = teams;
 
+function findMayStats(){
+   return teams.map(team => {
+        const mayStats = team.monthlyData.find(stat => stat.month === 'January')
+        if (mayStats) {
+            return {
+                name: team.name,
+                record: mayStats,
+            }
+        } else {
+            console.log('no data found')
+        }
+    })
+}
+
+const mayStats = findMayStats()
+console.log('May Stats', mayStats)
+
+
 function calculateTotalGamesPlayedForTeams(teams) {
     let totalWins = 0;
     let totalDraws = 0;
@@ -1220,7 +1238,6 @@ function calculateTotalGamesPlayedForTeams(teams) {
             totalWins += monthData.wins || 0;
             totalDraws += monthData.draws || 0;
             totalLosses += monthData.losses || 0;
-            console.log(`player: ${team.name} wins: ${team.wins}, ${team.draws}, ${team.losses}`)
         });
     });
 

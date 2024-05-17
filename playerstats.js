@@ -1355,6 +1355,23 @@ const players = [
 
 ]
 
+
+function findPlayerGoals() {
+  return players.map(player => {
+    const goalStat = player.monthlyData.find(stat => stat.month === 'May')
+    return {
+      name: player.name,
+      goals: goalStat.goals
+    }
+  })
+}
+
+const goalsConsole = findPlayerGoals()
+
+console.log('goals tester', goalsConsole)
+
+
+
 function calculateTotalAppsForMonths(players, targetMonths) {
   let totalApps = 0;
 
