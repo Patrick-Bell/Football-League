@@ -1913,6 +1913,27 @@ const matches = [
         motm: [],
         events: ["Messi (ft) racist to Son, Son hits out and the game abandonned. The 35 mins was finished today and they will both get 2 months ban"],
     },
+    {
+        id: "92",
+        month: "may",
+        match_number: "92",
+        date: "17/05/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 3, //away team
+        team1: ["Allison", "Van Dijk (orange)", "Mahrez", "Eriksen", "Van Persie (orange)", "Muller"],
+        team2: ["Boxer", "Ferdinand", "Mbappe", "De Bruyne", "Van Persie (red)", "Haaland"],
+        scorers: ["Van Persie (red)", "Haaland", "Haaland"],
+        assisters: ["Haaland", "De Bruyne", "Mbappe"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Eriksen"],
+        reds: [],
+        cleansheets: ["Boxer", "Ferdinand", "Mbappe", "De Bruyne", "Van Persie (red)", "Haaland"],
+        motm: ["Haaland"],
+        events: ["Van Persie boosting?", "Haaland smash volley"]
+    },
 ]
 
 
