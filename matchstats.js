@@ -1934,6 +1934,69 @@ const matches = [
         motm: ["Haaland"],
         events: ["Van Persie boosting?", "Haaland smash volley"]
     },
+    {
+        id: "93",
+        month: "may",
+        match_number: "93",
+        date: "18/05/2024",
+        time: "13:05",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 0, //away team
+        team1: ["Stackers", "Ferdinand", "Mane", "Bastian", "Torres", "Kane"],
+        team2: ["Bruney", "Russian Def", "Bale", "De Bruyne", "Henry", "Lewandowski"],
+        scorers: ["Kane", "De Bruyne (o.g)"],
+        assisters: ["Bastian", "Mane"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Torres", "Bastian", "Henry"],
+        reds: [],
+        cleansheets: ["Stackers", "Ferdinand", "Mane", "Bastian", "Torres", "Kane"],
+        motm: ["Kane"],
+        events: ["Mane keeps ball in play and smashes it in and hits De Bruyne"]
+    },
+    {
+        id: "94",
+        month: "may",
+        match_number: "94",
+        date: "18/05/2024",
+        time: "19:30",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Bruney", "Van Dijk (orange)", "Bale", "Pogba", "Marquez", "Ronaldo"],
+        team2: ["Stackers", "Ferdinand", "Mane", "Maradonna", "Van Persie (orange)", "Kane"],
+        scorers: ["Marquez", "Mane"],
+        assisters: ["Bale", "Maradonna"],
+        slingers: ["Mane"],
+        penalties: [],
+        yellows: ["Pogba", "Van Persie (orange)", "Ronaldo"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Mane"],
+        events: ["Mane quick to the side and shot slinger"]
+    },
+    {
+        id: "95",
+        month: "may",
+        match_number: "95",
+        date: "19/05/2024",
+        time: "14:35",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 2, //away team
+        team1: ["Russian Keeper", "Van Dijk (red)", "Pele", "Eriksen", "Robinho", "Kane"],
+        team2: ["Boxer", "Risse", "Neymar", "Pogba", "Berbatov", "Benzema"],
+        scorers: ["Robinho", "Risse", "Risse (o.g)", "Pogba"],
+        assisters: ["Eriksen", "Pogba", "Benzema"],
+        slingers: ["Risse"],
+        penalties: [],
+        yellows: ["Van Dijk (red)"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Pogba"],
+        events: ["Pogba went rampage this game"]
+    },
 ]
 
 
@@ -1965,7 +2028,7 @@ function get50thYellowCard(matches) {
     for (const match of matches) {
         for (const player of match.yellows) {
             yellowCardCount++;
-            if (yellowCardCount === 100) {
+            if (yellowCardCount === 200) {
                 console.log("Reached 50th Yellow Card in Match:", match.match_number);
                 return ({ player: player, date: match.date, game: match.match_number});
             }
@@ -2031,7 +2094,7 @@ const playerGamesPlayed = countPlayerGamesPlayed(matches);
 // Print out all players and their total games
 for (const player in playerGamesPlayed) {
     if (playerGamesPlayed.hasOwnProperty(player)) {
-       //console.log(`${player}: ${playerGamesPlayed[player]} games played`);
+       console.log(`${player}: ${playerGamesPlayed[player]} games played`);
     }
 }
 
