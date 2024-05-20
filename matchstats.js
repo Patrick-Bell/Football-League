@@ -1997,6 +1997,27 @@ const matches = [
         motm: ["Pogba"],
         events: ["Pogba went rampage this game"]
     },
+    {
+        id: "96",
+        month: "may",
+        match_number: "96",
+        date: "20/05/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 2, //away team
+        team1: ["Bruney", "Ramos (lego)", "Mane", "De Bruyne", "Berbatov", "Lewandowski"],
+        team2: ["Russian Keeper", "Trippier", "Pele", "Pedri", "Carragher", "Jiminez"],
+        scorers: ["Lewandowski", "Carragher", "Pedri", "Mane"],
+        assisters: ["Mane", "Pedri", "Carragher", "Lewandowski"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Trippier", "Mane", "Carragher"],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: []
+    },
 ]
 
 
