@@ -2018,6 +2018,48 @@ const matches = [
         motm: [],
         events: []
     },
+    {
+        id: "97",
+        month: "may",
+        match_number: "97",
+        date: "22/05/2024",
+        time: "11:10",
+        condition: "Rain",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Bruney", "Russian Def", "Neymar", "Bastian", "Ramos", "Muller"],
+        team2: ["2-Face", "Puyol", "Mahrez", "Modric", "Robinho", "Jiminez"],
+        scorers: ["Ramos", "Jiminez"],
+        assisters: ["Muller"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Muller"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Ramos"],
+        events: ["Bruney and Russian Def complete mess up at the back led to a tap in for Jiminez"]
+    },
+    {
+        id: "98",
+        month: "may",
+        match_number: "98",
+        date: "22/05/2024",
+        time: "17:10",
+        condition: "Rain",
+        team1_score: 3, //home team
+        team2_score: 0, //away team
+        team1: ["Allison", "Risse", "Bale", "Pedri", "Robinho", "Haaland"],
+        team2: ["Stackers", "Van Dijk (red)", "Mahrez", "Eriksen", "Beckham", "Zlatan"],
+        scorers: ["Pedri", "Haaland", "Risse"],
+        assisters: ["Haaland", "Risse", "Pedri"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Beckham", "Mahrez"],
+        reds: ["Zlatan", "Robinho"],
+        cleansheets: ["Allison", "Risse", "Bale", "Pedri", "Robinho", "Haaland"],
+        motm: ["Haaland"],
+        events: ["Zlatan and Robinho face to face ref (Damien) sends them both off"]
+    },
 ]
 
 
