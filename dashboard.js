@@ -17,10 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const goalContainer = document.querySelector(".goal-container");
     const dashboardGoals = top5Scorers.map((scorer, index) => {
         const isTopScorer = index === 0;
-        const backgroundColor = isTopScorer ? "gold" : "";
+        const isSecondTopScorer = index === 1
+        const isThirdTopScorer = index === 2
+        let backgroundColor = isTopScorer ? "gold" : "";
+        let backgroundColor2 = isSecondTopScorer ? "silver" : ""
+        let backgroundColor3 = isThirdTopScorer ? "brown" : ""
     
         return `
-            <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
+            <div class="statistic-container dash-divide" style="background-color: ${backgroundColor} ${backgroundColor2} ${backgroundColor3}">
                 <div class="stat-bold">${index + 1}. ${scorer.name}</div>
                 <div class="stat-num">${scorer.monthlyData[0].goals} - ${(scorer.monthlyData[0].goals / scorer.monthlyData[0].apps).toFixed(2)} p/game</div>
             </div>
