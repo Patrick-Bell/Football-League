@@ -53,10 +53,14 @@ const top5Assisters = sortedAssistPlayers.slice(0, 10);
 const assistContainer = document.querySelector(".assist-container");
 const dashboardAssists = top5Assisters.map((scorer, index) => {
     const isTopAssister = index === 0;
+    const isSecondTopAssister = index === 1;
+    const isThirdTopAssister = index === 2
     const backgroundColor = isTopAssister ? "gold" : "";
+        let backgroundColor2 = isSecondTopAssister ? "silver" : ""
+        let backgroundColor3 = isThirdTopAssister ? "brown" : ""
     
     return `
-        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
+        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor} ${backgroundColor2} ${backgroundColor3}">
             <div class="stat-bold">${index + 1}. ${scorer.name}</div>
             <div class="stat-num stat-dash">${scorer.monthlyData[0].assists} - ${(scorer.monthlyData[0].assists / scorer.monthlyData[0].apps).toFixed(2)} p/game</div>
         </div>
@@ -84,10 +88,14 @@ assistContainer.innerHTML = assistersHTMLString;
     const cleanSheetContainer = document.querySelector(".cleansheet-container");
     const dashboardCleanSheets = top5CleanSheets.map((scorer, index) => {
     const isTopCleanSheetPlayer = index === 0;
+    const isSecondTopCleanSheetPlayer = index === 1
+    const isThirdTopCleanSheetPlayer = index === 2
     const backgroundColor = isTopCleanSheetPlayer ? "gold" : "";
+        let backgroundColor2 = isSecondTopCleanSheetPlayer ? "silver" : ""
+        let backgroundColor3 = isThirdTopCleanSheetPlayer ? "brown" : ""
     
     return `
-        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
+        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor} ${backgroundColor2} ${backgroundColor3}">
             <div class="stat-bold">${index + 1}. ${scorer.name}</div>
             <div class="stat-num stat-dash">${scorer.monthlyData[0].clean_sheets}</div>
         </div>
@@ -112,9 +120,13 @@ cleanSheetContainer.innerHTML = cleanSheetHTMLString;
     const pointsContainer = document.querySelector(".point-container");
     const dashboardPoint = top5Points.map((scorer, index) => {
         const isTopPoints = index === 0
+        const isSecondTopPoints = index === 1
+        const isThirdTopPoints = index === 2
         const backgroundColor = isTopPoints ? "gold" : ""
+        let backgroundColor2 = isSecondTopPoints ? "silver" : ""
+        let backgroundColor3 = isThirdTopPoints ? "brown" : ""
     return `
-        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
+        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor} ${backgroundColor2} ${backgroundColor3}">
             <div class="stat-bold">${index + 1}. ${scorer.name}</div>
             <div class="stat-num stat-dash">${scorer.monthlyData[0].points} - ${(scorer.monthlyData[0].points / scorer.monthlyData[0].gamesPlayed).toFixed(2)} p/game</div>
             </div>
@@ -133,12 +145,16 @@ const contributorContainer = document.querySelector(".contributor-container");
 
 const dashboardContributors = top5Contributors.map((scorer, index) => {
     const isTopContributor = index === 0;
+    const isSecondTopContributor = index === 1
+    const isThirdTopContributor = index === 2
     const backgroundColor = isTopContributor ? "gold" : "";
+        let backgroundColor2 = isSecondTopContributor ? "silver" : ""
+        let backgroundColor3 = isThirdTopContributor ? "brown" : ""
     const totalGoalsAndAssists = scorer.monthlyData[0].goals + scorer.monthlyData[0].assists;
     const totalGamesPlayed = scorer.monthlyData[0].apps
 
     return `
-        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
+        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor} ${backgroundColor2} ${backgroundColor3}">
             <div class="stat-bold">${index + 1}. ${scorer.name}</div>
             <div class="stat-num stat-dash">${totalGoalsAndAssists} - ${(totalGoalsAndAssists / totalGamesPlayed).toFixed(2)}  p/game</div>
             </div>
@@ -172,9 +188,13 @@ const unbeatenContainer = document.querySelector(".unbeaten-container");
 
 const dashboardUnbeaten = top5Unbeaten.map((scorer, index) => {
     const isTopUnbeaten = index === 0;
+    const isSecondTopUnbeaten = index === 1
+    const isThirdTopUnbeaten = index === 2
     const backgroundColor = isTopUnbeaten ? "gold" : "";
+        let backgroundColor2 = isSecondTopUnbeaten ? "silver" : ""
+        let backgroundColor3 = isThirdTopUnbeaten ? "brown" : ""
     return `
-        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
+        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor} ${backgroundColor2} ${backgroundColor3}">
             <div class="stat-bold">${index + 1}. ${scorer.name}</div>
             <div class="stat-num stat-dash">${scorer.monthlyData[0].unbeaten_percentage} (${scorer.monthlyData[0].apps})</div>
         </div>
@@ -191,10 +211,14 @@ const top5Apps = sortedAppPlayers.slice(0, 10);
 const appContainer = document.querySelector(".app-container");
 const dashboardApps = top5Apps.map((scorer, index) => {
     const isTopAppPlayer = index === 0;
+    const isSecondTopAppPlayer = index === 1
+    const isThirdTopAppPlayer = index === 2
     const backgroundColor = isTopAppPlayer ? "gold" : "";
+        let backgroundColor2 = isSecondTopAppPlayer ? "silver" : ""
+        let backgroundColor3 = isThirdTopAppPlayer ? "brown" : ""
 
 return`
-<div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
+<div class="statistic-container dash-divide" style="background-color: ${backgroundColor} ${backgroundColor2} ${backgroundColor3}">
         <div class="stat-bold">${index + 1}. ${scorer.name}</div>
         <div class="stat-num">${scorer.monthlyData[0].apps} - ${(scorer.monthlyData[0].apps * 45)} mins</div>
     </div>
@@ -218,10 +242,14 @@ const top5Carders = sortedCardPlayers.slice(0, 10);
 const cardContainer = document.querySelector(".card-container");
 const dashboardCards = top5Carders.map((scorer, index) => {
     const isTopScorer = index === 0;
+    const isSecondTopScorer = index === 1
+    const isThirdTopScorer = index === 2
     const backgroundColor = isTopScorer ? "gold" : "";
+        let backgroundColor2 = isSecondTopScorer ? "silver" : ""
+        let backgroundColor3 = isThirdTopScorer ? "brown" : ""
 
     return `
-        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor}">
+        <div class="statistic-container dash-divide" style="background-color: ${backgroundColor} ${backgroundColor2} ${backgroundColor3}">
             <div class="stat-bold">${index + 1}. ${scorer.name}</div>
             <div class="stat-num">
                 <i class='bx bxs-card' style='color:#fbff00'></i>${scorer.monthlyData[0].yellow}
