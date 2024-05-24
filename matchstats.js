@@ -2060,6 +2060,27 @@ const matches = [
         motm: ["Haaland"],
         events: ["Zlatan and Robinho face to face ref (Damien) sends them both off"]
     },
+    {
+        id: "99",
+        month: "may",
+        match_number: "99",
+        date: "24/05/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["2-Face", "Puyol", "Mbappe", "Modric", "Joaquin", "Haaland"],
+        team2: ["Neuer", "Ramos (lego)", "Kaka", "Kroos", "Ramos", "Lewandowski"],
+        scorers: ["Mbappe", "Ramos"],
+        assisters: ["Modric"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Haaland", "Kroos"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Haaland"],
+        events: ["Ramos free kick post and in just above where Modric stood"]
+    },
 ]
 
 
