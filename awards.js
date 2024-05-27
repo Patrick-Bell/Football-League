@@ -208,58 +208,219 @@ document.addEventListener("DOMContentLoaded", function () {
         return { teams: mostDefeatsPlayers, overallDefeats: maxOverallDefeats}
     }
 
-
-    function findPlayersWithMostGoalsInMonth(players) {
-        const playerGoalsByMonth = {};
+    function findPlayersWithMostYellowsInMonth(players) {
+        let playerYellowsByMonth = {};
     
-        // Iterate through each team
-        players.forEach(team => {
-            // Iterate through each month's data for the team
-            team.monthlyData.forEach(monthData => {
-                const month = monthData.month.toLowerCase();
-    
-                // Exclude "Overall" month
-                if (month !== "overall") {
-                    // Update the defeats for the current month
-                    const goals = monthData.goals;
-                    if (!playerGoalsByMonth[month]) {
-                        // If the month entry does not exist, create it as an array
-                        playerGoalsByMonth[month] = [{ playerName: team.name, goals: goals }];
-                    } else if (goals > playerGoalsByMonth[month][0].goals) {
-                        // If a player has more defeats, replace the array with a new one
-                        playerGoalsByMonth[month] = [{ playerName: team.name, goals: goals }];
-                    } else if (goals === playerGoalsByMonth[month][0].goals) {
-                        // If multiple players have the same number of defeats, add them to the array
-                        playerGoalsByMonth[month].push({ playerName: team.name, goals: goals, month: team.month });
+        players.forEach(player => {
+            player.monthlyData.forEach(({ month, yellow }) => {
+                month = month.toLowerCase();
+                if (month !== "overall") { // Skip "Overall" month
+                    if (!playerYellowsByMonth[month]) {
+                        playerYellowsByMonth[month] = [];
                     }
+                    playerYellowsByMonth[month].push({ playerName: player.name, yellow });
                 }
             });
         });
     
-        // Find the month with the most defeats
-        let mostGoalsMonth;
-        mostGoalsMonth = 0;
-        let topPlayers = [];
+        let mostYellows = 0;
+        const topMonths = [];
     
-        for (const month in playerGoalsByMonth) {
-            const goals = playerGoalsByMonth[month][0].goals;
-            
-            if (goals > mostGoalsMonth) {
-                mostGoalsMonth = month;
-                mostGoalsMonth = goals;
-                topPlayers = playerGoalsByMonth[month];
-            } else if (goals === mostGoalsMonth) {
-                // If multiple players have the same number of defeats, add them to the array
-                topPlayers.push(...playerGoalsByMonth[month]);
+        Object.entries(playerYellowsByMonth).forEach(([month, players]) => {
+            const maxYellows = Math.max(...players.map(player => player.yellow));
+            if (maxYellows > mostYellows) {
+                mostYellows = maxYellows;
+                topMonths.length = 0;
+                topMonths.push({ month, players: players.filter(player => player.yellow === maxYellows) });
+            } else if (maxYellows === mostYellows) {
+                topMonths.push({ month, players: players.filter(player => player.yellow === maxYellows) });
             }
+        });
+    
+        if (mostYellows > 0) {
+            const result = `${mostYellows} - ${topMonths.map(({ month, players }) => {
+                const capitalizedMonth = month.charAt(0).toUpperCase() + month.slice(1);
+                return players.map(player => `${player.playerName} (${capitalizedMonth})`).join(', ');
+            }).join(', ')}`;
+            return result;
+        } else {
+            return "No player has monthly yellow card data excluding 'Overall'.";
+        }
+    }
+
+
+    function findPlayersWithMostRedsInMonth(players) {
+        let playerRedsByMonth = {};
+    
+        players.forEach(player => {
+            player.monthlyData.forEach(({ month, red }) => {
+                month = month.toLowerCase();
+                if (month !== "overall") { // Skip "Overall" month
+                    if (!playerRedsByMonth[month]) {
+                        playerRedsByMonth[month] = [];
+                    }
+                    playerRedsByMonth[month].push({ playerName: player.name, red });
+                }
+            });
+        });
+
+        console.log(playerRedsByMonth)
+    
+        let mostReds = 0;
+        const topMonths = [];
+    
+        Object.entries(playerRedsByMonth).forEach(([month, players]) => {
+            const maxReds = Math.max(...players.map(player => player.red));
+            if (maxReds > mostReds) {
+                mostReds = maxReds;
+                topMonths.length = 0;
+                topMonths.push({ month, players: players.filter(player => player.red === maxReds) });
+            } else if (maxReds === mostReds) {
+                topMonths.push({ month, players: players.filter(player => player.red === maxReds) });
+            }
+        });
+    
+        if (mostReds > 0) {
+            const result = `${mostReds} - ${topMonths.map(({ month, players }) => {
+                const capitalizedMonth = month.charAt(0).toUpperCase() + month.slice(1);
+                return players.map(player => `${player.playerName} (${capitalizedMonth})`).join(', ');
+            }).join(', ')}`;
+            return result;
+        } else {
+            return "No player has monthly yellow card data excluding 'Overall'.";
+        }
+    }
+    
+    
+
+
+    function findPlayersWithMostAppsInMonth(players) {
+        const playerAppsByMonth = {};
+    
+        // Collect player appearances by month
+        players.forEach(player => {
+            player.monthlyData.forEach(({ month, apps }) => {
+                month = month.toLowerCase();
+                if (month !== "overall") {
+                    if (!playerAppsByMonth[month]) {
+                        playerAppsByMonth[month] = [];
+                    }
+                    playerAppsByMonth[month].push({ playerName: player.name, apps });
+                }
+            });
+        });
+
+        console.log('playres apps by month tester', playerAppsByMonth)
+    
+        // Determine the maximum number of appearances and track relevant players and months
+        let mostApps = 0;
+        const topMonths = [];
+    
+        Object.entries(playerAppsByMonth).forEach(([month, players]) => {
+            const maxApps = Math.max(...players.map(player => player.apps));
+            console.log(maxApps)
+            if (maxApps > mostApps) {
+                mostApps = maxApps;
+                topMonths.length = 0; // Reset the array
+                topMonths.push({ month, players: players.filter(player => player.apps === maxApps) });
+            } else if (maxApps === mostApps) {
+                topMonths.push({ month, players: players.filter(player => player.apps === maxApps) });
+            }
+        });
+    
+        // Format the result
+        if (mostApps > 0) {
+            const result = `${mostApps} - ${topMonths.map(({ month, players }) => {
+                const capitalizedMonth = month.charAt(0).toUpperCase() + month.slice(1);
+                return players.map(player => `${player.playerName} (${capitalizedMonth})`).join(', ');
+            }).join('; ')}`;
+            return result;
+        } else {
+            return "No player has monthly appearance data excluding 'Overall'.";
+        }
+    }
+
+
+    function findPlayersWithMostAssistsInMonth(players) {
+        const playerAssistsByMonth = {}
+
+        players.forEach(player => {
+            player.monthlyData.forEach(({ month, assists }) => {
+                month = month.toLowerCase();
+                if (month !== "overall") {
+                    if (!playerAssistsByMonth[month]) {
+                        playerAssistsByMonth[month] = []
+                    }
+                    playerAssistsByMonth[month].push({ playerName: player.name, assists})
+                }
+            })
+        })
+
+        let mostAssists = 0
+        let topMonth = ""
+        let topPlayers = []
+
+        Object.entries(playerAssistsByMonth).forEach(([month, players]) => {
+            const maxAssists = Math.max(...players.map(player => player.assists))
+            if (maxAssists > mostAssists) {
+                mostAssists = maxAssists
+                topMonth = month
+                topPlayers = players.filter(player => player.assists === maxAssists)
+            } else if(maxAssists === mostAssists) {
+            topPlayers.push(...players.filter(player => player.assists === maxAssists));
+
+            }
+        })
+    
+        if (mostAssists > 0) {
+            const capitalizedMonth = topMonth.charAt(0).toUpperCase() + topMonth.slice(1);
+            return `${mostAssists} - ${topPlayers.map(player => `${player.playerName} (${capitalizedMonth})`).join(', ')}`;
+        } else {
+            return "No player has monthly goal data excluding 'Overall'.";
         }
     
-        if (mostGoalsMonth) {
-            const capitalizedMonth = mostGoalsMonth.charAt(0).toUpperCase() + mostGoalsMonth.slice(1);
-            return [`${mostGoalsMonth} - ${topPlayers.map(player => `${player.playerName} (${capitalizedMonth})`).reverse().join(', ')}`];
+    }
     
+    
+
+
+    function findPlayersWithMostGoalsInMonth(players) {
+        const playerGoalsByMonth = {};
+    
+        // Collect player goals by month
+        players.forEach(player => {
+            player.monthlyData.forEach(({ month, goals }) => {
+                month = month.toLowerCase();
+                if (month !== "overall") {
+                    if (!playerGoalsByMonth[month]) {
+                        playerGoalsByMonth[month] = [];
+                    }
+                    playerGoalsByMonth[month].push({ playerName: player.name, goals });
+                }
+            });
+        });
+    
+        // Determine the month with the most goals and the players with those goals
+        let mostGoals = 0;
+        let topMonth = "";
+        let topPlayers = [];
+    
+        Object.entries(playerGoalsByMonth).forEach(([month, players]) => {
+            const maxGoals = Math.max(...players.map(player => player.goals));
+            if (maxGoals > mostGoals) {
+                mostGoals = maxGoals;
+                topMonth = month;
+                topPlayers = players.filter(player => player.goals === maxGoals);
+            } else if (maxGoals === mostGoals) {
+                topPlayers.push(...players.filter(player => player.goals === maxGoals));
+            }
+        });
+    
+        if (mostGoals > 0) {
+            const capitalizedMonth = topMonth.charAt(0).toUpperCase() + topMonth.slice(1);
+            return `${mostGoals} - ${topPlayers.map(player => `${player.playerName} (${capitalizedMonth})`).join(', ')}`;
         } else {
-            return ["No player has monthly defeat data excluding 'Overall'."];
+            return "No player has monthly goal data excluding 'Overall'.";
         }
     }
    
@@ -718,7 +879,8 @@ matches.forEach(match => {
                 { category: "50th Assist", winner: "Benzema (04/03/2024)"},
                 { category: "100th Assist", winner: "Pedri (06/04/2024)"},
                 { category: "150th Assist", winner: "Haaland (17/05/2024)"},
-                { category: "Most Assists in Single Game", winner: findPlayersWithMostAssistsInSingleGame(matches)}
+                { category: "Most Assists in Single Game", winner: findPlayersWithMostAssistsInSingleGame(matches)},
+                { category: "Most Assists in Single Month", winner: findPlayersWithMostAssistsInMonth(players)}
             ],
         },
         {
@@ -727,6 +889,7 @@ matches.forEach(match => {
             data: [
                 { category: "Most Appearances", winner: findPlayerWithMostTotalApps(players) },
                 { category: "Least Appearances", winners: findPlayerWithLeastTotalApps(players)},
+                { category: "Most Appearances in a Single Month", winner: findPlayersWithMostAppsInMonth(players)}
             ],
         },
         {
@@ -742,6 +905,8 @@ matches.forEach(match => {
                 { category: "Most Red Cards", winners: findPlayersWithMostReds(players) },
                 { category: "Total Yellow Cards", winners: findTotalYellows(matches) },
                 { category: "Total Red Cards", winners: findTotalReds(matches) },
+                { category: "Most Yellows in a Single Month", winner: findPlayersWithMostYellowsInMonth(players)},
+                { category: "Most Reds in a Single Month", winner: findPlayersWithMostRedsInMonth(players)}
             ],
         },
         {
