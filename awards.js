@@ -208,6 +208,60 @@ document.addEventListener("DOMContentLoaded", function () {
         return { teams: mostDefeatsPlayers, overallDefeats: maxOverallDefeats}
     }
 
+
+    function findPlayersWithMostGoalsInMonth(players) {
+        const playerGoalsByMonth = {};
+    
+        // Iterate through each team
+        players.forEach(team => {
+            // Iterate through each month's data for the team
+            team.monthlyData.forEach(monthData => {
+                const month = monthData.month.toLowerCase();
+    
+                // Exclude "Overall" month
+                if (month !== "overall") {
+                    // Update the defeats for the current month
+                    const goals = monthData.goals;
+                    if (!playerGoalsByMonth[month]) {
+                        // If the month entry does not exist, create it as an array
+                        playerGoalsByMonth[month] = [{ playerName: team.name, goals: goals }];
+                    } else if (goals > playerGoalsByMonth[month][0].goals) {
+                        // If a player has more defeats, replace the array with a new one
+                        playerGoalsByMonth[month] = [{ playerName: team.name, goals: goals }];
+                    } else if (goals === playerGoalsByMonth[month][0].goals) {
+                        // If multiple players have the same number of defeats, add them to the array
+                        playerGoalsByMonth[month].push({ playerName: team.name, goals: goals, month: team.month });
+                    }
+                }
+            });
+        });
+    
+        // Find the month with the most defeats
+        let mostGoalsMonth;
+        mostGoalsMonth = 0;
+        let topPlayers = [];
+    
+        for (const month in playerGoalsByMonth) {
+            const goals = playerGoalsByMonth[month][0].goals;
+            
+            if (goals > mostGoalsMonth) {
+                mostGoalsMonth = month;
+                mostGoalsMonth = goals;
+                topPlayers = playerGoalsByMonth[month];
+            } else if (goals === mostGoalsMonth) {
+                // If multiple players have the same number of defeats, add them to the array
+                topPlayers.push(...playerGoalsByMonth[month]);
+            }
+        }
+    
+        if (mostGoalsMonth) {
+            const capitalizedMonth = mostGoalsMonth.charAt(0).toUpperCase() + mostGoalsMonth.slice(1);
+            return [`${mostGoalsMonth} - ${topPlayers.map(player => `${player.playerName} (${capitalizedMonth})`).reverse().join(', ')}`];
+    
+        } else {
+            return ["No player has monthly defeat data excluding 'Overall'."];
+        }
+    }
    
 
 
@@ -649,7 +703,8 @@ matches.forEach(match => {
                 { category: "10th Slinger", winner: "Van Dijk (red) (25/02/2024)"},
                 { category: "25th Slinger", winner: "Modric (26/04/2024)"},
                 { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) },
-                { category: "Most Goals in Single Game", winner: findPlayersWithMostGoalsInSingleGame(matches)}
+                { category: "Most Goals in Single Game", winner: findPlayersWithMostGoalsInSingleGame(matches)},
+                { category: "Most Gols in a Single Month", winner: findPlayersWithMostGoalsInMonth(players)}
             ],
         },
         {
