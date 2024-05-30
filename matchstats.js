@@ -2144,6 +2144,27 @@ const matches = [
         motm: ["Allison"],
         events: []
     },
+    {
+        id: "103",
+        month: "may",
+        match_number: "103",
+        date: "30/05/2024",
+        time: "12:35",
+        condition: "Clear",
+        team1_score: 3, //home team
+        team2_score: 0, //away team
+        team1: ["Boxer", "Ramos (lego)", "Bowen", "De Bruyne", "Benega", "Ronaldo"],
+        team2: ["Allison", "Trippier", "Mahrez", "Eriksen", "Joaquin", "Suarez"],
+        scorers: ["Bowen", "De Bruyne", "Ronaldo"],
+        assisters: ["De Bruyne"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Allison"],
+        reds: [],
+        cleansheets: ["Boxer", "Ramos (lego)", "Bowen", "De Bruyne", "Benega", "Ronaldo"],
+        motm: ["De Bruyne"],
+        events: ["De Bruyne perfect pass to Bowen", "De Bruyne free kick bar and in", "Trippier had a nightmare, mistake Ronaldo chips Allison"]
+    },
 ]
 
 
