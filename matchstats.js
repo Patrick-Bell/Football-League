@@ -2165,6 +2165,27 @@ const matches = [
         motm: ["De Bruyne"],
         events: ["De Bruyne perfect pass to Bowen", "De Bruyne free kick bar and in", "Trippier had a nightmare, mistake Ronaldo chips Allison"]
     },
+    {
+        id: "104",
+        month: "may",
+        match_number: "104",
+        date: "30/05/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["2-Face", "Russian Def", "Mahrez", "Modric", "Robinho", "Ronaldo"],
+        team2: ["Stackers", "Puyol", "Bowen", "Pogba", "Torres", "Zlatan"],
+        scorers: ["Zlatan", "Mahrez", "Ronaldo (o.g)"],
+        assisters: ["Robinho", "Zlatan"],
+        slingers: ["Zlatan"],
+        penalties: [],
+        yellows: ["Ronaldo", "Robinho", "Modric"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Zlatan"],
+        events: ["Zlatan bullied the other team"]
+    },
 ]
 
 
