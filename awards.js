@@ -831,6 +831,7 @@ matches.forEach(match => {
                 { month: "February", winner: "Russian Keeper"},
                 { month: "March", winner: "Benzema"},
                 { month: "April", winner: "Suarez"},
+                { month: "May", winner: "De Bruyne"}
             ],
         },
         {
@@ -865,7 +866,7 @@ matches.forEach(match => {
                 { category: "25th Slinger", winner: "Modric (26/04/2024)"},
                 { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) },
                 { category: "Most Goals in Single Game", winner: findPlayersWithMostGoalsInSingleGame(matches)},
-                { category: "Most Gols in a Single Month", winner: findPlayersWithMostGoalsInMonth(players)}
+                { category: "Most Goals in a Single Month", winner: findPlayersWithMostGoalsInMonth(players)}
             ],
         },
         {
