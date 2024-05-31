@@ -2186,6 +2186,27 @@ const matches = [
         motm: ["Zlatan"],
         events: ["Zlatan bullied the other team"]
     },
+    {
+        id: "105",
+        month: "may",
+        match_number: "105",
+        date: "31/05/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Boxer", "Baldy", "Messi", "Pedri", "Van Persie (red)", "Muller"],
+        team2: ["2-Face", "Van Dijk (red)", "Mbappe", "Kroos", "Henry", "Ronaldo"],
+        scorers: ["Muller", "Ronaldo"],
+        assisters: ["Van Persie (red)", "Kroos"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Messi", "Van Persie (red)"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Zlatan"],
+        events: []
+    },
 ]
 
 
