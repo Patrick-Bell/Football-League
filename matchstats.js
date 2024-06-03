@@ -2205,6 +2205,27 @@ const matches = [
         reds: [],
         cleansheets: [],
         motm: ["Zlatan"],
+        events: ["Turns out Ronaldo was banned and potentially ruined Boxer winning the month"]
+    },
+    {
+        id: "106",
+        month: "june",
+        match_number: "106",
+        date: "02/06/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Neuer", "Ramos (lego)", "Bale", "Modric", "Benega", "Haaland"],
+        team2: ["Allison", "Caveman", "Beckham (lego", "Eriksen", "Beckham", "Muller"],
+        scorers: ["Caveman", "Benega"],
+        assisters: ["Bale"],
+        slingers: ["Caveman"],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: [],
+        motm: [],
         events: []
     },
 ]

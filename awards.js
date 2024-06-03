@@ -812,6 +812,26 @@ matches.forEach(match => {
     return `${topAssistsInSingleGame} - ${topAssisters.join(', ')}`
 }
 
+const findTotalHomeGames = (matches) => {
+    let totalGoals = 0;
+
+    matches.forEach(match => {
+        totalGoals += match.team1_score
+    })
+
+    return totalGoals
+}
+
+const findTotalAwayGames = (matches) => {
+    let totalGoals = 0;
+
+    matches.forEach(match => {
+        totalGoals += match.team2_score
+    })
+
+    return totalGoals
+}
+
 
 
 
@@ -914,6 +934,8 @@ matches.forEach(match => {
             category: "season",
             headers: ["Season", ""],
             data: [
+                { category: "Total Home Goals", winner: findTotalHomeGames(matches) },
+                { category: "Total Away Goals", winner: findTotalAwayGames(matches) },
                 { category: "Total Games", winner: finalTotalMatches(matches) },
                 { category: "Total Goals", winner: finalTotalGoals(matches) },
                 { category: "Total Slingers", winner: finalTotalSlingers(matches) },
