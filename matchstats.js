@@ -2228,6 +2228,27 @@ const matches = [
         motm: [],
         events: []
     },
+    {
+        id: "107",
+        month: "june",
+        match_number: "107",
+        date: "03/06/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 2, //away team
+        team1: ["2-Face", "Russian Def", "Bowen", "Bastian", "Robinho", "Suarez"],
+        team2: ["Stackers", "Puyol", "Mane", "Pogba", "Berbatov", "Kane"],
+        scorers: ["Mane", "Mane"],
+        assisters: ["Kane"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Bowen"],
+        reds: [],
+        cleansheets: ["Stackers", "Puyol", "Mane", "Pogba", "Berbatov", "Kane"],
+        motm: ["Mane"],
+        events: ["Robinho hit bar twice from free kicks", "Mane hit post 3 times", "Mane dirty touch on Bastian for second goal"]
+    },
 ]
 
 

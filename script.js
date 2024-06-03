@@ -36,11 +36,11 @@ let awayST = document.querySelector(".away-st");
 
 let positions = {
   GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
-  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse", "Trippier", "Ramos"],
+  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse", "Trippier", "Ramos", "Hummels"],
   LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho", "Henry", "Benega", "Joaquin", "Marquez"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
   RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen", "Beckham", "Kaka"],
-  ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan", "Haaland"]
+  ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan", "Haaland", "Aguero"]
 };
 
 function getRandomPlayer(position) {
@@ -64,11 +64,11 @@ generateTeams.addEventListener("click", () => {
   // Reset the players array
   positions = {
     GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
-    DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse", "Trippier", "Ramos"],
+    DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse", "Trippier", "Ramos", "Hummels"],
     LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho", "Henry", "Benega", "Joaquin", "Marquez"],
     MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
     RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen", "Beckham", "Kaka"],
-    ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan", "Haaland"]
+    ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan", "Haaland", "Aguero"]
   };
 
   const team1 = getRandomTeam();
@@ -99,11 +99,11 @@ resetBtn.addEventListener("click", () => {
 
 positions = {
   GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
-  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse", "Trippier", "Ramos"],
+  DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse", "Trippier", "Ramos", "Hummels"],
   LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho", "Henry", "Benega", "Joaquin", "Marquez"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
   RM: ["Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Bowen", "Beckham", "Kaka"],
-  ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan", "Haaland"]
+  ST: ["Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", "Suarez", "Muller", "Zlatan", "Haaland", "Aguero"]
 };
 
 // Reset the displayed HTML content

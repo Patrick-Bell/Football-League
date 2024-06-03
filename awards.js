@@ -318,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         Object.entries(playerAppsByMonth).forEach(([month, players]) => {
             const maxApps = Math.max(...players.map(player => player.apps));
-            console.log(maxApps)
+            console.log('the maximum apps is', maxApps)
             if (maxApps > mostApps) {
                 mostApps = maxApps;
                 topMonths.length = 0; // Reset the array
