@@ -2249,6 +2249,48 @@ const matches = [
         motm: ["Mane"],
         events: ["Robinho hit bar twice from free kicks", "Mane hit post 3 times", "Mane dirty touch on Bastian for second goal"]
     },
+    {
+        id: "108",
+        month: "june",
+        match_number: "108",
+        date: "06/06/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 1, //away team
+        team1: ["Russian Keeper", "Van Dijk (red)", "Bowen", "Bastian", "Torres", "Muller"],
+        team2: ["Boxer", "Russian Def", "Kaka", "De Bruyne", "Benega", "Aguero"],
+        scorers: ["Benega"],
+        assisters: ["Aguero"],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: ["Boxer", "Russian Def", "Kaka", "De Bruyne", "Benega", "Aguero"],
+        motm: ["Benega"],
+        events: ["Game played over 2 days", "Torres loses for the first time"]
+    },
+    {
+        id: "109",
+        month: "june",
+        match_number: "109",
+        date: "07/06/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Neuer", "Van Dijk (red)", "Neymar", "Pedri", "Berbatov", "Zlatan"],
+        team2: ["Bruney", "Russian Def", "Mane", "Eriksen", "Marquez", "Lewandowski"],
+        scorers: ["Berbatov"],
+        assisters: ["Pedri"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Zlatan", "Mane", "Berbatov"],
+        reds: ["Zlatan"],
+        cleansheets: ["Neuer", "Van Dijk (red)", "Neymar", "Pedri", "Berbatov", "Zlatan"],
+        motm: ["Berbatov"],
+        events: ["Racist ref booked Mane and got caught"]
+    },
 ]
 
 
