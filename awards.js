@@ -294,6 +294,39 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
 
+
+    function findPlayersWithLeastYellows(players) {
+        let leastYellowPlayer = [];
+        let maxOverallYellow = Infinity;
+
+        players.forEach(player => {
+            let overallYellow = 0;
+            const overallMonth = player.monthlyData.find(monthData => monthData.month === "Overall");
+            overallYellow = overallMonth.yellow
+
+            
+
+            if (overallYellow < maxOverallYellow) {
+                maxOverallYellow = overallYellow
+                leastYellowPlayer = [player.name]
+            } else if (overallYellow === maxOverallYellow) {
+                leastYellowPlayer.push(player.name)
+            }
+
+        })
+
+        return maxOverallYellow + ' - ' + leastYellowPlayer.join(', ')
+
+    }
+
+
+    findPlayersWithLeastYellows(players)
+
+
+
+
+
+
     function findPlayersWithMostAppsInMonth(players) {
         const playerAppsByMonth = {};
     
@@ -927,7 +960,9 @@ const findTotalAwayGames = (matches) => {
                 { category: "Total Yellow Cards", winners: findTotalYellows(matches) },
                 { category: "Total Red Cards", winners: findTotalReds(matches) },
                 { category: "Most Yellows in a Single Month", winner: findPlayersWithMostYellowsInMonth(players)},
-                { category: "Most Reds in a Single Month", winner: findPlayersWithMostRedsInMonth(players)}
+                { category: "Most Reds in a Single Month", winner: findPlayersWithMostRedsInMonth(players)},
+                { category: "Players With Least Yellows", winner: findPlayersWithLeastYellows(players)
+                }
             ],
         },
         {
