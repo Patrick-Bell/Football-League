@@ -2375,6 +2375,27 @@ const matches = [
         motm: [""],
         events: ["Zlatan scored probably the fastest goal", "Russian Defender going mental"]
     },
+    {
+        id: "114",
+        month: "june",
+        match_number: "114",
+        date: "17/06/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Puyol", "Neymar", "Modric", "Ronaldinho", "Ronaldo"],
+        team2: ["Neuer", "Ramos (lego)", "Kaka", "Eriksen", "Ramos", "Haaland"],
+        scorers: ["Haaland", "Modric"],
+        assisters: [],
+        slingers: ["Haaland"],
+        penalties: ["Modric"],
+        yellows: ["Kaka", "Ramos"],
+        reds: [],
+        cleansheets: [],
+        motm: [""],
+        events: ["Ramos through ball to Haaland, Stackers went to kick it and it hit Haaland into the slinger", "Ramos handball to block Modric shot and Modric takes his time with the pen and puts it top left"]
+    },
 ]
 
 
