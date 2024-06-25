@@ -2396,6 +2396,27 @@ const matches = [
         motm: [""],
         events: ["Ramos through ball to Haaland, Stackers went to kick it and it hit Haaland into the slinger", "Ramos handball to block Modric shot and Modric takes his time with the pen and puts it top left"]
     },
+    {
+        id: "115",
+        month: "june",
+        match_number: "115",
+        date: "24/06/2024",
+        time: "17:15",
+        condition: "Sun",
+        team1_score: 4, //home team
+        team2_score: 1, //away team
+        team1: ["Allison", "Van Dijk (red)", "Neymar", "Bastian", "Benega", "Kane"],
+        team2: ["Stackers", "Caveman", "Bowen", "Pedri", "Van Persie (orange)", "Lewandowski"],
+        scorers: ["Lewandowski", "Kane", "Kane", "Kane", "Neymar"],
+        assisters: ["Van Dijk (red)", "Bastian", "Benega"],
+        slingers: ["Kane"],
+        penalties: [],
+        yellows: ["Van Persie (orange)"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Kane"],
+        events: ["Probably first 10/10 performance for the league", "Neymar stood in front of free kick and moved last second lol", "Kane briliant touches all game", "Bastian flick round the corner for second goal"]
+    },
 ]
 
 
