@@ -2417,6 +2417,27 @@ const matches = [
         motm: ["Kane"],
         events: ["Probably first 10/10 performance for the league", "Neymar stood in front of free kick and moved last second lol", "Kane briliant touches all game", "Bastian flick round the corner for second goal"]
     },
+    {
+        id: "116",
+        month: "june",
+        match_number: "116",
+        date: "25/06/2024",
+        time: "17:15",
+        condition: "Sun",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["2-Face", "Russian Def", "Mbappe", "Kroos", "Berbatov", "Ronaldo"],
+        team2: ["Allison", "Trippier", "Bale", "Modric", "Torres", "Kane"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Torres"],
+        reds: [],
+        cleansheets: ["2-Face", "Russian Def", "Mbappe", "Kroos", "Berbatov", "Ronaldo", "Allison", "Trippier", "Bale", "Modric", "Torres", "Kane"],
+        motm: ["2-Face"],
+        events: []
+    },
 ]
 
 
