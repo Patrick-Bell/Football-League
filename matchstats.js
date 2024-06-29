@@ -576,8 +576,8 @@ const matches = [
         date: "25/02/2024",
         time: "18:00",
         condition: "Rain",
-        team1_score: 2, //home team
-        team2_score: 2, //away team
+        team1_score: 1, //home team
+        team2_score: 0, //away team
         team1: ["Russian Keeper", "Van Dijk (red)", "Messi", "Bastian", "Assunco", "Lewandowski"],
         team2: ["Neuer", "Van Dijk (orange)", "Neymar", "Maradonna", "Robinho", "Muller"],
         scorers: ["Van Dijk (red)"],
@@ -2438,6 +2438,27 @@ const matches = [
         motm: ["2-Face"],
         events: []
     },
+    {
+        id: "117",
+        month: "june",
+        match_number: "117",
+        date: "29/06/2024",
+        time: "11:40",
+        condition: "Sun",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["2-Face", "Hummels", "Pele", "Bastian", "Van Persie (orange)", "Kane"],
+        team2: ["Stackers", "Risse", "Messi", "Modric", "Assunco", "Haaland"],
+        scorers: ["Kane", "Haaland "],
+        assisters: ["Bastian", "Modric"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Van Persie (orange)", "Haaland"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Haaland"],
+        events: []
+    },
 ]
 
 
@@ -2478,6 +2499,8 @@ function get50thYellowCard(matches) {
 
     return null; // Return null if the 50th yellow card is not found
 }
+
+
 
 function findFifthRedCard(matches) {
     let redCards = 0

@@ -12,6 +12,111 @@ document.addEventListener("DOMContentLoaded", function () {
         return totalMatches;
     }
 
+    function findNumberYellows(matches, yellow) {
+        const bigYellow = parseInt(yellow)
+        let totalYellows = 0
+
+        for (const match of matches) {
+            for (const player of match.yellows) {
+                totalYellows++
+
+                if (totalYellows === bigYellow) {
+                    return `${player} (${match.date})`
+                }
+            }
+        }
+    }
+
+    function findNumberReds(matches, red) {
+        const bigRed = parseInt(red)
+        let totalReds = 0
+
+        for (const match of matches) {
+            for (const player of match.reds) {
+                totalReds++
+
+                if (totalReds === bigRed) {
+                    return `${player} (${match.date})`
+                }
+            }
+        }
+    }
+
+    function findNumberSlingers(matches, slingers) {
+        const bigSlingers = parseInt(slingers)
+        let totalSlingers = 0
+
+        for (const match of matches) {
+            for (const player of match.slingers) {
+                totalSlingers++
+
+                if (bigSlingers === totalSlingers) {
+                    return `${player} (${match.date})`
+                }
+            }
+        }
+    }
+
+    function findNumberGoals(matches, goals) {
+        const bigGoals = parseInt(goals);
+        let totalGoals = 0;
+    
+        for (const match of matches) {
+            for (const player of match.scorers) {
+                totalGoals++;
+    
+                if (totalGoals === bigGoals) {
+                    return `${player} (${match.date})`;
+                }
+            }
+        }
+    
+        return `Not yet occured`; // Return null if goal number is out of range
+    }
+
+    function findNumberAssists(matches, assists) {
+        const bigAssists = parseInt(assists);
+        let totalAssists = 0;
+
+        for (const match of matches) {
+            for (const player of match.assisters) {
+                totalAssists++
+
+                if (totalAssists === bigAssists) {
+                    return `${player} (${match.date})`
+                }
+            }
+        }
+    }
+
+    function findTotalNumberOfGoals(matches) {
+        let totalGoals = 0;
+    
+        // Iterate over each match
+        for (const match of matches) {
+            // Add the length of scorers array to totalGoals
+            totalGoals += match.scorers.length;
+        }
+    
+        return totalGoals;
+    }
+    
+    function findNumberGame(matches, game) {
+        const gameNumber = parseInt(game)
+        totalGames = 0;
+
+        for (const match of matches) {
+            totalGames++
+
+            if (totalGames === gameNumber) {
+                return `${match.date} at ${match.time}`
+            }
+        }
+
+        return null
+    }
+
+
     function finalTotalSlingers(matches) {
         let totalSlingers = 0;
         matches.forEach(match => {
@@ -884,17 +989,19 @@ const findTotalAwayGames = (matches) => {
                 { month: "February", winner: "Russian Keeper"},
                 { month: "March", winner: "Benzema"},
                 { month: "April", winner: "Suarez"},
-                { month: "May", winner: "De Bruyne"}
+                { month: "May", winner: "De Bruyne"},
+                { month: "June", winner: "Ongoing..."}
             ],
         },
         {
             category: "games",
             headers: ["Matches", ""],
             data: [
-                { category: "1st Game", winner: "01/01/2024 at 13:30" },
-                { category: "10th Game", winner: "09/01/2024 at 12:00" },
-                { category: "50th Game", winner: "28/03/2024 at 11:25" },
-                { category: "75th Game", winner: "29/04/2024 at 17:05" },
+                { category: "1st Game", winner: findNumberGame(matches, 1) },
+                { category: "10th Game", winner: findNumberGame(matches, 10)},
+                { category: "50th Game", winner: findNumberGame(matches, 50) },
+                { category: "75th Game", winner: findNumberGame(matches, 75) },
+                { category: "100th Game", winner: findNumberGame(matches, 100) },
                 { category: "Highest Scoring Game", winner: findGameWithMostGoals(matches) },
                 { category: "Most Games in a Month", winner: findMonthWithMostGames(matches) },
                 { category: "Most Points in a Month", winner: findPlayerWithMostPointsInMonth(teams) },
@@ -907,16 +1014,17 @@ const findTotalAwayGames = (matches) => {
             headers: ["Goals", ""],
             data: [
                 { category: "Most Goals", winner: findPlayersWithMostGoals(players)},
-                { category: "1st Goal", winner: "Pele (01/01/2024) " },
-                { category: "10th Goal", winner: "Caveman (08/01/2024) " },
-                { category: "20th Gaol", winner: "Bale (05/02/2024)" },
-                { category: "50th Goal", winner: "Benzema (24/02/2024)"},
-                { category: "100th Goal", winner: "Ronaldo (25/03/2024)"},
-                { category: "150th Goal", winner: "Suarez (27/04/2024)"},
-                { category: "200th Goal", winner: "Risse (19/05/2024)" },
-                { category: "1st Slinger", winner: "Ronaldo (04/01/2024)" },
-                { category: "10th Slinger", winner: "Van Dijk (red) (25/02/2024)"},
-                { category: "25th Slinger", winner: "Modric (26/04/2024)"},
+                { category: "1st Goal", winner: findNumberGoals(matches, 1) },
+                { category: "10th Goal", winner: findNumberGoals(matches, 10) },
+                { category: "20th Gaol", winner: findNumberGoals(matches, 20)},
+                { category: "50th Goal", winner: findNumberGoals(matches, 50)},
+                { category: "100th Goal", winner: findNumberGoals(matches, 100)},
+                { category: "150th Goal", winner: findNumberGoals(matches, 150)},
+                { category: "200th Goal", winner: findNumberGoals(matches, 200) },
+                { category: "250th Goal", winner: findNumberGoals(matches, 250)},
+                { category: "1st Slinger", winner: findNumberSlingers(matches, 1) },
+                { category: "10th Slinger", winner: findNumberSlingers(matches, 10)},
+                { category: "25th Slinger", winner: findNumberSlingers(matches, 25)},
                 { category: "Most Slingers", winner: findPlayerWithMostSlingers(players) },
                 { category: "Most Goals in Single Game", winner: findPlayersWithMostGoalsInSingleGame(matches)},
                 { category: "Most Goals in a Single Month", winner: findPlayersWithMostGoalsInMonth(players)}
@@ -927,12 +1035,12 @@ const findTotalAwayGames = (matches) => {
             headers: ["Assists", ""],
             data: [
                 { category: "Most Assists", winner: findPlayersWithMostAssists(players)},
-                { category: "1st Assist", winner: "Lewnadowski"},
-                { category: "10th Assist", winner: "Ronaldo"},
-                { category: "20th Assist:", winner: "Carragher"},
-                { category: "50th Assist", winner: "Benzema (04/03/2024)"},
-                { category: "100th Assist", winner: "Pedri (06/04/2024)"},
-                { category: "150th Assist", winner: "Haaland (17/05/2024)"},
+                { category: "1st Assist", winner: findNumberAssists(matches, 1)},
+                { category: "10th Assist", winner: findNumberAssists(matches, 10)},
+                { category: "20th Assist:", winner: findNumberAssists(matches, 20)},
+                { category: "50th Assist", winner: findNumberAssists(matches, 50)},
+                { category: "100th Assist", winner: findNumberAssists(matches, 100)},
+                { category: "150th Assist", winner: findNumberAssists(matches, 150)},
                 { category: "Most Assists in Single Game", winner: findPlayersWithMostAssistsInSingleGame(matches)},
                 { category: "Most Assists in Single Month", winner: findPlayersWithMostAssistsInMonth(players)}
             ],
@@ -950,11 +1058,12 @@ const findTotalAwayGames = (matches) => {
             category: "disciplinary",
             headers: ["Disciplinary", ""],
             data: [
-                { category: "1st Yellow Card", winner: "Lewandowski (01/01/2024)" },
-                { category: "50th Yellow Card", winner: "Eriksen (18/02/2024)"},
-                { category: "100th Yellow Card", winner: "Ronaldo (25/03/2024)"},
-                { category: "200th Yellow Card", winner: "Bastian (18/05/2024)" },
-                { category: "1st Red Card", winner: "Messi (08/01/2024)" },
+                { category: "1st Yellow Card", winner: findNumberYellows(matches, 1) },
+                { category: "50th Yellow Card", winner: findNumberYellows(matches, 50)},
+                { category: "100th Yellow Card", winner: findNumberYellows(matches, 100)},
+                { category: "200th Yellow Card", winner: findNumberYellows(matches, 200)},
+                { category: "1st Red Card", winner: findNumberReds(matches, 1) },
+                { category: "10th Red Card", winner: findNumberReds(matches, 10) },
                 { category: "Most Yellow Cards", winner: findPlayersWithMostYellows(players)},
                 { category: "Most Red Cards", winners: findPlayersWithMostReds(players) },
                 { category: "Total Yellow Cards", winners: findTotalYellows(matches) },
@@ -972,7 +1081,7 @@ const findTotalAwayGames = (matches) => {
                 { category: "Total Home Goals", winner: findTotalHomeGames(matches) },
                 { category: "Total Away Goals", winner: findTotalAwayGames(matches) },
                 { category: "Total Games", winner: finalTotalMatches(matches) },
-                { category: "Total Goals", winner: finalTotalGoals(matches) },
+                { category: "Total Goals", winner: findTotalNumberOfGoals(matches) },
                 { category: "Total Slingers", winner: finalTotalSlingers(matches) },
                 { category: "Total Assists", winner: finalTotalAssists(matches) },
                 { category: "Most Appearances", winner: findPlayerWithMostTotalApps(players) },
@@ -986,61 +1095,6 @@ const findTotalAwayGames = (matches) => {
         }
     ];
 
-    totalGamesCategory = awardsData.find(category => category.category === "season" && category.headers[0] === "Total Games");
-    totalGoalsCategory = awardsData.find(category => category.category === "season" && category.headers[1] === "Total Goals");
-    totalSlingersCategory = awardsData.find(category => category.category === "season" && category.headers[2] === "Total Slingers");
-    totalAssistsCategory = awardsData.find(category => category.category === "season" && category.headers[3] === "Total Assists");
-
-    // Check if the category is found
-    if (totalGamesCategory) {
-        // Update the winner property with the result of the finalTotalMatches function
-        totalGamesCategory.data[0].winner = finalTotalMatches(matches);
-        console.log(totalGamesCategory);
-    }
-
-    if (totalGoalsCategory) {
-        totalGoalsCategory.data[1].winner = finalTotalGoals(matches);
-    }
-
-    if (totalSlingersCategory) {
-        totalSlingersCategory.data[2].winner = finalTotalSlingers(matches);
-    }
-
-    if (totalAssistsCategory) {
-        totalAssistsCategory.data[3].winner = finalTotalAssists(matches);
-    }
-    mostAppsCategory = awardsData.find(category => category.category === "season" && category.headers[4] === "Most Appearances");
-    if (mostAppsCategory) {
-        mostAppsCategory.data[4].winner = findPlayerWithMostTotalApps(players);
-    }
-
-    mostWinsCategory = awardsData.find(category => category.category === "season" && category.headers[5] === "Most Wins");
-    if (mostWinsCategory) {
-        mostWinsCategory.data[5].winner = findPlayerWithMostWins(players);
-    }
-
-    mostDefeatsCategory = awardsData.find(category => category.category === "season" && category.headers[6] === "Most Defeats");
-    if (mostDefeatsCategory) {
-        mostDefeatsCategory.data[6].winner = findPlayersWithMostDefeats(teams)
-    }
-
-    mostCleanSheetsCategory = awardsData.find(category => category.category === "season" && category.headers[7] === "Most Clean Sheets");
-    if (mostCleanSheetsCategory) {
-        mostCleanSheetsCategory.data[7].winner = findPlayersWithMostCleanSheets(players)
-    }
-
-    mostMOTMCategory = awardsData.find(category => category.category === "season" && category.headers[8] === "Most Clean Sheets");
-    if (mostMOTMCategory) {
-        mostMOTMCategory.data[8].winner = findPlayersWithMostMOTM(players)
-    }
-
-    mostPointsCategory = awardsData.find(category => category.category === "season" && category.headers[9] === "Most Points");
-    if (mostPointsCategory) {
-        mostPointsCategory.data[9].winner = findPlayersWithMostPoints(teams)
-    }
-
-
-    console.log(awardsData);
 
 
     renderAwards(awardsData);
