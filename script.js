@@ -35,7 +35,7 @@ let awayRM = document.querySelector(".away-rm");
 let awayST = document.querySelector(".away-st");
 
 let positions = {
-  GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
+  GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison", "Courtois"],
   DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse", "Trippier", "Ramos", "Hummels"],
   LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho", "Henry", "Benega", "Joaquin", "Marquez"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
@@ -63,7 +63,7 @@ function getRandomTeam() {
 generateTeams.addEventListener("click", () => {
   // Reset the players array
   positions = {
-    GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
+    GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison", "Courtois"],
     DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse", "Trippier", "Ramos", "Hummels"],
     LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho", "Henry", "Benega", "Joaquin", "Marquez"],
     MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],
@@ -98,7 +98,7 @@ resetBtn.addEventListener("click", () => {
 
 
 positions = {
-  GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison"],
+  GK: ["Stackers", "Boxer", "Neuer", "Russian Keeper", "Bruney", "2-Face", "Allison", "Courtois"],
   DEF: ["Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Puyol", "Russian Def", "Baldy", "Ferdinand", "Risse", "Trippier", "Ramos", "Hummels"],
   LM: ["Messi (ft)", "Assunco", "Van Persie (orange)", "Robinho", "Berbatov", "Ramos", "Van Persie (red)", "Beckham", "Carragher", "Torres", "Ronaldinho", "Henry", "Benega", "Joaquin", "Marquez"],
   MID: ["Kroos", "Schweinsteiger", "Pedri", "Maradonna", "Eriksen", "De Bruyne", "Modric", "Pogba"],

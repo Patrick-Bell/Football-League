@@ -990,7 +990,7 @@ const findTotalAwayGames = (matches) => {
                 { month: "March", winner: "Benzema"},
                 { month: "April", winner: "Suarez"},
                 { month: "May", winner: "De Bruyne"},
-                { month: "June", winner: "Ongoing..."}
+                { month: "June", winner: "Benega"}
             ],
         },
         {
