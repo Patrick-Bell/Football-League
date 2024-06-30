@@ -2459,6 +2459,48 @@ const matches = [
         motm: ["Haaland"],
         events: []
     },
+    {
+        id: "118",
+        month: "june",
+        match_number: "118",
+        date: "29/06/2024",
+        time: "20:20",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Bruney", "Van Dijk (red)", "Bale", "Bastian", "Henry", "Benzema"],
+        team2: ["Allison", "Trippier", "Bowen", "Modric", "Van Persie (red)", "Jiminez"],
+        scorers: ["Bale", "Modric"],
+        assisters: ["Bastian", "Van Persie (red)"],
+        slingers: ["Modric"],
+        penalties: [],
+        yellows: ["Bastian", "Henry"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Modric"],
+        events: ["Benzema tried clearing Modric shot off the line and ended up in the slinger"]
+    },
+    {
+        id: "119",
+        month: "june",
+        match_number: "119",
+        date: "30/06/2024",
+        time: "12:05",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["2-Face", "Puyol", "Bale", "Kroos", "Benega", "Jiminez"],
+        team2: ["Russian Keeper", "Van Dijk (orange)", "Messi", "Bastian", "Henry", "Aguero"],
+        scorers: ["Kroos"],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Jiminez", "Benega", "Aguero"],
+        reds: [],
+        cleansheets: ["2-Face", "Puyol", "Bale", "Kroos", "Benega", "Jiminez"],
+        motm: ["Kroos"],
+        events: ["Everyone thought Puyol won the month but Benega actually did on having 1 more motm", "Kroos free kick"]
+    },
 ]
 
 
