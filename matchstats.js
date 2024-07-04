@@ -2569,36 +2569,6 @@ const matches = [
 
 window.matches = matches;
 
-function datesWithMaxGames(matches) {
-    const matchCountByDate = {};
-    let maxGames = 0;
-
-    matches.forEach(match => {
-        const date = match.date;
-
-        if (matchCountByDate[date]) {
-            matchCountByDate[date]++;
-        } else {
-            matchCountByDate[date] = 1;
-        }
-
-        if (matchCountByDate[date] > maxGames) {
-            maxGames = matchCountByDate[date];
-        }
-    });
-
-    const datesWithMaxGames = [];
-
-    for (const date in matchCountByDate) {
-        if (matchCountByDate[date] === maxGames) {
-            datesWithMaxGames.push(date);
-        }
-    }
-
-    return datesWithMaxGames;
-}
-
-gamesInADay(matches)
 
 function countPlayerGoals(matches, playerName) {
     let cleansheetScore = 0;

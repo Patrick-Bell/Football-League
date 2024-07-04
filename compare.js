@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const player2FootballerMenu = document.querySelector('.player2menu')
 
     let footballPlayers = ["Boxer", "Russian Keeper", "Neuer", "Stackers", "Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Kroos", "Bastian", "De Bruyne", "Eriksen", "Maradonna", "Modric", 
-    "Assunco", "Robinho", "Messi (ft)", "Van Persie (orange)", "Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", 
+    "Assunco", "Robinho", "Messi (ft)", "Van Persie (orange)", "Van Persie (red)", "Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", 
     "Suarez", "Muller", "Zlatan", "Beckham", "Berbatov", "Puyol", "Carragher", "Ramos", "Torres", "Bowen", "Bruney", "Pogba", "Allison", "2-Face", "Ferdinand", "Risse", "Russian Def", 
     "Baldy", "Beckham (lego)", "Ronaldinho", "Trippier", "Henry"]
 
