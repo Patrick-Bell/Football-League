@@ -2501,11 +2501,104 @@ const matches = [
         motm: ["Kroos"],
         events: ["Everyone thought Puyol won the month but Benega actually did on having 1 more motm", "Kroos free kick"]
     },
+    {
+        id: "120",
+        month: "july",
+        match_number: "120",
+        date: "04/07/2024",
+        time: "11:30",
+        condition: "Clear",
+        team1_score: 3, //home team
+        team2_score: 0, //away team
+        team1: ["Stackers", "Baldy", "Bowen", "Eriksen", "Van Persie (orange)", "Benzema"],
+        team2: ["Allison", "Trippier", "Kaka", "Maradonna", "Berbatov", "Muller"],
+        scorers: ["Eriksen", "Eriksen", "Benzema"],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Muller", "Berbatov", "Benzema", "Van Persie (orange)", "Maradonna"],
+        reds: [],
+        cleansheets: ["Stackers", "Baldy", "Bowen", "Eriksen", "Van Persie (orange)", "Benzema"],
+        motm: ["Eriksen"],
+        events: []
+    },
+    {
+        id: "121",
+        month: "july",
+        match_number: "121",
+        date: "04/07/2024",
+        time: "14:10",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Courtois", "Van Dijk (red)", "Messi", "Pogba", "Marquez", "Lewandowski"],
+        team2: ["Boxer", "Caveman", "Mahrez", "Modric", "Van Persie (orange)", "Haaland"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Messi", "Mahrez"],
+        reds: [],
+        cleansheets: ["Courtois", "Van Dijk (red)", "Messi", "Pogba", "Marquez", "Lewandowski", "Boxer", "Caveman", "Mahrez", "Modric", "Van Persie (orange)", "Haaland"],
+        motm: ["Caveman"],
+        events: ["Courtois debut", "Caveman took Marquez pony tail off and Boxer gave him a rounder when the ref back was turned"]
+    },
+    {
+        id: "121",
+        month: "july",
+        match_number: "121",
+        date: "04/07/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 1, //away team
+        team1: ["Courtois", "Risse", "Neymar", "Pogba", "Joaquin", "Suarez"],
+        team2: ["Stackers", "Trippier", "Pele", "Pedri", "Van Persie (orange)", "Kane"],
+        scorers: ["Kane"],
+        assisters: ["Pele"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Joaquin"],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: ["Kane great movement to just get back onside before Pele crossed it, first time finish roof of net", "3 games in a day for the first time"]
+    },
 ]
 
 
 window.matches = matches;
 
+function datesWithMaxGames(matches) {
+    const matchCountByDate = {};
+    let maxGames = 0;
+
+    matches.forEach(match => {
+        const date = match.date;
+
+        if (matchCountByDate[date]) {
+            matchCountByDate[date]++;
+        } else {
+            matchCountByDate[date] = 1;
+        }
+
+        if (matchCountByDate[date] > maxGames) {
+            maxGames = matchCountByDate[date];
+        }
+    });
+
+    const datesWithMaxGames = [];
+
+    for (const date in matchCountByDate) {
+        if (matchCountByDate[date] === maxGames) {
+            datesWithMaxGames.push(date);
+        }
+    }
+
+    return datesWithMaxGames;
+}
+
+gamesInADay(matches)
 
 function countPlayerGoals(matches, playerName) {
     let cleansheetScore = 0;

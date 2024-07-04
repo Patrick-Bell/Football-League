@@ -4,6 +4,44 @@ document.addEventListener("DOMContentLoaded", function () {
     const teams = window.teams
     let totalGamesCategory, totalGoalsCategory, totalSlingersCategory, totalAssistsCategory, mostAppsCategory, mostWinsCategory, mostCleanSheetsCategory, mostMOTMCategory, mostPointsCategory, mostDefeatsCategory;
 
+    function findDaysWithMostGames(matches) {
+        let matchCountByDate = {};
+        let maxGames = 0;
+    
+        matches.forEach(match => {
+            const date = match.date;
+            const time = match.time;
+    
+            if (matchCountByDate[date]) {
+                matchCountByDate[date].count++;
+                matchCountByDate[date].times.push(time);
+            } else {
+                matchCountByDate[date] = {
+                    count: 1,
+                    times: [time]
+                };
+            }
+    
+            if (matchCountByDate[date].count > maxGames) {
+                maxGames = matchCountByDate[date].count;
+            }
+        });
+    
+        let datesWithMostGames = [];
+        let datesWithMostGamesTimes = [];
+    
+        for (const date in matchCountByDate) {
+            if (matchCountByDate[date].count === maxGames) {
+                datesWithMostGames.push(date);
+                datesWithMostGamesTimes.push(matchCountByDate[date].times.join(', '));
+            }
+        }
+    
+        return `${maxGames} - ${datesWithMostGames.join(', ')} (${datesWithMostGamesTimes.join(', ')})`;
+    }
+
+
+
     function finalTotalMatches(matches) {
         let totalMatches = 0;
         matches.forEach(match => {
@@ -1006,7 +1044,8 @@ const findTotalAwayGames = (matches) => {
                 { category: "Most Games in a Month", winner: findMonthWithMostGames(matches) },
                 { category: "Most Points in a Month", winner: findPlayerWithMostPointsInMonth(teams) },
                 { category: "Most Defeats in a Month", winner: findPlayersWithMostDefeatsInMonth(teams) },
-                { category: "Most Goals in a Month", winner: findMonthsWithMostGoals(matches) }
+                { category: "Most Goals in a Month", winner: findMonthsWithMostGoals(matches) },
+                { category: "Most Games in a Day", winner: findDaysWithMostGames(matches)}
             ],
         },
         {
