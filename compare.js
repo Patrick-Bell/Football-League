@@ -8,16 +8,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let footballPlayers = ["Boxer", "Russian Keeper", "Neuer", "Stackers", "Van Dijk (red)", "Van Dijk (orange)", "Caveman", "Kroos", "Bastian", "De Bruyne", "Eriksen", "Maradonna", "Modric", 
     "Assunco", "Robinho", "Messi (ft)", "Van Persie (orange)", "Van Persie (red)", "Mbappe", "Bale", "Son", "Mahrez", "Pele", "Mane", "Neymar", "Messi", "Benzema", "Kane", "Lewandowski", "Jiminez", "Ronaldo", 
-    "Suarez", "Muller", "Zlatan", "Beckham", "Berbatov", "Puyol", "Carragher", "Ramos", "Torres", "Bowen", "Bruney", "Pogba", "Allison", "2-Face", "Ferdinand", "Risse", "Russian Def", 
-    "Baldy", "Beckham (lego)", "Ronaldinho", "Trippier", "Henry"]
+    "Suarez", "Muller", "Zlatan", "Beckham", "Berbatov", "Puyol", "Carragher", "Ramos", "Torres", "Bowen", "Bruney", "Pogba", "Allison", "2-Face", "Ferdinand", "Risse", "Russian Def", "Benega",
+     "Joaquin", "Courtois", "Aguero", "Baldy", "Beckham (lego)", "Ronaldinho", "Trippier", "Henry"]
+
+
 
     footballPlayers.forEach((player) => {
-        const option = document.createElement('option')
-        option.value = player
-        option.text = player
-        player1FootballerMenu.add(option)
-        player2FootballerMenu.add(option.cloneNode(true))
-})
+        const option1 = document.createElement('option');
+        option1.value = player;
+        option1.text = player;
+        player1FootballerMenu.add(option1);
+    
+        const option2 = document.createElement('option');
+        option2.value = player;
+        option2.text = player;
+        player2FootballerMenu.add(option2);
+    });
+
     initializePage();
 });
 
