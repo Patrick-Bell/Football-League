@@ -2627,6 +2627,27 @@ const matches = [
         motm: ["Ronaldinho"],
         events: ["Controversial pen at the end, Pele kicking Bale but got ball first"]
     },
+    {
+        id: "126",
+        month: "july",
+        match_number: "126",
+        date: "08/07/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Courtois", "Van Dijk (red)", "Mbappe", "Modric", "Torres", "Zlatan"],
+        team2: ["Boxer", "Risse", "Bowen", "Kroos", "Marquez", "Benzema"],
+        scorers: ["Bowen", "Torres", "Van Dijk (red)"],
+        assisters: ["Benzema", "Modric", "Modric"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Zlatan", "Marquez"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Modric"],
+        events: []
+    },
 ]
 
 
