@@ -2669,6 +2669,27 @@ const matches = [
         motm: [],
         events: ["Few controversial decisions, 1. Mane ghost goal not given ended up in slinger but don't think it went in 2. Eriksen header just didn't cross the line, one angle looked like it did", "Away team playing proper rough, physical game"]
     },
+    {
+        id: "128",
+        month: "july",
+        match_number: "128",
+        date: "11/07/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Courtois", "Baldy", "Bowen", "Maradonna", "Ramos", "Ronaldo"],
+        team2: ["Boxer", "Risse", "Neymar", "Pedri", "Robinho", "Jiminez"],
+        scorers: ["Ronaldo", "Jiminez"],
+        assisters: ["Bowen", "Robinho"],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: ["Ronaldo got infront of Risse to put it in, after Risse pushed Pedri away for some reason", "Risse fouled Ronaldo and then scored a slinger disallowed whistle went"]
+    },
 ]
 
 
