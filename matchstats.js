@@ -2648,6 +2648,27 @@ const matches = [
         motm: ["Modric"],
         events: []
     },
+     {
+        id: "127",
+        month: "july",
+        match_number: "127",
+        date: "11/07/2024",
+        time: "11:35",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Stackers", "Ramos (lego)", "Mane", "Eriksen", "Beckham", "Lewandowski"],
+        team2: ["Russian Keeper", "Trippier", "Mahrez", "Bastian", "Marquez", "Jiminez"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Beckham", "Bastian", "Mahrez", "Jiminez"],
+        reds: [],
+        cleansheets: ["Stackers", "Ramos (lego)", "Mane", "Eriksen", "Beckham", "Lewandowski", "Russian Keeper", "Trippier", "Mahrez", "Bastian", "Marquez", "Jiminez"],
+        motm: [],
+        events: ["Few controversial decisions, 1. Mane ghost goal not given ended up in slinger but don't think it went in 2. Eriksen header just didn't cross the line, one angle looked like it did", "Away team playing proper rough, physical game"]
+    },
 ]
 
 
