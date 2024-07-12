@@ -913,7 +913,7 @@ const teams = [
             { month: "April", gamesPlayed: 0, wins: 1, draws: 2, losses: 1, points: 0 },
             { month: "May", gamesPlayed: 0, wins: 1, draws: 2, losses: 0, points: 0 },
             { month: "June", gamesPlayed: 0, wins: 0, draws: 1, losses: 0, points: 0 },
-            { month: "July", gamesPlayed: 0, wins: 2, draws: 2, losses: 0, points: 0 },
+            { month: "July", gamesPlayed: 0, wins: 3, draws: 2, losses: 0, points: 0 },
             { month: "August", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "September", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
             { month: "October", gamesPlayed: 0, wins: 0, draws: 0, losses: 0, points: 0 },
