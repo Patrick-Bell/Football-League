@@ -2711,6 +2711,27 @@ const matches = [
         motm: ["2-Face"],
         events: []
     },
+    {
+        id: "130",
+        month: "july",
+        match_number: "130",
+        date: "11/07/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["2-Face", "Ferdinand", "Messi", "Pogba", "Ronaldinho", "Benzema"],
+        team2: ["Neuer", "Baldy", "Bale", "Maradonna", "Ramos", "Jiminez"],
+        scorers: ["Jiminez", "Benzema", "Jiminez"],
+        assisters: ["Bale"],
+        slingers: [],
+        penalties: ["Jiminez"],
+        yellows: ["Ferdinand"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Jiminez"],
+        events: ["Jiminez bullied Ferdinand, got a penalty early on and then quick feet him towards the end and scored, good battle throughout the game"]
+    },
 ]
 
 
