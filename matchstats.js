@@ -2732,6 +2732,70 @@ const matches = [
         motm: ["Jiminez"],
         events: ["Jiminez bullied Ferdinand, got a penalty early on and then quick feet him towards the end and scored, good battle throughout the game"]
     },
+    {
+        id: "131",
+        month: "july",
+        match_number: "131",
+        date: "13/07/2024",
+        time: "13:15",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 3, //away team
+        team1: ["Allison", "Baldy", "Mbappe", "Bastian", "Berbatov", "Lewandowski"],
+        team2: ["Bruney", "Hummels", "Mane", "De Bruyne", "Robinho", "Suarez"],
+        scorers: ["Suarez", "Mane", "Hummels"],
+        assisters: ["Robinho", "Suarez", "Bruney"],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: ["Bruney", "Hummels", "Mane", "De Bruyne", "Robinho", "Suarez"],
+        motm: ["Hummels"],
+        events: ["Suarez and Robinho 1-2 through the pitch", "Hummels long shot at the end post and in", "Lewandowski walks off the pitch with at least 3-5 mins to go"]
+    },
+    {
+        id: "132",
+        month: "july",
+        match_number: "132",
+        date: "13/07/2024",
+        time: "15:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Ramos (lego)", "Mane", "Kroos", "Carragher", "Lewandowski"],
+        team2: ["Bruney", "Ferdinand", "Mahrez", "De Bruyne", "Beckham", "Muller"],
+        scorers: ["Mane", "Muller"],
+        assisters: ["Lewandowski", "Carragher"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Beckham", "Carragher"],
+        reds: ["Beckham"],
+        cleansheets: [],
+        motm: ["Muller"],
+        events: ["Muller scored probably one of the best goals, cuts out and then says cut in on Carragher and then shot it on the left wing and it looped over and clipped the bar on the way down"]
+    },
+    {
+        id: "133",
+        month: "july",
+        match_number: "133",
+        date: "14/07/2024",
+        time: "12:00",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 0, //away team
+        team1: ["Stackers", "Risse", "Beckham (lego)", "Pedri", "Carragher", "Jiminez"],
+        team2: ["Boxer", "Baldy", "Neymar", "Pogba", "Ronaldinho", "Lewandowski"],
+        scorers: ["Jiminez", "Jiminez"],
+        assisters: ["Beckham (lego)"],
+        slingers: [],
+        penalties: ["Jiminez"],
+        yellows: ["Pogba"],
+        reds: [],
+        cleansheets: ["Stackers", "Risse", "Beckham (lego)", "Pedri", "Carragher", "Jiminez"],
+        motm: ["Jiminez"],
+        events: ["Strong claims that Baldy boosted for Jiminez, gave away a penalty", "Stackers also beenfited which wasn't considered by the Mexicans"]
+    },
+
 ]
 
 
