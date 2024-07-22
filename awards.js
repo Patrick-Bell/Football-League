@@ -586,20 +586,19 @@ document.addEventListener("DOMContentLoaded", function () {
             if (maxGoals > mostGoals) {
                 mostGoals = maxGoals;
                 topMonth = month;
-                topPlayers = players.filter(player => player.goals === maxGoals);
+                topPlayers = players.filter(player => player.goals === maxGoals).map(player => ({ ...player, month }));
             } else if (maxGoals === mostGoals) {
-                topPlayers.push(...players.filter(player => player.goals === maxGoals));
+                topPlayers.push(...players.filter(player => player.goals === maxGoals).map(player => ({ ...player, month })));
             }
         });
     
         if (mostGoals > 0) {
-            const capitalizedMonth = topMonth.charAt(0).toUpperCase() + topMonth.slice(1);
-            return `${mostGoals} - ${topPlayers.map(player => `${player.playerName} (${capitalizedMonth})`).join(', ')}`;
+            return `${mostGoals} - ${topPlayers.map(player => `${player.playerName} (${player.month.charAt(0).toUpperCase() + player.month.slice(1)})`).join(', ')}`;
         } else {
             return "No player has monthly goal data excluding 'Overall'.";
         }
     }
-   
+    
 
 
     

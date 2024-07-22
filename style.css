@@ -722,6 +722,14 @@ img{
   margin-top: 5px;
 }
 
+
+/* italy games styling */
+.match-card.italian-game {
+  border: 7.5px solid;
+  border-image: linear-gradient(to right, red, white, white, green) 1;
+  color: #333; /* Example: Text color */
+}
+
 @media (max-width: 700px){
   .large-dash-container{
     grid-template-columns: repeat(1, 1fr);

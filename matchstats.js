@@ -2795,6 +2795,111 @@ const matches = [
         motm: ["Jiminez"],
         events: ["Strong claims that Baldy boosted for Jiminez, gave away a penalty", "Stackers also beenfited which wasn't considered by the Mexicans"]
     },
+    {
+        id: "134",
+        month: "july",
+        match_number: "134",
+        date: "15/07/2024",
+        time: "22:00",
+        condition: "Sun",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Bruney", "Hummels", "Bale", "Modric", "Berbatov", "Muller"],
+        team2: ["Stackers", "Van Dijk (orange)", "Mbappe", "De Bruyne", "Van Persie (red)", "Kane"],
+        scorers: ["Mbappe", "Kane", "Berbatov"],
+        assisters: ["Kane", "Van Persie (red)"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Mbappe"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Kane"],
+        events: ["Match 1 of 5 (Naples, Italy)", "Referee: Krusty"]
+    },
+    {
+        id: "135",
+        month: "july",
+        match_number: "135",
+        date: "17/07/2024",
+        time: "22:45",
+        condition: "Sun",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Allison", "Ramos (lego)", "Beckham (lego)", "Bastian", "Ronaldinho", "Kane"],
+        team2: ["Bruney", "Baldy", "Mahrez", "Pedri", "Henry", "Benzema"],
+        scorers: ["Kane", "Mahrez"],
+        assisters: ["Beckham (lego)", "Pedri"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Benzema"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Mahrez"],
+        events: ["Match 2 of 5 (Naples, Italy)", "Referee: Headband"]
+    },
+    {
+        id: "136",
+        month: "july",
+        match_number: "136",
+        date: "19/07/2024",
+        time: "13:15",
+        condition: "Sun",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Neuer", "Trippier", "Beckham (lego)", "Pogba", "Ronaldinho", "Suarez"],
+        team2: ["2-Face", "Baldy", "Bowen", "Kroos", "Robinho", "Aguero"],
+        scorers: ["Robinho", "Suarez"],
+        assisters: ["Kroos"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Ronaldinho"],
+        reds: ["Suarez", "Ronaldinho"],
+        cleansheets: [],
+        motm: ["Robhinho"],
+        events: ["Match 3 of 5 (Naples, Italy)", "Referee: Black Hair", "Suarez starte beef with Bowen and Ronaldinho jumped in at the end"]
+    },
+    {
+        id: "137",
+        month: "july",
+        match_number: "137",
+        date: "19/07/2024",
+        time: "19:50",
+        condition: "Sun",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Allison", "Russian Def", "Son", "Kroos", "Joaquin", "Aguero"],
+        team2: ["Neuer", "Ferdinand", "Pele", "Maradonna", "Benega", "Benzema"],
+        scorers: ["Son", "Pele", "Maradonnna"],
+        assisters: ["Kroos", "Pele"],
+        slingers: [],
+        penalties: ["Pele"],
+        yellows: ["Russian Def", "Neuer"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Pele"],
+        events: ["Match 4 of 5 (Naples, Italy)", "Referee: Headband", "Pele dived for the pen and got Russian Def booked"]
+    },
+    {
+        id: "138",
+        month: "july",
+        match_number: "138",
+        date: "20/07/2024",
+        time: "00:05",
+        condition: "Sun",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Bruney", "Van Dijk (orange)", "Beckham (lego)", "Eriksen", "Robinho", "Kane"],
+        team2: ["2-Face", "Ramos (lego)", "Mbappe", "Bastian", "Messi (ft)", "Jiminez"],
+        scorers: ["Jiminez", "Beckham (lego)"],
+        assisters: ["Messi (ft)", "Kane"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Ramos (lego)", "Messi (ft)"],
+        reds: [],
+        cleansheets: [],
+        motm: [""],
+        events: ["Match 5 of 5 (Naples, Italy)", "Referee: Krusty", "Carragher had to be subbed in first 5 mins because his arm was hanging off", "Assunco and Boxer miss out on Italy games"]
+    },
 
 ]
 
@@ -3016,43 +3121,50 @@ console.log("Total Clean Sheets", totalCleanSheets);
 
 function renderMatches(matches) {
     const matchContainer = document.querySelector(".matches-container");
+    const italyGames = matches.filter(match => match.id >= 134 && match.id <= 138)
+    console.log('italy games', italyGames)
 
-    const matchCardsHTML = matches.map(match => `
-        <div class="match-card">
-            <div class="match-details-container">
-                <p class="matchday">Match ${match.match_number}</p>
-                <i class='bx bx-calendar'>${match.date}</i>
-                <i class='bx bx-football'>${match.time}</i>
-                <i class='bx bx-cloud'>${match.condition}</i>
-            </div>
-            <div class="scores-container">
-                <h2>Home Team  ${match.team1_score} - ${match.team2_score}  Away Team</h2>
-            </div>
-            <div class="view-stats"><i class='bx bxs-up-arrow-circle'></i>View Stats</div>
-            <div class="full-stats">
-                <div class="line-ups-text">Line ups</div>
-                <div class="line-ups">
-                    <div class="team">
-                        ${match.team1.map(player => `<div class="player">${player}</div>`).join('')}
+    const matchCardsHTML = matches.map(match => {
+        const isItalianGame = match.id >= 134 && match.id <= 138;
+        const italianGameClass = isItalianGame ? 'italian-game' : '';
+        
+        return `
+            <div class="match-card ${italianGameClass}">
+                <div class="match-details-container">
+                    <p class="matchday">Match ${match.match_number}</p>
+                    <i class='bx bx-calendar'>${match.date}</i>
+                    <i class='bx bx-football'>${match.time}</i>
+                    <i class='bx bx-cloud'>${match.condition}</i>
+                </div>
+                <div class="scores-container">
+                    <h2>Home Team  ${match.team1_score} - ${match.team2_score}  Away Team</h2>
+                </div>
+                <div class="view-stats"><i class='bx bxs-up-arrow-circle'></i>View Stats</div>
+                <div class="full-stats">
+                    <div class="line-ups-text">Line ups</div>
+                    <div class="line-ups">
+                        <div class="team">
+                            ${match.team1.map(player => `<div class="player">${player}</div>`).join('')}
+                        </div>
+                        <div class="team">
+                            ${match.team2.map(player => `<div class="player">${player}</div>`).join('')}
+                        </div>
                     </div>
-                    <div class="team">
-                        ${match.team2.map(player => `<div class="player">${player}</div>`).join('')}
+                    <div class="stats-text">
+                        <div class="line-ups-text">Stats</div>
+                        <div class="goals">Goals: ${match.scorers.join(', ')}</div>
+                        <div class="assists">Assists: ${match.assisters.join(', ')}</div>
+                        <div class="slingers">Slingers: ${match.slingers.join(', ')}</div>
+                        <div class="penalties">Penalties: ${match.penalties.join(', ')}</div>
+                        <div class="yellows">Yellow Cards: ${match.yellows.join(', ')}</div>
+                        <div class="reds">Red Cards: ${match.reds.join(', ')}</div>
+                        <div class="cleansheets">Clean Sheets: ${match.cleansheets.join(', ')}</div>
+                        <div class="motm">MOTM: ${match.motm}</div>
                     </div>
                 </div>
-                <div class="stats-text">
-                    <div class="line-ups-text">Stats</div>
-                    <div class="goals">Goals: ${match.scorers.join(', ')}</div>
-                    <div class="assists">Assists: ${match.assisters.join(', ')}</div>
-                    <div class="slingers">Slingers: ${match.slingers.join(', ')}</div>
-                    <div class="penalties">Penalties: ${match.penalties.join(', ')}</div>
-                    <div class="yellows">Yellow Cards: ${match.yellows.join(', ')}</div>
-                    <div class="reds">Red Cards: ${match.reds.join(', ')}</div>
-                    <div class="cleansheets">Clean Sheets: ${match.cleansheets.join(', ')}</div>
-                    <div class="motm">MOTM: ${match.motm}</div>
-                </div>
             </div>
-        </div>
-    `);
+        `;
+    });
 
     const matchesHTMLString = matchCardsHTML.join('');
     matchContainer.innerHTML = matchesHTMLString;
