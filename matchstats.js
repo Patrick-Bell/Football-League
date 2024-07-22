@@ -2900,7 +2900,27 @@ const matches = [
         motm: [""],
         events: ["Match 5 of 5 (Naples, Italy)", "Referee: Krusty", "Carragher had to be subbed in first 5 mins because his arm was hanging off", "Assunco and Boxer miss out on Italy games"]
     },
-
+    {
+        id: "139",
+        month: "july",
+        match_number: "139",
+        date: "22/07/2024",
+        time: "00:05",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Hummels", "Mane", "Modric", "Ramos", "Ronaldo"],
+        team2: ["Courtois", "Risse", "Son", "Eriksen", "Joaquin", "Lewandowski"],
+        scorers: ["Ronaldo", "Lewandowski", "Ronaldo"],
+        assisters: ["Ramos"],
+        slingers: ["Ronaldo"],
+        penalties: [],
+        yellows: ["Joaquin"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Ronaldo"],
+        events: []
+    },
 ]
 
 
