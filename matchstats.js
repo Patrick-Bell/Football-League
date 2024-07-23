@@ -2942,6 +2942,27 @@ const matches = [
         motm: ["De Bruyne"],
         events: ["De Bruyne free kick near slinger goal", "Marquez first win"]
     },
+    {
+        id: "141",
+        month: "july",
+        match_number: "141",
+        date: "23/07/2024",
+        time: "17:00",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Neuer", "Puyol", "Bowen", "Pedri", "Berbatov", "Aguero"],
+        team2: ["Bruney", "Caveman", "Son", "Pogba", "Van Persie (red)", "Muller"],
+        scorers: ["Muller", "Pedri", "Bowen"],
+        assisters: ["Pogba", "Puyol", "Pedri"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Son"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Bowen"],
+        events: []
+    },
 ]
 
 

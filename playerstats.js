@@ -68,7 +68,7 @@ const players = [
           { month: "April", apps: 7, won: 0, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
           { month: "May", apps: 4, won: 2, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 1 },
           { month: "June", apps: 4, won: 1, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
-          { month: "July", apps: 4, won: 3, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 1, motm: 0 },
+          { month: "July", apps: 5, won: 4, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 1, motm: 0 },
           { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
           { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
           { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -156,7 +156,7 @@ const players = [
                { month: "April", apps: 4, won: 3, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 2 },
                { month: "May", apps: 2, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "June", apps: 2, won: 0, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 1, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 1 },
-               { month: "July", apps: 1, won: 0, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 1 },
+               { month: "July", apps: 2, won: 0, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 1 },
                { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -310,7 +310,7 @@ const players = [
                { month: "April", apps: 9, won: 4, draw: 4, win_percentage: 0, unbeaten_percentage: 0, goals: 3, owngoals: 0, slingers: 0, assists: 2, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 4, motm: 3 },
                { month: "May", apps: 7, won: 1, draw: 5, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 3, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 3, motm: 2 },
                { month: "June", apps: 3, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
-               { month: "July", apps: 4, won: 2, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
+               { month: "July", apps: 5, won: 3, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 2, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
                { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -393,7 +393,7 @@ const players = [
              monthlyData: [
                 { month: "Overall", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "January", apps: 4, won: 3, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
-               { month: "February", apps: 4, won: 0, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 2, penalties: 0, hattricks: 0, yellow: 3, red: 1.1, clean_sheets: 0, motm: 0 },
+               { month: "February", apps: 4, won: 0, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 2, penalties: 0, hattricks: 0, yellow: 3, red: 1, clean_sheets: 0, motm: 0 },
                { month: "March", apps: 2, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "April", apps: 5, won: 0, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 0, motm: 0 },
                { month: "May", apps: 3, won: 0, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 0, motm: 0 },
@@ -464,7 +464,7 @@ const players = [
                { month: "April", apps: 6, won: 3, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 3, red: 0, clean_sheets: 2, motm: 1 },
                { month: "May", apps: 1, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 0, motm: 0 },
                { month: "June", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
-               { month: "July", apps: 2, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+               { month: "July", apps: 3, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -486,7 +486,7 @@ const players = [
                { month: "April", apps: 7, won: 4, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 3, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 4, motm: 2 },
                { month: "May", apps: 8, won: 0, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 2, motm: 0 },
                { month: "June", apps: 1, won: 0, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 1 },
-               { month: "July", apps: 6, won: 1, draw: 5, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 4, motm: 1 },
+               { month: "July", apps: 6, won: 1, draw: 5, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 2.1, red: 0, clean_sheets: 4, motm: 1 },
                { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -706,7 +706,7 @@ const players = [
                { month: "April", apps: 13, won: 6, draw: 4, win_percentage: 0, unbeaten_percentage: 0, goals: 6, owngoals: 0, slingers: 1, assists: 1, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 4, motm: 2 },
                { month: "May", apps: 2, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 1, motm: 0 },
                { month: "June", apps: 2, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 1, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
-               { month: "July", apps: 4, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 2, penalties: 0, hattricks: 0, yellow: 1, red: 1, clean_sheets: 1, motm: 0 },
+               { month: "July", apps: 4, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 2, penalties: 0, hattricks: 0, yellow: 1, red: 1.1, clean_sheets: 1, motm: 0 },
                { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -728,7 +728,7 @@ const players = [
                { month: "April", apps: 3, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 1, assists: 1, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 0, motm: 0 },
                { month: "May", apps: 6, won: 0, draw: 4, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 0, motm: 0 },
                { month: "June", apps: 3, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 1 },
-               { month: "July", apps: 4, won: 0, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 1, motm: 1 },
+               { month: "July", apps: 5, won: 0, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 1, motm: 1 },
                { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -794,7 +794,7 @@ const players = [
                { month: "April", apps: 3, won: 0, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 2, motm: 0 },
                { month: "May", apps: 4, won: 1, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 1 },
                { month: "June", apps: 3, won: 2, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 3, motm: 1 },
-               { month: "July", apps: 5, won: 0, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 1, motm: 0 },
+               { month: "July", apps: 6, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 1, motm: 0 },
                { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -816,7 +816,7 @@ const players = [
                { month: "April", apps: 2, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
                { month: "May", apps: 5, won: 2, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 2, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 3, motm: 0 },
                { month: "June", apps: 3, won: 0, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 2, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 0, motm: 0 },
-               { month: "July", apps: 1, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+               { month: "July", apps: 2, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -860,7 +860,7 @@ const players = [
                { month: "April", apps: 7, won: 2, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
                { month: "May", apps: 8, won: 2, draw: 5, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
                { month: "June", apps: 4, won: 3, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
-               { month: "July", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
+               { month: "July", apps: 1, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
                { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -948,7 +948,7 @@ const players = [
        { month: "April", apps: 6, won: 2, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 1, motm: 2 },
        { month: "May", apps: 3, won: 2, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 2, motm: 0 },
        { month: "June", apps: 6, won: 0, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 0, motm: 0 },
-       { month: "July", apps: 5, won: 1, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
+       { month: "July", apps: 6, won: 2, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 2, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 1 },
        { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
        { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
        { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -970,7 +970,7 @@ const players = [
      { month: "April", apps: 6, won: 3, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 3, motm: 0 },
      { month: "May", apps: 7, won: 0, draw: 6, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
      { month: "June", apps: 3, won: 0, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
-     { month: "July", apps: 5, won: 1, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
+     { month: "July", apps: 6, won: 1, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 1, motm: 0 },
      { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
      { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
      { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -992,7 +992,7 @@ const players = [
     { month: "April", apps: 6, won: 0, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 2, motm: 0 },
     { month: "May", apps: 6, won: 1, draw: 5, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 2, motm: 1 },
     { month: "June", apps: 2, won: 1, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 1 },
-    { month: "July", apps: 8, won: 1, draw: 4, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 3, motm: 0 },
+    { month: "July", apps: 9, won: 1, draw: 4, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 2, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 3, motm: 0 },
     { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -1168,7 +1168,7 @@ const players = [
     { month: "April", apps: 4, won: 3, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 2, red: 0, clean_sheets: 2, motm: 0 },
     { month: "May", apps: 3, won: 0, draw: 3, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 2, red: 2, clean_sheets: 3, motm: 0 },
     { month: "June", apps: 1, won: 0, draw: 1, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
-    { month: "July", apps: 5, won: 1, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 1, clean_sheets: 0, motm: 1 },
+    { month: "July", apps: 5, won: 1, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 1, red: 1.1, clean_sheets: 0, motm: 1 },
     { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -1388,7 +1388,7 @@ const players = [
     { month: "April", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "May", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "June", apps: 2, won: 1, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 1, penalties: 0, hattricks: 0, yellow: 1, red: 0, clean_sheets: 1, motm: 0 },
-    { month: "July", apps: 4, won: 1, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
+    { month: "July", apps: 5, won: 2, draw: 2, win_percentage: 0, unbeaten_percentage: 0, goals: 1, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 2, motm: 0 },
     { month: "August", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "September", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
     { month: "October", apps: 0, won: 0, draw: 0, win_percentage: 0, unbeaten_percentage: 0, goals: 0, owngoals: 0, slingers: 0, assists: 0, penalties: 0, hattricks: 0, yellow: 0, red: 0, clean_sheets: 0, motm: 0 },
@@ -1608,7 +1608,7 @@ function renderPlayers(players) {
       const isEliminated = eliminatedPlayers ? 'eliminated-card' : '';
       const playerOfTheMonth = player.name === "Benega";
       const isPOTM = playerOfTheMonth ? 'potm' : "";
-      const banned = player.name === "Son" || player.name === "Messi (ft)"
+      const banned = player.name === "Suarez" || player.name === "Ronaldinho"
       const isBanned = banned ? 'player-ban' : ''
 
         return `
@@ -1618,7 +1618,7 @@ function renderPlayers(players) {
                     ${bannedClass === 'banned' ? 'SUSPENDED (1) GAME' : ''}
                     ${isEliminated === 'eliminated-card' ? "Left League" : ''}
                     ${isPOTM === 'potm' ? "Player of the Month" : ''}
-                    ${isBanned === 'player-ban' ? 'Banned until 16/07' : ''}
+                    ${isBanned === 'player-ban' ? 'Banned until 23/08' : ''}
                 </div>
     <div class="stat-bold player-name"><i class="bi-brightness-high-fill"></i>${player.name} (${player.position})</div>
     <img class="player-img" src="${player.picture}" alt="">
@@ -1819,7 +1819,7 @@ function checkSuspendedPlayers(players) {
 // Function to get suspended players
 function getSuspendedPlayers(players) {
   return players.filter(player => {
-    const bannedPlayers = player.name === "Messi (ft)" || player.name === "Son"
+    const bannedPlayers = player.name === "Suarez" || player.name === "Ronaldinho"
     const redCard = player.monthlyData[0].red;
     return (player.monthlyData[0].yellow % 5 === 0 && player.monthlyData[0].yellow > 0) || 
            (Number.isInteger(redCard) && redCard > 0) || bannedPlayers;
