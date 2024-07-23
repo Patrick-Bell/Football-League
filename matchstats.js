@@ -2921,6 +2921,27 @@ const matches = [
         motm: ["Ronaldo"],
         events: []
     },
+    {
+        id: "140",
+        month: "july",
+        match_number: "140",
+        date: "23/07/2024",
+        time: "12:10",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 0, //away team
+        team1: ["Russian Keeper", "Baldy", "Pele", "De Bruyne", "Marquez", "Aguero"],
+        team2: ["2-Face", "Ramos (lego)", "Bale"< "Eriksen", "Van Persie (orange)", "Zlatan"],
+        scorers: ["De Bruyne", "Aguero"],
+        assisters: ["Pele"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Eriksen", "Van Persie (orange)"],
+        reds: ["Van Persie (orange)"],
+        cleansheets: ["Russian Keeper", "Baldy", "Pele", "De Bruyne", "Marquez", "Aguero"],
+        motm: ["De Bruyne"],
+        events: ["De Bruyne free kick near slinger goal", "Marquez first win"]
+    },
 ]
 
 
