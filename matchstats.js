@@ -2963,6 +2963,48 @@ const matches = [
         motm: ["Bowen"],
         events: []
     },
+    {
+        id: "142",
+        month: "july",
+        match_number: "142",
+        date: "24/07/2024",
+        time: "17:00",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 1, //away team
+        team1: ["Stackers", "Trippier", "Kaka", "Maradonna", "Van Persie (red)", "Zlatan"],
+        team2: ["Neuer", "Caveman", "Pele", "Pogba", "Marquez", "Ronaldo"],
+        scorers: ["Pele"],
+        assisters: ["Marquez"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Van Persie (red)"],
+        reds: [],
+        cleansheets: ["Neuer", "Caveman", "Pele", "Pogba", "Marquez", "Ronaldo"],
+        motm: ["Neuer"],
+        events: []
+    },
+    {
+        id: "143",
+        month: "july",
+        match_number: "143",
+        date: "24/07/2024",
+        time: "17:00",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Stackers", "Baldy", "Son", "Pedri", "Robinho", "Muller"],
+        team2: ["2-Face", "Puyol", "Kaka", "Modric", "Benega", "Jiminez"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Muller", "Jiminez"],
+        reds: [],
+        cleansheets: ["Stackers", "Baldy", "Son", "Pedri", "Robinho", "Muller", "2-Face", "Puyol", "Kaka", "Modric", "Benega", "Jiminez"],
+        motm: ["Robinho"],
+        events: []
+    },
 ]
 
 
