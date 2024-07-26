@@ -3005,6 +3005,27 @@ const matches = [
         motm: ["Robinho"],
         events: []
     },
+    {
+        id: "144",
+        month: "july",
+        match_number: "144",
+        date: "26/07/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Courtois", "Puyol", "Kaka", "Pogba", "Berbatov", "Jiminez"],
+        team2: ["Allison", "Russian Def", "Mbappe", "Kroos", "Assunco", "Muller"],
+        scorers: ["Pogba", "Muller"],
+        assisters: ["Jiminez", "Assunco"],
+        slingers: ["Muller"],
+        penalties: [],
+        yellows: ["Kaka", "Puyol"],
+        reds: [],
+        cleansheets: [],
+        motm: [],
+        events: ["Muller slinger right at the end"]
+    },
 ]
 
 
