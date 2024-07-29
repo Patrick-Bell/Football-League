@@ -409,10 +409,13 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        console.log(playerRedsByMonth)
+        console.log('checking players reds by the month now ', playerRedsByMonth)
     
         let mostReds = 0;
         const topMonths = [];
+
+        const tester = Object.entries(playerRedsByMonth)
+        console.log('tester', tester)
     
         Object.entries(playerRedsByMonth).forEach(([month, players]) => {
             const maxReds = Math.max(...players.map(player => player.red));
@@ -432,7 +435,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }).join(', ')}`;
             return result;
         } else {
-            return "No player has monthly yellow card data excluding 'Overall'.";
+            return "No player has monthly yellow card data excluding 'Overall'.";       
         }
     }
     
@@ -747,33 +750,35 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
     function findPlayersWithMostGoalsInSingleGame(matches) {
-    let topScorers = [];
-let topGoalsInSingleGame = 0;
-
-// Iterate through each match
-matches.forEach(match => {
-    // Combine goal scorers from both teams for the current match
-    const allScorers = match.scorers;
-
-    // Count goals for each scorer in the current match
-    const scorerGoals = {};
-    allScorers.forEach(scorer => {
-        scorerGoals[scorer] = (scorerGoals[scorer] || 0) + 1;
-    });
-
-    // Find the player(s) with the most goals in the current match
-    for (const scorer in scorerGoals) {
-        if (scorerGoals[scorer] > topGoalsInSingleGame) {
-            topScorers = [scorer];
-            topGoalsInSingleGame = scorerGoals[scorer];
-        } else if (scorerGoals[scorer] === topGoalsInSingleGame) {
-            // If there are multiple players with the same highest goal count
-            topScorers.push(scorer);
-        }
+        let topScorers = [];
+        let topGoalsInSingleGame = 0;
+    
+        // Iterate through each match
+        matches.forEach(match => {
+            // Combine goal scorers from both teams for the current match
+            const allScorers = match.scorers;
+    
+            // Count goals for each scorer in the current match
+            const scorerGoals = {};
+            allScorers.forEach(scorer => {
+                scorerGoals[scorer] = (scorerGoals[scorer] || 0) + 1;
+            });
+    
+            // Find the player(s) with the most goals in the current match
+            for (const scorer in scorerGoals) {
+                if (scorerGoals[scorer] > topGoalsInSingleGame) {
+                    topScorers = [{ name: scorer, goals: scorerGoals[scorer], date: match.date }];
+                    topGoalsInSingleGame = scorerGoals[scorer];
+                } else if (scorerGoals[scorer] === topGoalsInSingleGame) {
+                    // If there are multiple players with the same highest goal count
+                    topScorers.push({ name: scorer, goals: scorerGoals[scorer], date: match.date });
+                }
+            }
+        });
+    
+        const topScorersDetails = topScorers.map(scorer => `${scorer.name} (${scorer.date})`).join(', ');
+        return `${topGoalsInSingleGame} - ${topScorersDetails}`;
     }
-});
-    return `${topGoalsInSingleGame} - ${topScorers.join(', ')}`
-}
 
 function findGameWithMostGoals(matches) {
 let mostGoalsInSingleGame = 0;

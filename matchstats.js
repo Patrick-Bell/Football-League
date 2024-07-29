@@ -3131,6 +3131,27 @@ const matches = [
         motm: [""],
         events: []
     },
+    {
+        id: "150",
+        month: "july",
+        match_number: "150",
+        date: "29/07/2024",
+        time: "17:15",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["2-Face", "Van Dijk (orange)", "Messi", "Eriksen", "Henry", "Haaland"],
+        team2: ["Stackers", "Russian Def", "Pele", "De Bruyne", "Messi (ft)", "Benzema"],
+        scorers: ["Haaland"],
+        assisters: ["Henry"],
+        slingers: ["Haaland"],
+        penalties: [],
+        yellows: ["Messi (ft)", "Eriksen", "Pele"],
+        reds: [],
+        cleansheets: ["2-Face", "Van Dijk (orange)", "Messi", "Eriksen", "Henry", "Haaland"],
+        motm: ["Haaland"],
+        events: ["Haaland tight through ball between Messi (ft) and De Bruyne, gets the return perfect first touch and does a bounce shot into the slinger"]
+    },
 ]
 
 
