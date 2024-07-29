@@ -2694,7 +2694,7 @@ const matches = [
         id: "129",
         month: "july",
         match_number: "129",
-        date: "11/07/2024",
+        date: "12/07/2024",
         time: "11:50",
         condition: "Clear",
         team1_score: 0, //home team
@@ -2715,7 +2715,7 @@ const matches = [
         id: "130",
         month: "july",
         match_number: "130",
-        date: "11/07/2024",
+        date: "12/07/2024",
         time: "17:15",
         condition: "Clear",
         team1_score: 1, //home team
@@ -3025,6 +3025,111 @@ const matches = [
         cleansheets: [],
         motm: [],
         events: ["Muller slinger right at the end"]
+    },
+    {
+        id: "145",
+        month: "july",
+        match_number: "145",
+        date: "27/07/2024",
+        time: "12:20",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 2, //away team
+        team1: ["Russian Keeper", "Ferdinand", "Son", "Maradonna", "Carragher", "Aguero"],
+        team2: ["Stackers", "Trippier", "Pele", "Pogba", "Henry", "Zlatan"],
+        scorers: ["Zlatan", "Henry", "Maradonna"],
+        assisters: ["Trippier", "Zlatan", "Carragher"],
+        slingers: ["Maradonna"],
+        penalties: [],
+        yellows: ["Henry"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Pogba"],
+        events: ["Stackers 50th game and beats Suarez month points record of 22"]
+    },
+    {
+        id: "146",
+        month: "july",
+        match_number: "146",
+        date: "27/07/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 1, //away team
+        team1: ["Russian Keeper", "Russian Def", "Bale", "Pedri", "Van Persie (red)", "Haaland"],
+        team2: ["Courtois", "Baldy", "Pele", "Eriksen", "Carragher", "Aguero"],
+        scorers: ["Pele"],
+        assisters: ["Aguero"],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: ["Courtois", "Baldy", "Pele", "Eriksen", "Carragher", "Aguero"],
+        motm: ["Pele"],
+        events: ["Pele dirty nutmeg on Russian Def"]
+    },
+    {
+        id: "147",
+        month: "july",
+        match_number: "147",
+        date: "27/07/2024",
+        time: "18:40",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 0, //away team
+        team1: ["Courtois", "Van Dijk (red)", "Kaka", "Pedri", "Marquez", "Muller"],
+        team2: ["2-Face", "Van Dijk (orange)", "Messi", "Bastian", "Benega", "Zlatan"],
+        scorers: ["Muller", "Marquez"],
+        assisters: ["Pedri", "Muller"],
+        slingers: [],
+        penalties: [],
+        yellows: [],
+        reds: [],
+        cleansheets: ["Courtois", "Van Dijk (red)", "Kaka", "Pedri", "Marquez", "Muller"],
+        motm: ["Marquez"],
+        events: []
+    },
+    {
+        id: "148",
+        month: "july",
+        match_number: "148",
+        date: "28/07/2024",
+        time: "12:20",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 0, //away team
+        team1: ["Russian Keeper", "Hummels", "Bale", "Pedri", "Benega", "Ronaldo"],
+        team2: ["Courtois", "Ramos (lego)", "Son", "De Bruyne", "Robinho", "Kane"],
+        scorers: ["Ronaldo"],
+        assisters: ["Benega"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Robinho"],
+        reds: [],
+        cleansheets: ["Russian Keeper", "Hummels", "Bale", "Pedri", "Benega", "Ronaldo"],
+        motm: ["Ronaldo"],
+        events: []
+    },
+    {
+        id: "149",
+        month: "july",
+        match_number: "149",
+        date: "28/07/2024",
+        time: "17:10",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["Courtois", "Van Dijk (red)", "Bale", "Pedri", "Henry", "Haaland"],
+        team2: ["Boxer", "Risse", "Pele", "Eriksen", "Carragher", "Zlatan"],
+        scorers: ["Pedri", "Pele"],
+        assisters: ["Henry", "Zlatan"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Haaland", "Risse"],
+        reds: [],
+        cleansheets: [],
+        motm: [""],
+        events: []
     },
 ]
 

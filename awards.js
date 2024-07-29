@@ -37,7 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     
-        return `${maxGames} - ${datesWithMostGames.join(', ')} (${datesWithMostGamesTimes.join(', ')})`;
+        return `${maxGames} - ${datesWithMostGames.map((date, index) => {
+            return `${date}: (${datesWithMostGamesTimes[index]})`;
+        }).join(', ')}`;
     }
 
 
@@ -730,9 +732,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let overallGoal = 0;
             const overallMonth = player.monthlyData.find(monthData => monthData.month === "Overall");
     
-            if (overallMonth && typeof overallMonth.goals !== 'undefined') {
                 overallGoal = overallMonth.goals;
-            }
     
             if (overallGoal > maxOverallGoal) {
                 maxOverallGoal = overallGoal;
@@ -1060,6 +1060,7 @@ const findTotalAwayGames = (matches) => {
                 { category: "150th Goal", winner: findNumberGoals(matches, 150)},
                 { category: "200th Goal", winner: findNumberGoals(matches, 200) },
                 { category: "250th Goal", winner: findNumberGoals(matches, 250)},
+                { category: "300th Goal", winner: findNumberGoals(matches, 300) },
                 { category: "1st Slinger", winner: findNumberSlingers(matches, 1) },
                 { category: "10th Slinger", winner: findNumberSlingers(matches, 10)},
                 { category: "25th Slinger", winner: findNumberSlingers(matches, 25)},
@@ -1079,6 +1080,7 @@ const findTotalAwayGames = (matches) => {
                 { category: "50th Assist", winner: findNumberAssists(matches, 50)},
                 { category: "100th Assist", winner: findNumberAssists(matches, 100)},
                 { category: "150th Assist", winner: findNumberAssists(matches, 150)},
+                { category: "200th Assist", winner: findNumberAssists(matches, 200)},
                 { category: "Most Assists in Single Game", winner: findPlayersWithMostAssistsInSingleGame(matches)},
                 { category: "Most Assists in Single Month", winner: findPlayersWithMostAssistsInMonth(players)}
             ],
