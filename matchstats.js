@@ -3152,6 +3152,27 @@ const matches = [
         motm: ["Haaland"],
         events: ["Haaland tight through ball between Messi (ft) and De Bruyne, gets the return perfect first touch and does a bounce shot into the slinger"]
     },
+    {
+        id: "151",
+        month: "july",
+        match_number: "151",
+        date: "30/07/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 1, //home team
+        team2_score: 1, //away team
+        team1: ["2-Face", "Risse", "Neymar", "Modric", "Henry", "Benzema"],
+        team2: ["Russian Keeper", "Puyol", "Kaka", "Bastian", "Ramos", "Jiminez"],
+        scorers: ["Henry", "Jiminez"],
+        assisters: ["Modric"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Risse", "Benzema", "Ramos"],
+        reds: [],
+        cleansheets: [],
+        motm: ["Kaka"],
+        events: ["Kaka throwing the ball on Modric multiple times"]
+    },
 ]
 
 
