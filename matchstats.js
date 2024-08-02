@@ -3173,6 +3173,27 @@ const matches = [
         motm: ["Kaka"],
         events: ["Kaka throwing the ball on Modric multiple times"]
     },
+    {
+        id: "152",
+        month: "august",
+        match_number: "152",
+        date: "02/08/2024",
+        time: "11:30",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 2, //away team
+        team1: ["Allison", "Ramos (lego)", "Neymar", "Maradonna", "Joaquin", "Jiminez"],
+        team2: ["Bruney", "Russian Def", "Mbappe", "Pogba", "Henry", "Haaland"],
+        scorers: ["Haaland", "Henry"],
+        assisters: ["Mbappe", "Mbappe"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Russian Def"],
+        reds: [],
+        cleansheets: ["Bruney", "Russian Def", "Mbappe", "Pogba", "Henry", "Haaland"],
+        motm: [""],
+        events: ["Haaland bullied Ramos, knocked him over for Henry to score and spin him for first goal too"]
+    },
 ]
 
 
