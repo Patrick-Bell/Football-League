@@ -3194,6 +3194,69 @@ const matches = [
         motm: [""],
         events: ["Haaland bullied Ramos, knocked him over for Henry to score and spin him for first goal too"]
     },
+    {
+        id: "153",
+        month: "august",
+        match_number: "153",
+        date: "02/08/2024",
+        time: "19:15",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 0, //away team
+        team1: ["Russian Keeper", "Van Dijk (orange)", "Beckham (lego)", "Kroos", "Ramos", "Aguero"],
+        team2: ["Allison", "Russian Def", "Messi", "Pogba", "Messi  (ft)", "Lewandowski"],
+        scorers: ["Aguero", "Aguero"],
+        assisters: ["Russian Keeper"],
+        slingers: ["Aguero"],
+        penalties: ["Aguero"],
+        yellows: ["Russian Def", "Messi (ft)", "Messi"],
+        reds: [],
+        cleansheets: ["Russian Keeper", "Van Dijk (orange)", "Beckham (lego)", "Kroos", "Ramos", "Aguero"],
+        motm: ["Aguero"],
+        events: ["Ref blew the whistle to tell the players something and Aguero thought it was for the pen so he took the pen quickly and it went into the slinger"]
+    },
+    {
+        id: "154",
+        month: "august",
+        match_number: "154",
+        date: "03/08/2024",
+        time: "10:55",
+        condition: "Clear",
+        team1_score: 2, //home team
+        team2_score: 1, //away team
+        team1: ["Courtois", "Puyol", "Son", "Bastian", "Assunco", "Benzema"],
+        team2: ["Bruney", "Trippier", "Mbappe", "Maradonna", "Joaquin", "Lewandowski"],
+        scorers: ["Lewandowski", "Benzema", "Son"],
+        assisters: ["Mbappe", "Bastian"],
+        slingers: [],
+        penalties: [],
+        yellows: ["Joaquin"],
+        reds: ["Joaquin"],
+        cleansheets: [],
+        motm: [],
+        events: []
+    },
+    {
+        id: "155",
+        month: "august",
+        match_number: "155",
+        date: "04/08/2024",
+        time: "17:05",
+        condition: "Clear",
+        team1_score: 0, //home team
+        team2_score: 0, //away team
+        team1: ["Bruney", "Baldy", "Neymar", "Eriksen", "Benega", "Zlatan"],
+        team2: ["Allison", "Puyol", "Messi", "Bastian", "Ramos", "Muller"],
+        scorers: [],
+        assisters: [],
+        slingers: [],
+        penalties: [],
+        yellows: ["Messi", "Bastian"],
+        reds: [],
+        cleansheets: ["Bruney", "Baldy", "Neymar", "Eriksen", "Benega", "Zlatan", "Allison", "Puyol", "Messi", "Bastian", "Ramos", "Muller"],
+        motm: [],
+        events: []
+    },
 ]
 
 
